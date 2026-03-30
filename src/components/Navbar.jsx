@@ -6,7 +6,6 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Link from "next/link";
-import Image from "next/image";
 import "./Navbar.css";
 
 const MyNavbar = () => {
@@ -18,13 +17,7 @@ const MyNavbar = () => {
   return (
     <Navbar expand="lg" className="navbar">
       <Navbar.Brand as={Link} href="/" className="nav-brand">
-        <Image
-          src="/images/logo/logo.png"
-          alt="Marsons Limited"
-          width={100}
-          height={30}
-          className="w-full h-auto"
-        />
+        <img src="/images/logo/logo.png" alt="Marsons Limited" loading="eager" />
       </Navbar.Brand>
 
       {/* Toggle button opens Offcanvas */}
@@ -39,13 +32,7 @@ const MyNavbar = () => {
       >
         <Offcanvas.Header>
           <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-            <Image
-              src="/images/logo/logo.png"
-              alt="Marsons Limited"
-              width={100}
-              height={30}
-              className="w-full h-auto offCanvasLogo"
-            />
+            <img src="/images/logo/logo.png" alt="Marsons Logo" className="offCanvasLogo" />
           </Offcanvas.Title>
         </Offcanvas.Header>
 

@@ -1,22 +1,22 @@
 let highlightsData = [
     {
         id: 1,
-        image: "",
+        image: "/images/icons/quality.png",
         title: "Certified Products",
     },
     {
         id: 2,
-        image: "",
+        image: "/images/icons/experience.png",
         title: "Credible & Longstanding Experience",
     },
     {
         id: 3,
-        image: "",
+        image: "/images/icons/infrastructure.png",
         title: "Quality-Accredited Infrastructure",
     },
     {
         id: 4,
-        image: "",
+        image: "/images/icons/increase.png",
         title: "Responsive",
     },
 ]

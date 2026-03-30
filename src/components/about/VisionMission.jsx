@@ -2,7 +2,7 @@ const visionMissionData = [
     {
         id: 1,
         type: "image",
-        image: "",
+        image: "/images/vision-mission/1.avif",
         alt: "Vision Image",
     },
     {
@@ -16,7 +16,7 @@ const visionMissionData = [
     {
         id: 3,
         type: "image",
-        image: "",
+        image: "/images/vision-mission/2.avif",
         alt: "Mission Image",
     },
     {
@@ -30,7 +30,7 @@ const visionMissionData = [
     {
         id: 5,
         type: "image",
-        image: "",
+        image: "/images/vision-mission/3.avif",
         alt: "Values Image",
     },
     {

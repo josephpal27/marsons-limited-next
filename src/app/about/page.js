@@ -1,9 +1,10 @@
 import AboutBanner from "@/components/about/AboutBanner";
 import AboutWhatWeDo from "@/components/about/AboutWhatWeDo";
 import Highlights from "@/components/about/Highlights";
-// import OurClients from "@/components/about/OurClients";
+import OurClients from "@/components/about/OurClients";
 // import OurJourney from "@/components/about/OurJourney";
 import VisionMission from "@/components/about/VisionMission";
+import Footer from "@/components/Footer";
 import MyNavbar from "@/components/Navbar";
 
 export default function About() {
@@ -15,7 +16,8 @@ export default function About() {
             <Highlights />
             <VisionMission />
             {/* <OurJourney /> */}
-            {/* <OurClients /> */}
+            <OurClients />
+            <Footer />
         </>
     );
 }

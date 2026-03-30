@@ -16,3 +16,56 @@ html,
 body{
   overflow-x: hidden;
 }
+
+/* About Us (Client Logos) */
+.our-client-logos .swiper-wrapper{
+  transition-timing-function: linear !important;
+}
+
+/* Footer */
+footer .footer-links span{
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+footer .footer-links a{
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.1s ease;
+}
+footer .footer-links a:hover{
+  color: #e9202a;
+}
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+  footer .footer-links span{
+    font-size: 1.3rem;
+    margin-bottom: 0.9rem;
+  }
+  footer .footer-links a{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+  footer .footer-links span{
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  footer .footer-links a{
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  footer .footer-links span{
+    margin-bottom: 0.7rem;
+  }
+  footer .footer-links a{
+    font-size: 1rem;
+  }
+}
