@@ -12,11 +12,6 @@ html{
   scroll-behavior: unset !important;
 }
 
-html,
-body{
-  overflow-x: hidden;
-}
-
 /* About Us (Client Logos) */
 .our-client-logos .swiper-wrapper{
   transition-timing-function: linear !important;
