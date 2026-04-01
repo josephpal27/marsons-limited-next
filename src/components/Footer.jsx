@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className="
                         w-full lg:w-[37%]
                     ">
-                        <img src="images/logo/logo.png" alt="Logo" loading="lazy" className="
+                        <img src="/images/logo/logo.png" alt="Logo" loading="lazy" className="
                             w-[50%] sm:w-[250px] lg:w-[240px] xl:w-[270px] 2xl:w-[300px]
                             rounded-[8px] sm:rounded-[10px] lg:rounded-[6px] xl:rounded-[8px] 2xl:rounded-[10px]
                         " />

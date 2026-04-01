@@ -33,7 +33,7 @@ const OurClientLogos = () => {
             <div className="
                 our-client-logos
                 bg-[#fff] flex justify-between items-center flex-wrap
-                py-[1.2rem] sm:py-0
+                py-[0] sm:py-[1rem] lg:py-[1.6rem] xl:py-[1.8rem] 2xl:py-[2rem]
             ">
                 <Swiper
                     modules={[Autoplay]}

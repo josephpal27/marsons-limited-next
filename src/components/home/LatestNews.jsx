@@ -5,8 +5,7 @@ const LatestNews = () => {
 
     return (
         <div className="
-            py-[0] sm:py-[3rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
-            pb-[1rem] sm:pb-0
+            pb-[0] sm:pb-[1.5rem] lg:pb-[1rem] xl:pb-[1.5rem] 2xl:pb-[2rem]
             px-[1rem] sm:px-[5%] lg:px-[7%]
             flex flex-col justify-center
             h-full

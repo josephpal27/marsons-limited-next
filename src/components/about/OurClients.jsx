@@ -7,7 +7,7 @@ const OurClients = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[0] sm:py-[2rem] lg:py-[1rem] xl:py-[1.5rem] 2xl:py-[2rem]
+                py-[0] sm:py-[1rem] lg:py-[1rem] xl:py-[1.5rem] 2xl:py-[2rem]
                 mt-[3rem] sm:mt-0
             ">
                 {/* Head */}
@@ -33,7 +33,6 @@ const OurClients = () => {
                 {/* Row */}
                 <div className="
                     mt-[0.5rem]
-                    py-[0] sm:py-[2rem] lg:py-[1.6rem] xl:py-[1.8rem] 2xl:py-[2rem]
                  ">
                     <OurClientLogos />
                 </div>
