@@ -1,4 +1,4 @@
-import latestNewsData from "../../data/LatestNewsData";
+import latestNewsData from "@/data/LatestNewsData";
 import LatestNewsCard from "./LatestNewsCard";
 
 const LatestNews = () => {

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 
 const LatestNewsCard = ({
     image,
@@ -44,7 +44,7 @@ const LatestNewsCard = ({
                         {description}
                     </p>
 
-                    <Link to="/coming-soon" className="
+                    <Link href="/coming-soon" className="
                         bg-[#e9202a] text-white font-[450] rounded-[3px] hover:bg-[#d6151f] transition block w-max
                         text-[1rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                         px-[0.6rem]

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import Link from 'next/link';
 
 let productsData = [
     {
@@ -23,7 +23,7 @@ let productsData = [
         desc: "Purpose-built for electric arc furnaces and ladle furnaces. Designed for continuous repetitive short-circuit events.",
         output: "EAF & LF Type | Electrode current up to 50 kA",
         image: "/images/products/3.jpg",
-        url: "/products/furnace-transformers",
+        url: "/products/furnace-duty-transformers",
     },
     {
         id: 4,
@@ -142,7 +142,7 @@ const OurProducts = () => {
                                         inset-0 flex justify-center sm:justify-end items-end translate-y-full group-hover:-translate-y-0 transition-transform duration-500 ease-in-out
                                         p-[0.8rem] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
                                     ">
-                                        <Link to={item.url}>
+                                        <Link href={item.url}>
                                             <button className="
                                                 bg-[#e9202a] text-[#fff] font-[500] rounded-[3px] hover:bg-[#d6151f]
                                                 text-[0.9rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
