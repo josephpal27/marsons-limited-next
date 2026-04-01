@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import InvestorAccordion from "@/components/investor-corner/InvestorAccordion";
 import InvestorCornerBanner from "@/components/investor-corner/InvestorCornerBanner";
 import MyNavbar from "@/components/Navbar";
@@ -25,6 +26,7 @@ export default async function InvestorCorner({ params }) {
                 accordionData={pageData.accordion}
                 slug={slug}
             />
+            <Footer />
         </>
     );
 }
