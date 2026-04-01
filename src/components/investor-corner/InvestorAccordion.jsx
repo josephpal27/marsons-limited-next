@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Accordion from "react-bootstrap/Accordion";
 
-const InvestorAccordion = ({ accordionData }) => {
+const InvestorAccordion = ({ accordionData, slug }) => {
 
     return (
         <>
@@ -14,7 +14,7 @@ const InvestorAccordion = ({ accordionData }) => {
                     mt-[2.5rem] sm:mt-[4.5rem] lg:mt-[6rem] xl:mt-[7rem] 2xl:mt-[8rem]
                     investor-accordion
                 ">
-                <Accordion defaultActiveKey="0" key={""}>
+                <Accordion defaultActiveKey="0" key={slug}>
                     {accordionData.map((item, index) => {
                         const hasBody = item.body && item.body.length > 0;
 
@@ -93,7 +93,7 @@ const InvestorAccordion = ({ accordionData }) => {
                                                                 </span>
                                                             ) : item.type === "route" ? (
                                                                 <Link
-                                                                    to={item.link}
+                                                                    href={item.link}
                                                                     className="
                                                                         bg-[#0a2946] hover:bg-[#d61821] text-[#fff] font-[500] block text-center rounded-[5px] transition
                                                                         w-full

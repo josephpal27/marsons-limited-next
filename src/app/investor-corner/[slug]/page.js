@@ -23,6 +23,7 @@ export default async function InvestorCorner({ params }) {
             />
             <InvestorAccordion
                 accordionData={pageData.accordion}
+                slug={slug}
             />
         </>
     );
