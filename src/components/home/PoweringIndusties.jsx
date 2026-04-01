@@ -1,38 +1,34 @@
-import certified from '../../assets/images/icons/certified.avif';
-import excellence from '../../assets/images/icons/excellence.avif';
-import responsive from '../../assets/images/icons/responsive.avif';
-import trust from '../../assets/images/icons/trust.avif';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { FaArrowRightLong } from "react-icons/fa6";
 
-let whatWeDoCardsData = [
+let PoweringIndustriesData = [
   {
     id: 1,
-    image: certified,
+    image: "/images/icons/certified.avif",
     title: "Certified Products",
     desc: "Our Transformers of various ratings, which includes 50 MVA 132 kV class, have been successfully type-tested at CPRI in Bhopal and Bangalore.",
   },
   {
     id: 2,
-    image: trust,
+    image: "/images/icons/trust.avif",
     title: "Trusted Expertise",
     desc: "We have supplied more than 300,000 Transformers of different voltage and MVA across the globe over last 6 decades.",
   },
   {
     id: 3,
-    image: excellence,
+    image: "/images/icons/excellence.avif",
     title: "Certified Excellence",
     desc: "Our fully equipped laboratory can efficiently carry out all required routine tests, for various ratings of Power Transformers up to the range of 10 KVA to 300 MVA class.",
   },
   {
     id: 4,
-    image: responsive,
+    image: "/images/icons/responsive.avif",
     title: "Responsive",
     desc: "We have evolved over the years by introducing new range of products catering to the latest developments and requirements in the market.",
   },
 ]
 
-const WhatWeDo = () => {
+const PoweringIndustries = () => {
   return (
     <>
       <div className="
@@ -62,10 +58,10 @@ const WhatWeDo = () => {
           flex justify-between flex-wrap overflow-hidden
         ">
           {
-            whatWeDoCardsData.map((item, index) => {
+            PoweringIndustriesData.map((item, index) => {
               return (
                 <div className="
-                  what-we-do-card
+                  feature-card
                   sm:w-[25%]
                   mb-[2rem] sm:mb-0
                   p-[0] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
@@ -91,7 +87,7 @@ const WhatWeDo = () => {
                   ">
                     {item.desc}
                   </p>
-                  <Link to="/about" className="
+                  <Link href="/about" className="
                     hidden lg:flex
                     text-[#e9202a] hover:text-[#d6151f] mt-auto font-[500] items-center w-max
                     text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
@@ -113,4 +109,4 @@ const WhatWeDo = () => {
   )
 }
 
-export default WhatWeDo
+export default PoweringIndustries

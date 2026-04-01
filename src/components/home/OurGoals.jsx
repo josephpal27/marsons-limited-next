@@ -1,27 +1,25 @@
-import visionIcon from '../../assets/images/icons/vision.avif';
-import missionIcon from '../../assets/images/icons/mission.avif';
 
-let missionVisionData = [
+let ourGoalsData = [
     {
         id: 1,
-        Image: visionIcon,
+        Image: "/images/icons/vision.avif",
         title: "VISION",
         desc: "To establish Marsons as a global brand and one of the most trusted names in transformers.",
     },
     {
         id: 2,
-        Image: missionIcon,
+        Image: "/images/icons/mission.avif",
         title: "MISSION",
         desc: "Through quality assurance and stringent evaluations, provide customers with quality products at affordable prices and consistency in service. Develop and maintain supplier–customer relationships based on open communication, mutual trust, and respect.",
     },
 ]
 
 
-const MissionVision = () => {
+const OurGoals = () => {
     return (
         <>
             <div className="
-                py-[1.5rem] sm:py-[3rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
+                py-[1.5rem] sm:py-[5rem] lg:py-[5rem] xl:py-[5.5rem] 2xl:py-[6rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex justify-between items-center flex-wrap bg-[url('/images/mission-vision-bg.avif')] bg-no-repeat bg-cover bg-center relative
                 h-full
@@ -55,7 +53,7 @@ const MissionVision = () => {
                     mt-[2.5rem] sm:mt-0
                 ">
                     {
-                        missionVisionData.map((item, index) => {
+                        ourGoalsData.map((item, index) => {
                             return (
                                 <div className="
                                     sm:w-[47%] group
@@ -107,4 +105,4 @@ const MissionVision = () => {
     )
 }
 
-export default MissionVision
+export default OurGoals
