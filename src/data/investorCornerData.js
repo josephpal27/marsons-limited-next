@@ -298,7 +298,12 @@ export const investorCornerData = {
       {
         id: 15,
         title: "Audio recordings, video recording, if any and transcripts of post earmimgs or quarterly calls, by whatever name called, conducted physically or through digital means",
-        body: [],
+        body: [
+          {
+            heading: "Audio Recording of Knowledge Session on 01-04-2026",
+            link: "/audios/regulation/knowledge-session-on-01-04-2026.m4a",
+          },
+        ],
       },
       {
         id: 16,
@@ -893,6 +898,10 @@ export const investorCornerData = {
           {
             heading: "Closure of Trading Window",
             link: "/pdf/notices-results/regulation-30/closure-of-trading-window.pdf",
+          },
+          {
+            heading: "Intimation of Knowledge Session",
+            link: "/pdf/notices-results/regulation-30/intimation-of-knowledge-session.pdf",
           },
         ],
       },
