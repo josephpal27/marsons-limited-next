@@ -130,3 +130,77 @@ footer .footer-links a:hover{
   }
 }
 /* Contact Form End */
+
+/* Investor Corner Accordion Start */
+.investor-accordion .accordion-button{
+  background: #0a2946 !important;
+  color: #fff !important;
+  padding: 1.5rem 1.5rem !important;
+  box-shadow: none !important;
+  font-weight: 600;
+  border-radius: 20px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.investor-accordion .accordion-button:not(.collapsed){
+  background: #e9202a !important;
+}
+.investor-accordion .accordion-button::after{
+  display: none;
+}
+.investor-accordion .accordion-button::before{
+  content: "\002B";
+  font-size: 1.5rem;
+  font-weight: 500;
+  order: 2;
+}
+.investor-accordion .accordion-button:not(.collapsed)::before{
+  content: "\2013";
+}
+.investor-accordion .no-accordion .accordion-button::before{
+  display:none;
+}
+.investor-accordion .no-accordion .accordion-button{
+  padding: 1.65rem 1.5rem !important;
+}
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+  .investor-accordion .accordion-button{
+    padding: 1.4rem 1.4rem !important;
+    border-radius: 18px !important;
+  }
+  .investor-accordion .accordion-button::before{
+    font-size: 1.4rem;
+  }
+  .investor-accordion .no-accordion .accordion-button{
+    padding: 1.55rem 1.4rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+  .investor-accordion .accordion-button{
+    padding: 1.2rem 1.3rem !important;
+    border-radius: 16px !important;
+  }
+  .investor-accordion .accordion-button::before{
+    font-size: 1.3rem;
+  }
+  .investor-accordion .no-accordion .accordion-button{
+    padding: 1.45rem 1.3rem !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .investor-accordion .accordion-button{
+    padding: 0.8rem 1rem !important;
+    border-radius: 15px !important;
+  }
+  .investor-accordion .accordion-button::before{
+    font-size: 1.5rem;
+  }
+  .investor-accordion .no-accordion .accordion-button{
+    padding: 1rem 1rem !important;
+  }
+}
+/* Investor Corner Accordion End */

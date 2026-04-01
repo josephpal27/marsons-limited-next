@@ -1,0 +1,42 @@
+export const journeyData = [
+  {
+    id: 1,
+    year: "1976",
+    title: "THE FOUNDATION",
+    highlight: "FOUNDATION",
+    desc: "The Beginning: Started as a proprietorship concern specializing in the manufacture of power and distribution transformers.",
+    image: "images/our-journey/1.avif",
+  },
+  {
+    id: 2,
+    year: "1977",
+    title: "INCORPORATION",
+    highlight: "INCORPORATION",
+    desc: "Marsons is Born. Officially incorporated as Marsons Electricals Private Limited to scale operations and modernize production.",
+    image: "images/our-journey/2.avif",
+  },
+  {
+    id: 3,
+    year: "1991",
+    title: "REBRANDING FOR THE FUTURE",
+    highlight: "FOR THE FUTURE",
+    desc: "Company Marsons Limited. The company officially changed its name to Marsons Limited, reflecting a broader vision and corporate identity.",
+    image: "images/our-journey/3.avif",
+  },
+  {
+    id: 4,
+    year: "1994",
+    title: "PUBLIC MILESTONE",
+    highlight: "MILESTONE",
+    desc: "Listing on the BSE. Transitioned into a Public Limited Company and debuted on the Bombay Stock Exchange (BSE).",
+    image: "images/our-journey/4.avif",
+  },
+  {
+    id: 5,
+    year: "2009",
+    title: "MODERN EVOLUTION",
+    highlight: "EVOLUTION",
+    desc: "The Beginning: Started as a proprietorship concern specializing in the manufacture of power and distribution transformers.",
+    image: "images/our-journey/5.avif",
+  },
+];
