@@ -4,6 +4,11 @@ import ContactMap from "@/components/contact/ContactMap";
 import Footer from "@/components/Footer";
 import MyNavbar from "@/components/Navbar";
 
+export const metadata = {
+  title: "Contact Us - Marsons Limited",
+  description: "",
+};
+
 export default function Contact() {
     return (
         <>

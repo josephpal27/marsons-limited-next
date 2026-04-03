@@ -7,6 +7,11 @@ import VisionMission from "@/components/about/VisionMission";
 import Footer from "@/components/Footer";
 import MyNavbar from "@/components/Navbar";
 
+export const metadata = {
+  title: "About Us - Marsons Limited",
+  description: "",
+};
+
 export default function About() {
     return (
         <>
