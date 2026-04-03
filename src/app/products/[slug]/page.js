@@ -10,12 +10,27 @@ import Transformers from "@/components/products/Transformers";
 import { productsData } from "@/data/productsData";
 import { notFound } from "next/navigation";
 
+// Dynamic Meta data
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const pageData =  productsData.find(item => item.slug === slug);
+
+  if (!pageData) {
+    return {
+      title: "Not Found - Marsons Limited",
+    };
+  }
+
+  return {
+    title: `${pageData.title} - Marsons Limited`,
+    description: ``,
+  };
+}
+
 export default async function Products({ params }) {
 
     const { slug } = await params;
-
     const product = productsData.find(item => item.slug === slug);
-
     if (!product) {
         return notFound();
     }

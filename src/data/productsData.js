@@ -157,7 +157,7 @@ export const productsData = [
     },
     {
         id: 5,
-        title: "PAD Mounted Transformers",
+        title: "Pad Mounted Transformers",
         range: "Up to 300 MVA / 345 kV | IEEE C57 Series | ANSI / DOE / NERC / FERC Compliant",
         desc: "Marsons manufactures liquid-filled power transformers for the US grid — pad-mounted distribution, substation power, generator step-up (GSU), and specialty transformers — engineered to IEEE/ANSI standards with PE-stamped documentation for all 50 states. Our US portfolio covers voltages from 15 kV through 345 kV and ratings from 10 kVA to 300 MVA.",
         transformerImages: [
