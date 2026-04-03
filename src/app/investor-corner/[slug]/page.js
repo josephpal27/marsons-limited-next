@@ -5,10 +5,22 @@ import MyNavbar from "@/components/Navbar";
 import { investorCornerData } from "@/data/investorCornerData";
 import { notFound } from "next/navigation";
 
-export const metadata = {
-  title: " - Marsons Limited",
-  description: "",
-};
+// Dynamic Meta data
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const pageData = investorCornerData[slug];
+
+  if (!pageData) {
+    return {
+      title: "Not Found - Marsons Limited",
+    };
+  }
+
+  return {
+    title: `${pageData.banner.title} - Marsons Limited`,
+    description: ``,
+  };
+}
 
 export default async function InvestorCorner({ params }) {
 

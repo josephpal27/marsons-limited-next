@@ -2,7 +2,7 @@ export const investorCornerData = {
 
   "financials": {
     banner: {
-      title: "FINANCIALS",
+      title: "Financials",
       image: "/images/banners/about-banner.avif",
     },
 
@@ -117,7 +117,7 @@ export const investorCornerData = {
 
   "regulation": {
     banner: {
-      title: "REGULATION 46(2)",
+      title: "Regulation 46(2)",
       image: "/images/banners/about-banner.avif",
     },
 
@@ -469,7 +469,7 @@ export const investorCornerData = {
 
   "corporate-governance": {
     banner: {
-      title: "CORPORATE GOVERNANCE",
+      title: "Corporate Governance",
       image: "/images/banners/about-banner.avif",
     },
 
@@ -622,7 +622,7 @@ export const investorCornerData = {
 
   "shareholding-pattern": {
     banner: {
-      title: "SHAREHOLDING PATTERN",
+      title: "Shareholding Pattern",
       image: "/images/banners/about-banner.avif",
     },
 
@@ -719,7 +719,7 @@ export const investorCornerData = {
 
   "notices-and-results": {
     banner: {
-      title: "NOTICES & RESULTS",
+      title: "Notices & Results",
       image: "/images/banners/about-banner.avif",
     },
 
@@ -975,7 +975,7 @@ export const investorCornerData = {
 
   "policies": {
     banner: {
-      title: "POLICIES",
+      title: "Policies",
       image: "/images/banners/about-banner.avif",
     },
 
@@ -1033,7 +1033,7 @@ export const investorCornerData = {
 
   "unclaimed-dividend": {
     banner: {
-      title: "UNCLAIMED DIVIDEND",
+      title: "Unclaimed Dividend",
       image: "/images/banners/about-banner.avif",
     },
 
@@ -1049,7 +1049,7 @@ export const investorCornerData = {
 
   "contact-details": {
     banner: {
-      title: "CONTACT DETAILS",
+      title: "Contact Details",
       image: "/images/banners/about-banner.avif",
     },
 
