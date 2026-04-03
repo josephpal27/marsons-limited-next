@@ -5,12 +5,15 @@ import MyNavbar from "@/components/Navbar";
 import { investorCornerData } from "@/data/investorCornerData";
 import { notFound } from "next/navigation";
 
+export const metadata = {
+  title: " - Marsons Limited",
+  description: "",
+};
+
 export default async function InvestorCorner({ params }) {
 
     const { slug } = await params;
-
     const pageData = investorCornerData[slug];
-
     if (!pageData) {
         return notFound();
     }
