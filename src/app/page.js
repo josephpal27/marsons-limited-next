@@ -7,6 +7,11 @@ import PoweringIndustries from "@/components/home/PoweringIndusties";
 import MyNavbar from "@/components/Navbar";
 import OurClientLogos from "@/components/OurClientLogos";
 
+export const metadata = {
+  title: "Setting Power In Motion - Marsons Limited",
+  description: "",
+};
+
 export default function Home() {
   return (
     <>
