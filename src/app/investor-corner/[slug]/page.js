@@ -5,30 +5,39 @@ import MyNavbar from "@/components/Navbar";
 import { investorCornerData } from "@/data/investorCornerData";
 import { notFound } from "next/navigation";
 
-// Dynamic Meta data
+// Generate static pages
+export async function generateStaticParams() {
+  return Object.keys(investorCornerData).map((slug) => ({
+    slug,
+  }));
+}
+
+// Dynamic SEO per page
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+
   const pageData = investorCornerData[slug];
 
   if (!pageData) {
     return {
-      title: "Not Found - Marsons Limited",
+      title: "No Data Found - Marsons Limited",
+      description: "",
     };
   }
 
   return {
-    title: `${pageData.banner.title} - Marsons Limited`,
-    description: ``,
+    title: pageData.banner.title + " - Marsons Limited",
+    description: "",
   };
 }
 
 export default async function InvestorCorner({ params }) {
 
-    const { slug } = await params;
-    const pageData = investorCornerData[slug];
-    if (!pageData) {
-        return notFound();
-    }
+  const { slug } = await params;
+
+  const pageData = investorCornerData[slug];
+
+  if (!pageData) return notFound();
 
     return (
         <>

@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# If file or folder exists → serve normally
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise → fallback to index
+RewriteRule ^ /index.html [L]
