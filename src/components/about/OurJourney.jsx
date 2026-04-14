@@ -1,11 +1,13 @@
+"use client"
+
 import { useLayoutEffect, useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
-// import { journeyData } from "../../data/journeyData";
+// import { useLocation } from "react-router-dom";
+import { journeyData } from "../../data/journeyData";
 
 const OurJourney = () => {
     const sectionRef = useRef(null);
     const dotRefs = useRef([]);
-    const location = useLocation();
+    // const location = useLocation();
 
     const [lineTop, setLineTop] = useState(0);
     const [lineHeight, setLineHeight] = useState(0);
