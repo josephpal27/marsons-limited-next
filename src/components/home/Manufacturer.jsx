@@ -69,7 +69,7 @@ const Manufacturer = () => {
     return (
         <>
             <div className="
-                py-[0] sm:py-[2rem] lg:py-[1rem] xl:py-[1.5rem] 2xl:py-[2rem]
+                py-[0] sm:py-[2rem] lg:py-[1rem] xl:py-[1.5rem] 2xl:py-[2rem] 
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex justify-between items-center flex-wrap h-full
             ">
