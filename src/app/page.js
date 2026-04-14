@@ -1,9 +1,11 @@
 import Footer from "@/components/Footer";
 import HomeBanner from "@/components/home/HomeBanner";
 import LatestNews from "@/components/home/LatestNews";
+import Manufacturer from "@/components/home/Manufacturer";
 import OurGoals from "@/components/home/OurGoals";
 import OurProducts from "@/components/home/OurProducts";
 import PoweringIndustries from "@/components/home/PoweringIndusties";
+import TrustedWorldWide from "@/components/home/TrustedWorldWide";
 import MyNavbar from "@/components/Navbar";
 import OurClientLogos from "@/components/OurClientLogos";
 
@@ -20,8 +22,12 @@ export default function Home() {
       <PoweringIndustries />
       <OurGoals />
       <OurProducts />
+      <Manufacturer />
+      <TrustedWorldWide />
       <LatestNews />
-      <OurClientLogos />
+      <section className="px-[1rem] sm:px-[5%] lg:px-[7%]">
+        <OurClientLogos />
+      </section>
       <Footer />
     </>
   );

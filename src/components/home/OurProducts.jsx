@@ -70,11 +70,10 @@ let productsData = [
 const OurProducts = () => {
     return (
         <>
-            <div className="
+            <section className="
                 py-[1.5rem] sm:py-[3rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex flex-col justify-center
-                h-full
             ">
                 <h4 className="
                     text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
@@ -160,7 +159,7 @@ const OurProducts = () => {
                         })
                     }
                 </div>
-            </div>
+            </section>
         </>
     )
 }

@@ -4,7 +4,7 @@ const HomeBanner = () => {
         <>
             <div className="
                 w-full
-                h-screen
+                h-[100dvh]
                 relative
             ">
                 <video

@@ -4,11 +4,11 @@ import LatestNewsCard from "./LatestNewsCard";
 const LatestNews = () => {
 
     return (
-        <div className="
+        <section className="
             pb-[0] sm:pb-[1.5rem] lg:pb-[1rem] xl:pb-[1.5rem] 2xl:pb-[2rem]
             px-[1rem] sm:px-[5%] lg:px-[7%]
+            mt-[0] sm:mt-[3rem] lg:mt-[2rem] xl:mt-[2.5rem] 2xl:mt-[3rem]
             flex flex-col justify-center
-            h-full
         ">
             <h5 className="
                 text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
@@ -63,7 +63,7 @@ const LatestNews = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 };
 

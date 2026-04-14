@@ -18,11 +18,10 @@ let ourGoalsData = [
 const OurGoals = () => {
     return (
         <>
-            <div className="
+            <section className="
                 py-[1.5rem] sm:py-[5rem] lg:py-[5rem] xl:py-[5.5rem] 2xl:py-[6rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex justify-between items-center flex-wrap bg-[url('/images/mission-vision-bg.avif')] bg-no-repeat bg-cover bg-center relative
-                h-full
             ">
                 {/* White Overlay */}
                 <div className="absolute inset-0 bg-[#ffffffe4]"></div>
@@ -100,7 +99,7 @@ const OurGoals = () => {
                         })
                     }
                 </div>
-            </div>
+            </section>
         </>
     )
 }
