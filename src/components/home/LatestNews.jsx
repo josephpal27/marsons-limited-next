@@ -24,7 +24,7 @@ const LatestNews = () => {
             ">
 
                 {/* Left */}
-                <div className="sm:w-[24%] mb-[1.4rem] sm:mb-0"> 
+                <div className="sm:w-[24%] mb-[1.4rem] sm:mb-0">
                     <LatestNewsCard
                         image={latestNewsData[0].image}
                         title={latestNewsData[0].title}
