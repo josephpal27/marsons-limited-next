@@ -1,3 +1,4 @@
+import Reveal from "../Reveal"
 
 const AboutBanner = () => {
     return (
@@ -22,12 +23,15 @@ const AboutBanner = () => {
                     flex
                     items-end
                 ">
-                    <h1 className="
-                        text-[1.6rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                        text-[#fff] font-[700]
-                    "  data-aos="fade-up">
-                        <span className="font-[200]">SETTING POWER</span> <br /> IN MOTION
-                    </h1>
+                    <Reveal>
+                        <h1 className="
+                            text-[1.6rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                            text-[#fff] font-[700]
+                        ">
+                            <span className="font-[200]">SETTING POWER</span> <br /> IN MOTION
+                        </h1>
+                    </Reveal>
+
                 </div>
             </section>
         </>

@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import MyNavbar from "@/components/Navbar";
 import Facility from "@/components/products/Facility";
 import GetInTouch from "@/components/products/GetInTouch";
 import ProductsBanner from "@/components/products/ProductsBanner";
@@ -74,7 +72,6 @@ export default async function Products({ params }) {
 
   return (
     <>
-      <MyNavbar />
       <ProductsBanner title={product?.title} range={product?.range} />
       <Transformers data={product} />
       <TechnicalSpecifications specs={product?.technicalSpecs} />
@@ -82,7 +79,6 @@ export default async function Products({ params }) {
       <RelatedProducts />
       <QualityControl />
       <GetInTouch />
-      <Footer />
     </>
   );
 }

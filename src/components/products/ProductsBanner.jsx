@@ -1,3 +1,4 @@
+import Reveal from "../Reveal"
 
 const ProductsBanner = ({title, range}) => {
     return (
@@ -20,12 +21,14 @@ const ProductsBanner = ({title, range}) => {
                     h-full
                     flex flex-col justify-end
                 ">
-                    <h1 className="
-                        text-[1.5rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                        text-[#fff] font-[700] uppercase
-                    ">
-                        {title}
-                    </h1>
+                    <Reveal>
+                        <h1 className="
+                            text-[1.5rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                            text-[#fff] font-[700] uppercase
+                        ">
+                            {title}
+                        </h1>
+                    </Reveal>
                     <p className="
                         text-[0.75rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                         text-[#fff] font-[600] [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] 

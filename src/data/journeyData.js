@@ -5,7 +5,7 @@ export const journeyData = [
     title: "THE FOUNDATION",
     highlight: "FOUNDATION",
     desc: "The Beginning: Started as a proprietorship concern specializing in the manufacture of power and distribution transformers.",
-    image: "images/our-journey/1.avif",
+    image: "/images/our-journey/1.avif",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const journeyData = [
     title: "INCORPORATION",
     highlight: "INCORPORATION",
     desc: "Marsons is Born. Officially incorporated as Marsons Electricals Private Limited to scale operations and modernize production.",
-    image: "images/our-journey/2.avif",
+    image: "/images/our-journey/2.avif",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const journeyData = [
     title: "REBRANDING FOR THE FUTURE",
     highlight: "FOR THE FUTURE",
     desc: "Company Marsons Limited. The company officially changed its name to Marsons Limited, reflecting a broader vision and corporate identity.",
-    image: "images/our-journey/3.avif",
+    image: "/images/our-journey/3.avif",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const journeyData = [
     title: "PUBLIC MILESTONE",
     highlight: "MILESTONE",
     desc: "Listing on the BSE. Transitioned into a Public Limited Company and debuted on the Bombay Stock Exchange (BSE).",
-    image: "images/our-journey/4.avif",
+    image: "/images/our-journey/4.avif",
   },
   {
     id: 5,
@@ -37,6 +37,6 @@ export const journeyData = [
     title: "MODERN EVOLUTION",
     highlight: "EVOLUTION",
     desc: "The Beginning: Started as a proprietorship concern specializing in the manufacture of power and distribution transformers.",
-    image: "images/our-journey/5.avif",
+    image: "/images/our-journey/5.avif",
   },
 ];

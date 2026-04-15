@@ -4,8 +4,6 @@ import Highlights from "@/components/about/Highlights";
 import OurClients from "@/components/about/OurClients";
 import OurJourney from "@/components/about/OurJourney";
 import VisionMission from "@/components/about/VisionMission";
-import Footer from "@/components/Footer";
-import MyNavbar from "@/components/Navbar";
 
 export const metadata = {
   title: "About Us - Marsons Limited",
@@ -15,14 +13,12 @@ export const metadata = {
 export default function About() {
     return (
         <>
-            <MyNavbar />
             <AboutBanner />
             <AboutWhatWeDo />
             <Highlights />
             <VisionMission />
             <OurJourney />
             <OurClients />
-            <Footer />
         </>
     );
 }
