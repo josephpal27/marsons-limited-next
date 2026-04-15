@@ -1,5 +1,6 @@
 import latestNewsData from "@/data/LatestNewsData";
 import LatestNewsCard from "./LatestNewsCard";
+import Reveal from "../Reveal";
 
 const LatestNews = () => {
 
@@ -10,12 +11,14 @@ const LatestNews = () => {
             mt-[0] sm:mt-[3rem] lg:mt-[2rem] xl:mt-[2.5rem] 2xl:mt-[3rem]
             flex flex-col justify-center
         ">
-            <h5 className="
-                text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                font-[600]
-            ">
-                LATEST <span className="text-[#e9202a]">BLOGS</span> & <span className="text-[#e9202a]">ARTICLES</span>
-            </h5>
+            <Reveal>
+                <h6 className="
+                    text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                    font-[600]
+                ">
+                    LATEST <span className="text-[#e9202a]">BLOGS</span> & <span className="text-[#e9202a]">ARTICLES</span>
+                </h6>
+            </Reveal>
 
             {/* Cards Row */}
             <div className="

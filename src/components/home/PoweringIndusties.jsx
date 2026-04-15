@@ -1,5 +1,10 @@
+"use client"
+
 import Link from 'next/link';
 import { FaArrowRightLong } from "react-icons/fa6";
+import Reveal from '../Reveal';
+import Fade from '../Fade';
+import { motion } from "framer-motion";
 
 let PoweringIndustriesData = [
   {
@@ -37,13 +42,16 @@ const PoweringIndustries = () => {
         flex flex-col justify-center
         pb-[0]
       ">
-        <h2 className="
-          text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-          text-[#000] font-[600] uppercase
-          mb-[0] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
-        ">
-          Powering <span className="text-[#e9202a]">Industries</span>  
-        </h2>
+        <Reveal>
+          <h2 className="
+            text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+            text-[#000] font-[600] uppercase
+            mb-[0] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
+          ">
+            Powering <span className="text-[#e9202a]">Industries</span>
+          </h2>
+        </Reveal>
+
         <p className="
           text-[1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
           text-[#000] font-[500]
@@ -67,26 +75,46 @@ const PoweringIndustries = () => {
                   p-[0] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
                   flex flex-col relative group
                 " key={index}>
-                  <img
+                  <motion.img
                     src={item.image}
                     alt={item.title}
                     loading="lazy"
                     className="w-[20%] sm:w-[30%]"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.7,
+                      ease: "easeOut",
+                    }}
                   />
-                  <span className="
-                    text-[#e9202a] font-[500] block
-                    text-[1.3rem] sm:text-[1.4rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
-                    mt-[1rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
-                  ">
+                  <motion.span 
+                    className="
+                      text-[#e9202a] font-[500] block
+                      text-[1.3rem] sm:text-[1.4rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
+                      mt-[1rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
+                    "
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.7,
+                      ease: "easeOut",
+                    }}
+                  >
                     {item.title}
-                  </span>
-                  <p className="
-                    text-[1rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
-                    text-[#323232] font-[450]
-                    mt-[0.5rem] sm:mt-[0.7rem] lg:mt-[0.5rem] xl:mt-[0.6rem] 2xl:mt-[0.7rem]
-                  ">
-                    {item.desc}
-                  </p>
+                  </motion.span>
+
+                  <Fade>
+                      <p className="
+                        text-[1rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                        text-[#323232] font-[450]
+                        mt-[0.5rem] sm:mt-[0.7rem] lg:mt-[0.5rem] xl:mt-[0.6rem] 2xl:mt-[0.7rem]
+                      ">
+                        {item.desc}
+                      </p>
+                  </Fade>
+
                   <Link href="/about" className="
                     hidden lg:flex
                     text-[#e9202a] hover:text-[#d6151f] mt-auto font-[500] items-center w-max

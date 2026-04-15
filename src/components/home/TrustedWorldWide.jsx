@@ -1,3 +1,7 @@
+"use client"
+
+import Reveal from "../Reveal"
+import { motion } from "framer-motion"
 
 const locationData = [
     {
@@ -53,25 +57,36 @@ const TrustedWorldWide = () => {
                 py-[1.7rem] sm:py-[2rem] lg:py-[2rem] xl:py-[2.5rem] 2xl:py-[3rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
             ">
-                <h6 className="
-                    text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                    text-[#000] font-[600] uppercase
-                ">
-                    Built in Kolkata, <br /> <span className="text-[#e9202a]">Trusted Worldwide</span>
-                </h6>
+                <Reveal>
+                    <h6 className="
+                        text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                        text-[#000] font-[600] uppercase
+                    ">
+                        Built in Kolkata, <br /> <span className="text-[#e9202a]">Trusted Worldwide</span>
+                    </h6>
+                </Reveal>
 
                 {/* Cards */}
                 <div className="
                     mt-[1.2rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                     flex justify-between flex-wrap
                 ">
-                    {locationData.map((item) => {
-                        return(
-                            <div key={item.id} className="
+                    {locationData.map((item, index) => {
+                        return (
+                            <motion.div key={item.id} className="
                                 w-full sm:w-[49.05%] bg-[#0a2946] 
                                 p-[1rem] sm:p-[2.5rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
                                 mb-[1rem] sm:mb-0
-                            ">
+                            "
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.7,
+                                    delay: index * 0.1, // stagger effect
+                                    ease: "easeOut",
+                                }}
+                            >
                                 <span className="
                                     text-[#fff] font-[600]
                                     text-[1.3rem] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
@@ -91,7 +106,7 @@ const TrustedWorldWide = () => {
                                     gap-[1rem] sm:gap-[0.9rem] lg:gap-[0.7rem] xl:gap-[0.8rem] 2xl:gap-[0.9rem]
                                 ">
                                     {item.rating.map((item, index) => {
-                                        return(
+                                        return (
                                             <p key={index} className="
                                                 bg-[#154776] text-[#e0e0e0] uppercase
                                                 py-[0.35rem] sm:py-[0.4rem] lg:py-[0.3rem] xl:py-[0.35rem] 2xl:py-[0.4rem]
@@ -103,7 +118,7 @@ const TrustedWorldWide = () => {
                                         )
                                     })}
                                 </div>
-                            </div>
+                            </motion.div>
                         )
                     })}
                 </div>
@@ -113,13 +128,22 @@ const TrustedWorldWide = () => {
                     flex justify-between flex-wrap
                     mt-[1.2rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                 ">
-                    {countryData.map((item) => {
-                        return(
-                            <div key={item.id} className="
+                    {countryData.map((item, index) => {
+                        return (
+                            <motion.div key={item.id} className="
                                 w-full sm:w-[32%] bg-[#e9202a] 
                                 p-[1rem] sm:p-[2rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]
                                 mb-[1rem] sm:mb-0
-                            ">
+                            "
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.7,
+                                    delay: index * 0.1, // stagger effect
+                                    ease: "easeOut",
+                                }}
+                            >
                                 <span className="
                                     text-[1.3rem] sm:text-[1.2rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                     text-[#fff] font-[600]
@@ -133,7 +157,7 @@ const TrustedWorldWide = () => {
                                 ">
                                     {item.desc}
                                 </p>
-                            </div>
+                            </motion.div>
                         )
                     })}
                 </div>

@@ -1,3 +1,5 @@
+import Reveal from "../Reveal"
+import Fade from '../Fade';
 
 const ehvHighlightData = [
     {
@@ -75,19 +77,24 @@ const Manufacturer = () => {
             ">
                 {/* Left */}
                 <div className="w-full sm:w-[47%]">
-                    <h5 className="
-                        text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                        text-[#000] font-[600] uppercase
-                        mb-[0.8rem] sm:mb-[1rem] lg:mb-[0.6rem] xl:mb-[0.8rem] 2xl:mb-[1rem]
-                    ">
-                        Only <span className="text-[#e9202a]">EHV</span> Manufacturer in <span className="text-[#e9202a]">Eastern India</span>
-                    </h5>
-                    <p className="
-                        text-[1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                        text-[#000] font-[500]
-                    ">
-                        No other transformer manufacturer in Eastern India — including the North Eastern Region — produces Extra-High Voltage transformers. Nearly 200 EHV units commissioned across India's most demanding grid projects. 150 MVA 220 kV class impulse-tested at our own NABL accredited laboratory.
-                    </p>
+                    <Reveal>
+                        <h5 className="
+                            text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                            text-[#000] font-[600] uppercase
+                            mb-[0.8rem] sm:mb-[1rem] lg:mb-[0.6rem] xl:mb-[0.8rem] 2xl:mb-[1rem]
+                        ">
+                            Only <span className="text-[#e9202a]">EHV</span> Manufacturer in <span className="text-[#e9202a]">Eastern India</span>
+                        </h5>
+                    </Reveal>
+
+                    <Fade>
+                        <p className="
+                            text-[1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                            text-[#000] font-[500]
+                        ">
+                            No other transformer manufacturer in Eastern India — including the North Eastern Region — produces Extra-High Voltage transformers. Nearly 200 EHV units commissioned across India's most demanding grid projects. 150 MVA 220 kV class impulse-tested at our own NABL accredited laboratory.
+                        </p>
+                    </Fade>
 
                     {/* Cards */}
                     <div className="

@@ -1,3 +1,5 @@
+import Reveal from "../Reveal"
+import Fade from "../Fade"
 
 let ourGoalsData = [
     {
@@ -31,19 +33,24 @@ const OurGoals = () => {
                     sm:w-[35%]
                     z-10
                 ">
-                    <h3 className="
-                        text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                        text-[#000] font-[600]
-                        mb-[1rem] sm:mb-[2rem] lg:mb-[1.6rem] xl:mb-[1.8rem] 2xl:mb-[2rem]
-                    ">
-                        OUR <span className="text-[#e9202a]">GOALS</span>
-                    </h3>
-                    <p className="
-                        text-[1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                        text-[#000] font-[500]
-                    ">
-                        To manufacture and supply trouble-free products in conformance to specification for the satisfaction of our customers. We commit to increase productivity and continuously improve systems — ensuring timely delivery at competitive prices, in compliance with health, safety, and environmental requirements.
-                    </p>
+                    <Reveal>
+                        <h3 className="
+                            text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                            text-[#000] font-[600]
+                            mb-[1rem] sm:mb-[2rem] lg:mb-[1.6rem] xl:mb-[1.8rem] 2xl:mb-[2rem]
+                        ">
+                            OUR <span className="text-[#e9202a]">GOALS</span>
+                        </h3>
+                    </Reveal>
+
+                    <Fade>
+                        <p className="
+                            text-[1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                            text-[#000] font-[500]
+                        ">
+                            To manufacture and supply trouble-free products in conformance to specification for the satisfaction of our customers. We commit to increase productivity and continuously improve systems — ensuring timely delivery at competitive prices, in compliance with health, safety, and environmental requirements.
+                        </p>
+                    </Fade>
                 </div>
                 {/* Right */}
                 <div className="
@@ -60,18 +67,24 @@ const OurGoals = () => {
                                     bg-[#0a2946] text-[#fff] aspect-square relative 
                                     mb-[3rem] sm:mb-0 last:mb-[1.4rem] sm:last:mb-0
                                 " key={index}>
-                                    <span className="
-                                        text-[1.6rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
-                                        font-[550]
-                                    ">
-                                        {item.title}
-                                    </span>
-                                    <p className="
-                                        text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
-                                        mt-[0.5rem] sm:mt-[1.4rem] lg:mt-[1.2rem] xl:mt-[1.3rem] 2xl:mt-[1.4rem]
-                                    ">
-                                        {item.desc}
-                                    </p>
+                                    <Fade>
+                                        <span className="
+                                            text-[1.6rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
+                                            font-[550]
+                                        ">
+                                            {item.title}
+                                        </span>
+                                    </Fade>
+                                    
+                                    <Fade>
+                                        <p className="
+                                            text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                            mt-[0.5rem] sm:mt-[1.4rem] lg:mt-[1.2rem] xl:mt-[1.3rem] 2xl:mt-[1.4rem]
+                                        ">
+                                            {item.desc}
+                                        </p>
+                                    </Fade>
+                                    
                                     <div className="
                                         w-[70px] sm:w-[80px] lg:w-[65px] xl:w-[73px] 2xl:w-[80px]
                                         h-[70px] sm:h-[80px] lg:h-[65px] xl:h-[73px] 2xl:h-[80px]

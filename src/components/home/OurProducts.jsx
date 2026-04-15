@@ -1,4 +1,8 @@
+"use client"
+
+import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Reveal from '../Reveal';
 
 let productsData = [
     {
@@ -75,12 +79,14 @@ const OurProducts = () => {
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex flex-col justify-center
             ">
-                <h4 className="
-                    text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                    text-[#000] font-[600]
-                ">
-                    OUR <span className="text-[#e9202a]">PRODUCTS</span>
-                </h4>
+                <Reveal>
+                    <h4 className="
+                        text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                        text-[#000] font-[600]
+                    ">
+                        OUR <span className="text-[#e9202a]">PRODUCTS</span>
+                    </h4>
+                </Reveal>
 
                 {/* Products Row */}
                 <div className="
@@ -90,12 +96,22 @@ const OurProducts = () => {
                     {
                         productsData.map((item, index) => {
                             return (
-                                <div className="
+                                <motion.div className="
                                     w-full sm:w-[23.7%]
                                     shadow-[0px_6px_12px_-2px_rgba(50,50,93,0.25),_0px_3px_7px_-3px_rgba(0,0,0,0.3)]
                                     mb-[1.1rem] sm:mb-[1.4rem] lg:mb-[1.2rem] xl:mb-[1.3rem] 2xl:mb-[1.4rem]
                                     relative overflow-hidden group
-                                " key={index}>
+                                " key={index}
+
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        duration: 0.7,
+                                        delay: index * 0.1, // stagger effect
+                                        ease: "easeOut",
+                                    }}
+                                >
                                     <img
                                         src={item.image}
                                         alt={item.name}
@@ -154,7 +170,7 @@ const OurProducts = () => {
                                             </button>
                                         </Link>
                                     </div>
-                                </div>
+                                </motion.div>
                             )
                         })
                     }
