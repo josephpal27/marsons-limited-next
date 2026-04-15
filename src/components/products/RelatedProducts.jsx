@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import Link from "next/link"
+import Link from "next/link";
 import Reveal from "../Reveal";
 
 const relatedProductsData = [

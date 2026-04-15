@@ -1,7 +1,7 @@
 "use client"
 
-import Fade from "../Fade"
-import { motion } from "framer-motion"
+import Fade from "../Fade";
+import { motion } from "framer-motion";
 
 let highlightsData = [
     {

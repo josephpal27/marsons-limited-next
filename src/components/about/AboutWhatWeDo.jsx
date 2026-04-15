@@ -1,5 +1,5 @@
-import Fade from "../Fade"
-import Reveal from "../Reveal"
+import Fade from "../Fade";
+import Reveal from "../Reveal";
 
 const AboutWhatWeDo = () => {
     return (

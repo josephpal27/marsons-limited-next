@@ -1,6 +1,6 @@
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import ContactForm from './ContactForm';
-import Fade from "../Fade"
+import Fade from "../Fade";
 
 const contactData = [
     {
