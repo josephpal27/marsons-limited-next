@@ -1,3 +1,8 @@
+"use client"
+
+import Reveal from "../Reveal"
+import { motion } from "framer-motion"
+
 const visionMissionData = [
     {
         id: 1,
@@ -80,23 +85,34 @@ const VisionMission = () => {
                                 ${item.align === "center" ? "text-left sm:text-center" : "text-left"}
                             `}
                         >
-                            <span className="
-                                text-[1.7rem] sm:text-[3rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                                font-[700] leading-[1]
-                            " data-aos="fade-up" data-aos-once="true">
-                                {item.title} <br />
-                                <span className="text-[#e9202a]">
-                                    {item.highlight}
+                            <Reveal>
+                                <span className="
+                                    text-[1.7rem] sm:text-[3rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
+                                    font-[700] leading-[1]
+                                ">
+                                    {item.title} <br />
+                                    <span className="text-[#e9202a]">
+                                        {item.highlight}
+                                    </span>
                                 </span>
-                            </span>
+                            </Reveal>
 
-                            <p className="
+                            <motion.p className="
                                 text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                                 text-[#000] font-[500]
                                 mt-[0.8rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
-                            " data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+                            "
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: 0.3,
+                                    ease: "easeOut",
+                                }}
+                            >
                                 {item.desc}
-                            </p>
+                            </motion.p>
                         </div>
                     );
                 })}

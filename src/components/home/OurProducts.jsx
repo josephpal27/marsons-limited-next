@@ -72,6 +72,9 @@ let productsData = [
 ]
 
 const OurProducts = () => {
+
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+
     return (
         <>
             <section className="
@@ -108,7 +111,7 @@ const OurProducts = () => {
                                     viewport={{ once: true }}
                                     transition={{
                                         duration: 0.7,
-                                        delay: index * 0.1, // stagger effect
+                                        delay: isMobile ? 0 : index * 0.1, // stagger effect
                                         ease: "easeOut",
                                     }}
                                 >

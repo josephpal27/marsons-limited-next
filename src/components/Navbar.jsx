@@ -16,6 +16,11 @@ const MyNavbar = () => {
   const handleShow = () => setShow(true);
   const pathname = usePathname();
 
+  const isActive = (path) => {
+    if (path === "/") return pathname === "/";
+    return pathname.startsWith(path);
+  };
+
   return (
     <Navbar expand="lg" className="navbar">
       <Navbar.Brand as={Link} href="/" className="nav-brand">
@@ -40,10 +45,10 @@ const MyNavbar = () => {
 
         <Offcanvas.Body>
           <Nav className="justify-content-end flex-grow-1">
-            <Nav.Link as={Link} href="/" onClick={handleClose} className={`${pathname === "/" ? "active" : ""}`}>
+            <Nav.Link as={Link} href="/" active={false} onClick={handleClose} className={isActive("/") ? "active" : ""}>
               HOME
             </Nav.Link>
-            <Nav.Link as={Link} href="/about" onClick={handleClose} className={`${pathname === "/about" ? "active" : ""}`}>
+            <Nav.Link as={Link} href="/about" active={false} onClick={handleClose} className={isActive("/about") ? "active" : ""}>
               ABOUT
             </Nav.Link>
             {/* Bootstrap Dropdown */}
@@ -109,9 +114,9 @@ const MyNavbar = () => {
             <Nav.Link as={NavLink} href="/career" onClick={handleClose} className={`${pathname === "/career" ? "active" : ""}`}>
               CAREER
             </Nav.Link> */}
-            <Nav.Link as={Link} href="/contact" onClick={handleClose} className={`${pathname === "/contact" ? "active" : ""}`}>
+            <Nav.Link as={Link} href="/contact" active={false} onClick={handleClose} className={isActive("/contact") ? "active" : ""}>
               CONTACT
-            </Nav.Link>
+            </Nav.Link> 
           </Nav>
         </Offcanvas.Body>
       </Navbar.Offcanvas>

@@ -1,6 +1,7 @@
 "use client"
 
 import OurClientLogos from "../OurClientLogos";
+import Reveal from "../Reveal";
 
 const OurClients = () => {
     return (
@@ -14,12 +15,15 @@ const OurClients = () => {
                 <div className="
                     flex flex-col items-center
                 ">
-                    <h5 className="
-                        text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                        font-[700] leading-[1.1] text-center
-                    " data-aos="zoom-in">
-                        OUR <span className="text-[#e9202a]">CLIENTS</span>
-                    </h5>
+                    <Reveal>
+                        <h5 className="
+                            text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                            font-[700] leading-[1.1] text-center
+                        ">
+                            OUR <span className="text-[#e9202a]">CLIENTS</span>
+                        </h5>
+                    </Reveal>
+                    
                     <p className="
                         text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                         text-[#000] font-[500] text-center

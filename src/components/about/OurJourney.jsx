@@ -2,6 +2,8 @@
 
 import { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { journeyData } from "../../data/journeyData";
+import Reveal from "../Reveal";
+import Fade from "../Fade";
 
 const OurJourney = () => {
     const sectionRef = useRef(null);
@@ -72,20 +74,27 @@ const OurJourney = () => {
             {/* Head */}
             <div className="flex justify-between items-center flex-wrap">
                 <div className="w-full sm:w-[35%]">
-                    <h4 className=" 
-                        text-[1.8rem] sm:text-[5rem] lg:text-[4.5rem] xl:text-[5rem] 2xl:text-[5.5rem]
-                        font-[700] leading-[1]
-                    ">
-                        OUR <br /> <span className="text-[#e9202a]">JOURNEY</span>
-                    </h4>
+                    <Reveal>
+                        <h4 className=" 
+                            text-[1.8rem] sm:text-[5rem] lg:text-[4.5rem] xl:text-[5rem] 2xl:text-[5.5rem]
+                            font-[700] leading-[1]
+                        ">
+                            OUR <br /> <span className="text-[#e9202a]">JOURNEY</span>
+                        </h4>
+                    </Reveal>
                 </div>
                 <div className="sm:w-[60%] mt-[1rem] sm:mt-0">
-                    <p className="text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] text-[#000] font-[500]">
-                        Over the past 65 years, Marsons Limited has built an incredible legacy of distinction and credibility in the power sector.
-                    </p>
-                    <p className="text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] text-[#000] font-[500] mt-[0.8rem] sm:mt-[1rem]">
-                        From our early days, we have grown to operate the largest transformer manufacturing facility in Eastern India with global reach.
-                    </p>
+                    <Fade>
+                        <p className="text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] text-[#000] font-[500]">
+                            Over the past 65 years, Marsons Limited has built an incredible legacy of distinction and credibility in the power sector.
+                        </p>
+                    </Fade>
+
+                    <Fade>
+                        <p className="text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] text-[#000] font-[500] mt-[0.8rem] sm:mt-[1rem]">
+                            From our early days, we have grown to operate the largest transformer manufacturing facility in Eastern India with global reach.
+                        </p>
+                    </Fade>
                 </div>
             </div>
 
@@ -164,17 +173,24 @@ const Content = ({ item, align }) => (
     <div className={`
         ${align === "right" ? "text-left sm:text-right pr-[0] sm:pr-[2rem] lg:pr-[1.6rem] xl:pr-[1.8rem] 2xl:pr-[2rem]" : "pl-[0] sm:pl-[2rem] lg:pl-[1.6rem] xl:pl-[1.8rem] 2xl:pl-[2rem]"}
     `}>
-        <span className="text-[2.5rem] sm:text-[4rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] font-[700] text-[#0f2b3a] block mt-[1rem] sm:mt-0">
-            {item.year}
-        </span>
-
-        <span className="text-[1.5rem] sm:text-[2.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-[700] block mt-[0.5rem]">
-            {item.title.split(item.highlight)[0]}
-            <span className="text-[#e9202a]">{item.highlight}</span>
-        </span>
-
-        <p className="text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] text-[#000] font-[500] mt-[0.5rem]">
-            {item.desc}
-        </p>
+        <Reveal>
+            <span className="text-[2.5rem] sm:text-[4rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] font-[700] text-[#0f2b3a] block mt-[1rem] sm:mt-0">
+                {item.year}
+            </span>
+        </Reveal>
+        
+        <Reveal>
+            <span className="text-[1.5rem] sm:text-[2.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-[700] block mt-[0.5rem]">
+                {item.title.split(item.highlight)[0]}
+                <span className="text-[#e9202a]">{item.highlight}</span>
+            </span>
+        </Reveal>
+        
+        <Reveal>
+            <p className="text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] text-[#000] font-[500] mt-[0.5rem]">
+                {item.desc}
+            </p>
+        </Reveal>
+        
     </div>
 );
