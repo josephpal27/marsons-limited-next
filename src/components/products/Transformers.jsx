@@ -1,24 +1,37 @@
+"use client"
 
-const Transformers = ({data}) => {
+import {motion} from "framer-motion";
+import Reveal from "../Reveal";
+import Fade from "../Fade";
+
+const Transformers = ({ data }) => {
+
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+
     return (
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 mt-[2rem] sm:mt-[3rem] lg:mt-[6rem] xl:mt-[6.5rem] 2xl:mt-[7rem]
             ">
-                <h2 className="
-                    text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                    text-[#e9202a] font-[600]
-                ">
-                    EXPLORE OUR RANGE
-                </h2>
-                <p className="
-                    text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                    mt-[0.8rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
-                    font-[500] text-[#000]
-                ">
-                    {data?.desc}
-                </p>
+                <Reveal>
+                    <h2 className="
+                        text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
+                        text-[#e9202a] font-[600]
+                    ">
+                        EXPLORE OUR RANGE
+                    </h2>
+                </Reveal>
+
+                <Fade>
+                    <p className="
+                        text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                        mt-[0.8rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                        font-[500] text-[#000]
+                    ">
+                        {data?.desc}
+                    </p>
+                </Fade>
 
                 {/* Row */}
                 <div className="
@@ -29,10 +42,20 @@ const Transformers = ({data}) => {
                     {
                         data?.transformerImages?.map((item, index) => {
                             return (
-                                <div className="
+                                <motion.div className="
                                     w-full sm:w-[48%] lg:w-[31.5%] relative group overflow-hidden
                                     mb-[1.2rem] sm:mb-[1.7rem] lg:mb-[1.8rem] xl:mb-[2.1rem] 2xl:mb-[2.3rem]
-                                " key={index}>
+                                " key={index}
+
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        duration: 0.7,
+                                        delay: isMobile ? 0 : index * 0.1, // stagger effect
+                                        ease: "easeOut",
+                                    }}
+                                >
                                     <img
                                         src={item.image}
                                         alt="Transformers"
@@ -61,7 +84,7 @@ const Transformers = ({data}) => {
                                             {item.desc}
                                         </p>
                                     </div>
-                                </div>
+                                </motion.div>
                             )
                         })
                     }

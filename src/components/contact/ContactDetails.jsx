@@ -1,5 +1,6 @@
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import ContactForm from './ContactForm';
+import Fade from "../Fade"
 
 const contactData = [
     {
@@ -52,23 +53,25 @@ const ContactDetails = () => {
                 <div className="
                     w-full lg:w-[50%]
                 ">
-                    <h2 className="
-                        text-[1.4rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                        text-[#e9202a] font-[600]
-                    "
-                        data-aos="fade"
-                    >
-                        Get in touch <span className="text-[#000]">for support,</span> <span className="text-[#000]">queries,</span> or <span className="text-[#000]">collaborations</span>
-                    </h2>
-                    <p className="
-                        text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                        mt-[0.8rem] sm:mt-[1rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
-                        font-[500] text-[#000]
-                    "
-                        data-aos="fade"
-                    >
+                    <Fade>
+                        <h2 className="
+                            text-[1.4rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
+                            text-[#e9202a] font-[600]
+                        ">
+                            Get in touch <span className="text-[#000]">for support,</span> <span className="text-[#000]">queries,</span> or <span className="text-[#000]">collaborations</span>
+                        </h2>
+                    </Fade>
+            
+                    <Fade>
+                        <p className="
+                            text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                            mt-[0.8rem] sm:mt-[1rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
+                            font-[500] text-[#000]
+                        ">
                         Whether you need a quote for our power transformers, require 24x7 breakdown support, or want to discuss a global partnership, our dedicated team is ready to assist you.
                     </p>
+                    </Fade>
+
                     <div className="
                         mt-[2rem] sm:mt-[2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                         d-flex flex-wrap justify-between

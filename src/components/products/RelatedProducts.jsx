@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Link from "next/link"
+import Reveal from "../Reveal";
 
 const relatedProductsData = [
     {
@@ -50,12 +51,15 @@ const RelatedProducts = () => {
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 py-[0.5rem] sm:py-[2rem] lg:py-[2.4rem] xl:py-[2.7rem] 2xl:py-[3rem]
             ">
-                <h4 className="
+                <Reveal>
+                    <h4 className="
                         text-[1.5rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
                         text-[#e9202a] font-[600]
                     ">
-                    ADVANCED POWER SOLUTIONS
-                </h4>
+                        ADVANCED POWER SOLUTIONS
+                    </h4>
+                </Reveal>
+                
                 <p className="
                     text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                     mt-[0.8rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]

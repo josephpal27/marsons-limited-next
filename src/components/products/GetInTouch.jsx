@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Reveal from "../Reveal";
 
 const GetInTouch = () => {
     return (
@@ -17,12 +18,15 @@ const GetInTouch = () => {
                     px-[1rem] sm:px-[5%] lg:px-[7%]
                     pb-[1.5rem] sm:pb-[3rem] lg:pb-[3.4rem] xl:pb-[3.7rem] 2xl:pb-[4rem]
                 ">  
-                    <h6 className="
-                        text-[1.5rem] sm:text-[2.5rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
-                        font-[600]
-                    ">
-                        GET IN TOUCH
-                    </h6>
+                    <Reveal>
+                        <h6 className="
+                            text-[1.5rem] sm:text-[2.5rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
+                            font-[600]
+                        ">
+                            GET IN TOUCH
+                        </h6>
+                    </Reveal>
+                    
                     <p className="
                         w-full lg:w-[55%]
                         text-[0.95rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]

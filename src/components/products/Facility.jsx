@@ -1,3 +1,4 @@
+import Reveal from "../Reveal";
 import FacilityImageCard from "./FacilityImageCard";
 import FacilityTextBlock from "./FacilityTextBlock";
 
@@ -54,12 +55,15 @@ const Facility = () => {
                 <div className="
                     flex flex-col items-center
                 ">
-                    <h3 className="
-                        text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                        text-[#e9202a] font-[600]
-                    ">
-                        PRODUCTION FACILITY
-                    </h3>
+                    <Reveal>
+                        <h3 className="
+                            text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
+                            text-[#e9202a] font-[600]
+                        ">
+                            PRODUCTION FACILITY
+                        </h3>
+                    </Reveal>
+                    
                     <p className="
                         w-full lg:w-[70%]
                         text-center

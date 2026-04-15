@@ -1,3 +1,8 @@
+"use client"
+
+import { motion } from "framer-motion";
+import Reveal from "../Reveal";
+
 const qualityControlData = [
     {
         id: 1,
@@ -22,6 +27,9 @@ const qualityControlData = [
 ]
 
 const QualityControl = () => {
+
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+
     return (
         <>
             <section className="mt-[3rem] sm:mt-[2rem] lg:mt-[1.9rem] xl:mt-[2.2rem] 2xl:mt-[2.5rem]">
@@ -38,13 +46,15 @@ const QualityControl = () => {
                         bg-[linear-gradient(to_bottom,#e9202ab3_30%,#fff_100%)]
                         pt-[1.5rem] sm:pt-[3rem] lg:pt-[6rem] xl:pt-[7rem] 2xl:pt-[8rem]
                     ">
-                        <h5 className="
-                            text-[1.5rem] sm:text-[2.5rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
-                            font-[600] text-[#fff] text-center
-                            w-[65%] sm:w-full
-                        ">
-                            QUALITY CONTROL & TESTING
-                        </h5>
+                        <Reveal>
+                            <h5 className="
+                                text-[1.5rem] sm:text-[2.5rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
+                                font-[600] text-[#fff] text-center
+                                w-[65%] sm:w-full
+                            ">
+                                QUALITY CONTROL & TESTING
+                            </h5>
+                        </Reveal>
                     </div>
                 </div>
 
@@ -58,11 +68,20 @@ const QualityControl = () => {
                     {
                         qualityControlData.map((item, index) => {
                             return (
-                                <div key={index} className="
+                                <motion.div key={index} className="
                                     w-full lg:w-[48%] bg-[#fff] shadow-[-8px_8px_9px_rgba(0,0,0,0.25)] 
                                     p-[1rem] sm:p-[1.7rem] lg:p-[1.9rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
                                     mb-[1.5rem] lg:mb-0
-                                ">
+                                "
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        duration: 0.8,
+                                        delay: isMobile ? 0 : index * 0.1, // stagger effect
+                                        ease: "easeOut",
+                                    }}
+                                >
                                     <span className="
                                         text-[1.3rem] sm:text-[1.7rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
                                         text-[#e9202a] font-[600]
@@ -80,7 +99,7 @@ const QualityControl = () => {
                                             </p>
                                         ))
                                     }
-                                </div>
+                                </motion.div>
                             )
                         })
                     }
