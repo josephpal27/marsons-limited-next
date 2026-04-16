@@ -134,7 +134,7 @@ const OurJourney = () => {
                             {/* Left */}
                             <div className="w-full sm:w-[45%]">
                                 {isLeft || isMobile ? (
-                                    <img src={item.image} alt="Journey Image" className="w-full grayscale hover:grayscale-0 transition duration-300" />
+                                    <img src={item.image} alt={item.year} className="w-full grayscale hover:grayscale-0 transition duration-300" />
                                 ) : (
                                     <Content item={item} align="right" />
                                 )}
@@ -151,7 +151,7 @@ const OurJourney = () => {
                             {/* Right */}
                             <div className="w-full sm:w-[45%]">
                                 {!isLeft && !isMobile ? (
-                                    <img src={item.image} alt="Journey Image" className="w-full grayscale hover:grayscale-0 transition duration-300" />
+                                    <img src={item.image} alt={item.year} className="w-full grayscale hover:grayscale-0 transition duration-300" />
                                 ) : (
                                     <Content item={item} align="left" />
                                 )}
@@ -180,7 +180,7 @@ const Content = ({ item, align }) => (
         </Reveal>
         
         <Reveal>
-            <span className="text-[1.5rem] sm:text-[2.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-[700] block mt-[0.5rem]">
+            <span className="text-[1.5rem] sm:text-[2.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-[700] block mt-[0.5rem] uppercase">
                 {item.title.split(item.highlight)[0]}
                 <span className="text-[#e9202a]">{item.highlight}</span>
             </span>
