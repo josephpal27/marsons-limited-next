@@ -5,6 +5,7 @@ import OurGoals from "@/components/home/OurGoals";
 import OurProducts from "@/components/home/OurProducts";
 import PoweringIndustries from "@/components/home/PoweringIndusties";
 import TrustedWorldWide from "@/components/home/TrustedWorldWide";
+import WhyMarsons from "@/components/home/WhyMarsons";
 import OurClientLogos from "@/components/OurClientLogos";
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default function Home() {
       <PoweringIndustries />
       <OurGoals />
       <OurProducts />
+      <WhyMarsons />
       <Manufacturer />
       <TrustedWorldWide />
       <LatestNews />
