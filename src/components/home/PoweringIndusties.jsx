@@ -37,23 +37,23 @@ const PoweringIndustries = () => {
   return (
     <>
       <section className="
-        py-[1rem] sm:py-[3rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
+        py-[1rem] sm:py-[2rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
         px-[1rem] sm:px-[5%] lg:px-[7%]
         flex flex-col justify-center
         pb-[0]
       ">
         <Reveal>
           <h2 className="
-            text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+            text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
             text-[#000] font-[600] uppercase
-            mb-[0] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
+            mb-[0] sm:mb-[0.5rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
           ">
             Powering <span className="text-[#e9202a]">Industries</span>
           </h2>
         </Reveal>
 
         <p className="
-          text-[1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+          text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
           text-[#000] font-[500]
           mt-[0.5rem]
         ">
@@ -62,7 +62,7 @@ const PoweringIndustries = () => {
 
         {/* Cards Row */}
         <div className="
-          mt-[2rem] sm:mt-[3rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
+          mt-[2rem] sm:mt-[2.5rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
           flex justify-between flex-wrap overflow-hidden
         ">
           {
@@ -70,7 +70,7 @@ const PoweringIndustries = () => {
               return (
                 <div className="
                   feature-card
-                  sm:w-[25%]
+                  w-full sm:w-[50%] lg:w-[25%]
                   mb-[2rem] sm:mb-0
                   p-[0] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
                   flex flex-col relative group
@@ -79,7 +79,7 @@ const PoweringIndustries = () => {
                     src={item.image}
                     alt={item.title}
                     loading="lazy"
-                    className="w-[20%] sm:w-[30%]"
+                    className="w-[20%] sm:w-[25%] lg:w-[30%]"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -92,7 +92,7 @@ const PoweringIndustries = () => {
                     className="
                       text-[#e9202a] font-[500] block
                       text-[1.3rem] sm:text-[1.4rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
-                      mt-[1rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
+                      mt-[1rem] sm:mt-[1.2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                     "
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +109,7 @@ const PoweringIndustries = () => {
                       <p className="
                         text-[1rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                         text-[#323232] font-[450]
-                        mt-[0.5rem] sm:mt-[0.7rem] lg:mt-[0.5rem] xl:mt-[0.6rem] 2xl:mt-[0.7rem]
+                        mt-[0.5rem] sm:mt-[0.6rem] lg:mt-[0.5rem] xl:mt-[0.6rem] 2xl:mt-[0.7rem]
                       ">
                         {item.desc}
                       </p>

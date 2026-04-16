@@ -174,7 +174,7 @@ const Content = ({ item, align }) => (
         ${align === "right" ? "text-left sm:text-right pr-[0] sm:pr-[2rem] lg:pr-[1.6rem] xl:pr-[1.8rem] 2xl:pr-[2rem]" : "pl-[0] sm:pl-[2rem] lg:pl-[1.6rem] xl:pl-[1.8rem] 2xl:pl-[2rem]"}
     `}>
         <Reveal>
-            <span className="text-[2.5rem] sm:text-[4rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] font-[700] text-[#0f2b3a] block mt-[1rem] sm:mt-0">
+            <span className="text-[2rem] sm:text-[4rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] font-[700] text-[#0f2b3a] block mt-[1rem] sm:mt-0">
                 {item.year}
             </span>
         </Reveal>

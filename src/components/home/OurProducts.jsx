@@ -78,13 +78,13 @@ const OurProducts = () => {
     return (
         <>
             <section className="
-                py-[1.5rem] sm:py-[3rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
+                py-[1.5rem] sm:py-[2.5rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex flex-col justify-center
             ">
                 <Reveal>
                     <h4 className="
-                        text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                        text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                         text-[#000] font-[600]
                     ">
                         OUR <span className="text-[#e9202a]">PRODUCTS</span>
@@ -94,15 +94,15 @@ const OurProducts = () => {
                 {/* Products Row */}
                 <div className="
                     flex flex-wrap justify-between
-                    mt-[1.5rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                    mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                 ">
                     {
                         productsData.map((item, index) => {
                             return (
                                 <motion.div className="
-                                    w-full sm:w-[23.7%]
+                                    w-full sm:w-[48.5%] lg:w-[23.7%]
                                     shadow-[0px_6px_12px_-2px_rgba(50,50,93,0.25),_0px_3px_7px_-3px_rgba(0,0,0,0.3)]
-                                    mb-[1.1rem] sm:mb-[1.4rem] lg:mb-[1.2rem] xl:mb-[1.3rem] 2xl:mb-[1.4rem]
+                                    mb-[1.1rem] sm:mb-[1.5rem] lg:mb-[1.2rem] xl:mb-[1.3rem] 2xl:mb-[1.4rem]
                                     relative overflow-hidden group
                                 " key={index}
 
@@ -133,20 +133,20 @@ const OurProducts = () => {
                                     ">
                                         <span className="
                                             text-[#fff] font-[600] text-center
-                                            text-[1.2rem] sm:text-[1.2rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                                            text-[1.2rem] sm:text-[1.3rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                         ">
                                             {item.name}
                                         </span>
                                         <span className="
                                             text-[#fff] text-center font-[600]
-                                            text-[0.8rem] sm:text-[0.9rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.85rem]
+                                            text-[0.8rem] sm:text-[1rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.85rem]
                                             mt-[1rem]
                                         ">
                                             &bull; {item.output}
                                         </span>
                                         <p className="
                                             text-[#fff] text-center font-[450]
-                                            text-[0.8rem] sm:text-[0.9rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem]
+                                            text-[0.8rem] sm:text-[1rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem]
                                             mt-[0.3rem]
                                         ">
                                             {item.desc}
@@ -163,7 +163,7 @@ const OurProducts = () => {
                                         <Link href={item.url}>
                                             <button className="
                                                 bg-[#e9202a] text-[#fff] font-[500] rounded-[3px] hover:bg-[#d6151f]
-                                                text-[0.9rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                                                text-[0.9rem] sm:text-[1.1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                                                 px-[0.5rem]
                                                 pt-[0.17rem]
                                                 pb-[0.2rem]
