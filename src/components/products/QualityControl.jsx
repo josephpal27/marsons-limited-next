@@ -47,13 +47,13 @@ const QualityControl = () => {
                         pt-[1.5rem] sm:pt-[3rem] lg:pt-[6rem] xl:pt-[7rem] 2xl:pt-[8rem]
                     ">
                         <Reveal>
-                            <h5 className="
+                            <h6 className="
                                 text-[1.5rem] sm:text-[2.5rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
                                 font-[600] text-[#fff] text-center
                                 w-[65%] sm:w-full
                             ">
                                 QUALITY CONTROL & TESTING
-                            </h5>
+                            </h6>
                         </Reveal>
                     </div>
                 </div>

@@ -16,12 +16,12 @@ const OurClients = () => {
                     flex flex-col items-center
                 ">
                     <Reveal>
-                        <h5 className="
+                        <h3 className="
                             text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                             font-[700] leading-[1.1] text-center
                         ">
                             OUR <span className="text-[#e9202a]">CLIENTS</span>
-                        </h5>
+                        </h3>
                     </Reveal>
                     
                     <p className="

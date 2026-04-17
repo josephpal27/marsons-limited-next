@@ -10,7 +10,7 @@ let productsData = [
         name: "Distribution Transformers",
         desc: "For state utilities, DISCOMs, and industrial facilities. BIS Star Rated (Level 1–3). Hermetically sealed, conservator, and free-breathing variants.",
         output: "10 KVA – 2,500 KVA | Up to 33 kV | IS 1180",
-        image: "/images/products/distribution.png",
+        image: "/images/products/distribution.avif",
         url: "/products/distribution-transformers",
     },
     {
@@ -18,7 +18,7 @@ let productsData = [
         name: "Power Transformers",
         desc: "The only EHV transformer manufacturer in Eastern India. Serving India's 220 kV / 400 kV grid and US transmission networks at 69–345 kV.",
         output: "Up to 300 MVA | Up to 345 kV | IS 2026 / IEEE C57",
-        image: "/images/products/power.jpeg",
+        image: "/images/products/power.avif",
         url: "/products/power-transformers",
     },
     {
@@ -26,7 +26,7 @@ let productsData = [
         name: "Furnace Duty Transformers",
         desc: "Purpose-built for electric arc furnaces and ladle furnaces. Designed for continuous repetitive short-circuit events.",
         output: "EAF & LF Type | Electrode current up to 50 kA",
-        image: "/images/products/furnace-duty.png",
+        image: "/images/products/furnace-duty.avif",
         url: "/products/furnace-duty-transformers",
     },
     {
@@ -34,7 +34,7 @@ let productsData = [
         name: "Locomotive & Traction",
         desc: "Critical front-end transformers for Indian Railways' electric locomotive fleet.",
         output: "WAG9 / WAP5 / WAP7 | 25 kV AC | RDSO",
-        image: "/images/products/locomotive.png",
+        image: "/images/products/locomotive.avif",
         url: "/coming-soon",
     },
     {
@@ -42,7 +42,7 @@ let productsData = [
         name: "Dry Type Transformers",
         desc: "Oil-free, fire-safe units for hospitals, metro tunnels, data centres, and high-rise buildings.",
         output: "Up to 20 MVA | Up to 33 kV | IS 11171",
-        image: "/images/products/dry-type.png",
+        image: "/images/products/dry-type.avif",
         url: "/products/dry-type-transformers",
     },
     {
@@ -50,7 +50,7 @@ let productsData = [
         name: "WTG Transformers - Marsons Green",
         desc: "India's full onshore wind fleet. Handles thermal cycling, VCB surges, and harmonics.",
         output: "1 MVA – 6.3 MVA | IEC 60076-16",
-        image: "/images/products/wtg.jpeg",
+        image: "/images/products/wtg.avif",
         url: "/coming-soon",
     },
     {
@@ -58,7 +58,7 @@ let productsData = [
         name: "Inverter Duty Transformers - Marsons Green",
         desc: "For utility-scale solar PV, BESS, and VFD. Foil windings, unity power factor sizing.",
         output: "1 MVA – 6.3 MVA | IEC 60076-16",
-        image: "/images/products/inverter-duty.png",
+        image: "/images/products/inverter-duty.avif",
         url: "/coming-soon",
     },
     {
@@ -66,7 +66,7 @@ let productsData = [
         name: "US Market Transformers",
         desc: "Pad-mounted, substation, GSU, solar/BESS, wind collector, and specialty transformers. PE-stamped all 50 states.",
         output: "Up to 300 MVA / 345 kV | IEEE / ANSI / DOE",
-        image: "/images/products/us-market.png",
+        image: "/images/products/us-market.avif",
         url: "/coming-soon",
     },
 ]

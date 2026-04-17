@@ -75,12 +75,12 @@ const OurJourney = () => {
             <div className="flex justify-between items-center flex-wrap">
                 <div className="w-full sm:w-[35%]">
                     <Reveal>
-                        <h4 className=" 
+                        <h2 className=" 
                             text-[1.8rem] sm:text-[5rem] lg:text-[4.5rem] xl:text-[5rem] 2xl:text-[5.5rem]
                             font-[700] leading-[1]
                         ">
                             OUR <br /> <span className="text-[#e9202a]">JOURNEY</span>
-                        </h4>
+                        </h2>
                     </Reveal>
                 </div>
                 <div className="sm:w-[60%] mt-[1rem] sm:mt-0">

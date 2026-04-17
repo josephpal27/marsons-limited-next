@@ -52,12 +52,12 @@ const RelatedProducts = () => {
                 py-[0.5rem] sm:py-[2rem] lg:py-[2.4rem] xl:py-[2.7rem] 2xl:py-[3rem]
             ">
                 <Reveal>
-                    <h4 className="
+                    <h5 className="
                         text-[1.5rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
                         text-[#e9202a] font-[600]
                     ">
                         ADVANCED POWER SOLUTIONS
-                    </h4>
+                    </h5>
                 </Reveal>
                 
                 <p className="

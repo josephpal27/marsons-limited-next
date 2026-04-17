@@ -78,13 +78,13 @@ const Manufacturer = () => {
                 {/* Left */}
                 <div className="w-full lg:w-[47%]">
                     <Reveal>
-                        <h5 className="
+                        <h6 className="
                             text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                             text-[#000] font-[600] uppercase
                             mb-[0.8rem] sm:mb-[1rem] lg:mb-[0.6rem] xl:mb-[0.8rem] 2xl:mb-[1rem]
                         ">
                             Only <span className="text-[#e9202a]">EHV</span> Manufacturer in <span className="text-[#e9202a]">Eastern India</span>
-                        </h5>
+                        </h6>
                     </Reveal>
 
                     <Fade>

@@ -1,4 +1,9 @@
-import Reveal from "../Reveal";
+"use client"
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-fade";
 
 const AboutBanner = () => {
     return (
@@ -8,31 +13,36 @@ const AboutBanner = () => {
                 sm:h-screen
                 relative
             ">
-                <img src="/images/banners/about-banner.avif" alt="About Banner" loading="eager" className="
-                    w-full
-                    sm:h-[106vh]
-                    drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
-                " />
-                <div className="
-                    pb-[1.2rem] sm:pb-[3rem] lg:pb-[2.9rem] xl:pb-[3.2rem] 2xl:pb-[3.5rem]
-                    px-[1rem] sm:px-[5%] lg:px-[7%]
-                    absolute
-                    top-0
-                    w-full
-                    h-full
-                    flex
-                    items-end
-                ">
-                    <Reveal>
-                        <h1 className="
-                            text-[1.6rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                            text-[#fff] font-[700]
-                        ">
-                            <span className="font-[200]">SETTING POWER</span> <br /> IN MOTION
-                        </h1>
-                    </Reveal>
-
-                </div>
+                <Swiper
+                    modules={[Autoplay, EffectFade]}
+                    slidesPerView={1}
+                    centeredSlides={false}
+                    loop={true}
+                    grabCursor={true}
+                    speed={1000}
+                    effect="fade"
+                    fadeEffect={{ crossFade: true }}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+                    className="!pb-[0.7rem] !sm:pb-[1rem]"
+                >
+                    <SwiperSlide>
+                        <img src="/images/banners/about-banner-1.avif" alt="About Banner 1" loading="eager" className="
+                            w-full
+                            sm:h-[106vh]
+                            drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
+                        "/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="/images/banners/about-banner-2.avif" alt="About Banner 2" loading="eager" className="
+                            w-full
+                            sm:h-[106vh]
+                            drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
+                        "/>
+                    </SwiperSlide>
+                </Swiper>
             </section>
         </>
     )
