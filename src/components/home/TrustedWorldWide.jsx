@@ -59,7 +59,7 @@ const TrustedWorldWide = () => {
             ">
                 <Reveal>
                     <h6 className="
-                        text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                        text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                         text-[#000] font-[600] uppercase
                     ">
                         Built in Kolkata, <br /> <span className="text-[#e9202a]">Trusted Worldwide</span>
@@ -75,7 +75,7 @@ const TrustedWorldWide = () => {
                         return (
                             <motion.div key={item.id} className="
                                 w-full sm:w-[49.05%] bg-[#0a2946] 
-                                p-[1rem] sm:p-[2.5rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
+                                p-[1rem] sm:p-[1.2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
                                 mb-[1rem] sm:mb-0
                             "
                                 initial={{ opacity: 0 }}
@@ -89,7 +89,7 @@ const TrustedWorldWide = () => {
                             >
                                 <span className="
                                     text-[#fff] font-[600]
-                                    text-[1.3rem] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
+                                    text-[1.3rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
                                 ">
                                     {item.location}
                                 </span>
@@ -101,7 +101,7 @@ const TrustedWorldWide = () => {
                                     {item.desc}
                                 </p>
                                 <div className="
-                                    mt-[1.2rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
+                                    mt-[1.2rem] sm:mt-[1.3rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                                     flex flex-wrap 
                                     gap-[1rem] sm:gap-[0.9rem] lg:gap-[0.7rem] xl:gap-[0.8rem] 2xl:gap-[0.9rem]
                                 ">
@@ -126,13 +126,13 @@ const TrustedWorldWide = () => {
                 {/* Bottom Cards */}
                 <div className="
                     flex justify-between flex-wrap
-                    mt-[1.2rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
+                    mt-[1.2rem] sm:mt-[1.1rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                 ">
                     {countryData.map((item, index) => {
                         return (
                             <motion.div key={item.id} className="
                                 w-full sm:w-[32%] bg-[#e9202a] 
-                                p-[1rem] sm:p-[2rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]
+                                p-[1rem] sm:p-[1.2rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]
                                 mb-[1rem] sm:mb-0
                             "
                                 initial={{ opacity: 0 }}
@@ -145,13 +145,13 @@ const TrustedWorldWide = () => {
                                 }}
                             >
                                 <span className="
-                                    text-[1.3rem] sm:text-[1.2rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                                    text-[1.3rem] sm:text-[1.3rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                     text-[#fff] font-[600]
                                 ">
                                     {item.country}
                                 </span>
                                 <p className="
-                                    text-[1rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                                    text-[1rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                                     mt-[0.5rem]
                                     text-[#efefef] font-[400]
                                 ">

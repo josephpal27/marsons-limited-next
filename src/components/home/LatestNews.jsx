@@ -8,12 +8,12 @@ const LatestNews = () => {
         <section className="
             pb-[0] sm:pb-[1.5rem] lg:pb-[1rem] xl:pb-[1.5rem] 2xl:pb-[2rem]
             px-[1rem] sm:px-[5%] lg:px-[7%]
-            mt-[0] sm:mt-[3rem] lg:mt-[2rem] xl:mt-[2.5rem] 2xl:mt-[3rem]
+            mt-[0] sm:mt-[2.5rem] lg:mt-[2rem] xl:mt-[2.5rem] 2xl:mt-[3rem]
             flex flex-col justify-center
         ">
             <Reveal>
                 <h6 className="
-                    text-[1.8rem] sm:text-[3rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                    text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                     font-[600]
                 ">
                     LATEST <span className="text-[#e9202a]">BLOGS</span> & <span className="text-[#e9202a]">ARTICLES</span>
@@ -27,7 +27,7 @@ const LatestNews = () => {
             ">
 
                 {/* Left */}
-                <div className="sm:w-[24%] mb-[1.4rem] sm:mb-0">
+                <div className="lg:w-[24%] mb-[1.4rem] sm:mb-0">
                     <LatestNewsCard
                         image={latestNewsData[0].image}
                         title={latestNewsData[0].title}

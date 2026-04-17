@@ -58,6 +58,15 @@ html{
     border-right: 0;
   }
 }
+
+@media screen and (min-width: 641px) and (max-width: 991px) {
+  .feature-card{
+    border-right: 0;
+  }
+  .feature-card::after{
+    display: none;
+  }
+}
 /* Powering Industries End */
 
 /* About Us (Client Logos) */

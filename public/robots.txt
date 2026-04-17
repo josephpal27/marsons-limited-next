@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Block non-SEO assets
+Disallow: /_next/
+Disallow: /api/
+
+# Block PDFs and files
+Disallow: /pdf/
+Disallow: /*.pdf$
+
+Disallow: /audios/
+Disallow: /*.m4a$
+Disallow: /*.mp3$
+
+# Block unnecessary system files
+Disallow: /404
+Disallow: /_not-found
+
+# Sitemap
+Sitemap: https://www.marsonsonline.com/sitemap.xml
