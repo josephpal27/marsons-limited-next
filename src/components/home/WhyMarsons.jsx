@@ -54,14 +54,14 @@ const WhyMarsons = () => {
 
                 {/* Row */}
                 <div className="
-                    mt-[3rem]
+                    mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                     flex justify-between flex-wrap
                 ">
                     {whyMarsonsData.map((item) => {
                         return (
                             <div key={item.id} className="
-                                w-[32%] relative
-                                mb-[1.7rem]
+                                w-full sm:w-[48.5%] lg:w-[32%] relative
+                                mb-[1rem] sm:mb-[1.5rem] lg:mb-[1.3rem] xl:mb-[1.5rem] 2xl:mb-[1.7rem]
                             ">
                                 <img
                                     src={item.image}
@@ -72,10 +72,10 @@ const WhyMarsons = () => {
                                 <div className="
                                     absolute top-0 left-0 w-full h-full flex flex-col justify-end text-[#fff] 
                                     bg-[#00000094] hover:bg-[#000000c3] transition-all duration-200
-                                    p-[1.5rem]
+                                    p-[1rem] sm:p-[1.2rem] lg:p-[1.3rem] xl:p-[1.4rem] 2xl:p-[1.5rem]
                                 ">
                                     <span className="
-                                        text-[1.7rem] 
+                                        text-[1.4rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.5rem] 2xl:text-[1.7rem]
                                         font-[600] leading-[1.3]
                                     ">
                                         {item.title}
@@ -83,7 +83,7 @@ const WhyMarsons = () => {
                                     <p className="
                                         text-[0.9rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                                         font-[500]
-                                        mt-[1rem]
+                                        mt-[0.7rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                     ">
                                         {item.desc}
                                     </p>
