@@ -1,3 +1,7 @@
+"use client"
+
+import { motion } from 'framer-motion';
+import Reveal from "../Reveal";
 
 const whyMarsonsData = [
     {
@@ -12,7 +16,7 @@ const whyMarsonsData = [
         desc: "	We engineer to IS/IEC for India's grid and IEEE/ANSI for the United States — from the same factory, the same quality system, the same people. 132 kV class units certified and exported to European markets.",
         image: "/images/why-marsons/3.avif",
     },
-       {
+    {
         id: 3,
         title: "NABL Accredited Test Laboratory",
         desc: "Our in-house laboratory is equipped with a Haefely Trench impulse test system from Switzerland — rated at 1,600 kV / 80 kJ. We test transformers up to 200 MVA 220 kV class without sending units to a third-party facility. Full test reports provided with every unit.",
@@ -42,15 +46,17 @@ const WhyMarsons = () => {
     return (
         <>
             <section className="
-                pb-[1.5rem] sm:pb-[2.5rem] lg:pb-[2.5rem] xl:pb-[3rem] 2xl:pb-[3.5rem]
+                pb-[1.5rem] sm:pb-[1.5rem] lg:pb-[2.5rem] xl:pb-[3rem] 2xl:pb-[3.5rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
             ">
-                <h5 className="
-                    text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                    text-[#000] font-[600]
-                ">
-                    WHY <span className="text-[#e9202a]">MARSONS</span>
-                </h5>
+                <Reveal>
+                    <h5 className="
+                        text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
+                        text-[#000] font-[600]
+                    ">
+                        WHY <span className="text-[#e9202a]">MARSONS</span>
+                    </h5>
+                </Reveal>
 
                 {/* Row */}
                 <div className="
@@ -59,10 +65,18 @@ const WhyMarsons = () => {
                 ">
                     {whyMarsonsData.map((item) => {
                         return (
-                            <div key={item.id} className="
+                            <motion.div key={item.id} className="
                                 w-full sm:w-[48.5%] lg:w-[32%] relative
                                 mb-[1rem] sm:mb-[1.5rem] lg:mb-[1.3rem] xl:mb-[1.5rem] 2xl:mb-[1.7rem]
-                            ">
+                            "
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.7,
+                                    ease: "easeOut",
+                                }}
+                            >
                                 <img
                                     src={item.image}
                                     alt={item.title}
@@ -75,20 +89,20 @@ const WhyMarsons = () => {
                                     p-[1rem] sm:p-[1.2rem] lg:p-[1.3rem] xl:p-[1.4rem] 2xl:p-[1.5rem]
                                 ">
                                     <span className="
-                                        text-[1.4rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.5rem] 2xl:text-[1.7rem]
+                                        text-[1.4rem] sm:text-[1.6rem] lg:text-[1.3rem] xl:text-[1.5rem] 2xl:text-[1.7rem]
                                         font-[600] leading-[1.3]
                                     ">
                                         {item.title}
                                     </span>
                                     <p className="
-                                        text-[0.9rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                                        text-[0.9rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                                         font-[500]
                                         mt-[0.7rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                     ">
                                         {item.desc}
                                     </p>
                                 </div>
-                            </div>
+                            </motion.div>
                         )
                     })}
                 </div>
