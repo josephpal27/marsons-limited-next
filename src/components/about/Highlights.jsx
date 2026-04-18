@@ -31,7 +31,7 @@ const Highlights = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[2rem] sm:py-[3rem] lg:py-[2rem] xl:py-[2.5rem] 2xl:py-[3rem]
+                py-[2rem] sm:py-[2.2rem] lg:py-[2rem] xl:py-[2.5rem] 2xl:py-[3rem]
                 flex flex-wrap justify-between bg-[#0a2946]
             ">
                 {
@@ -58,8 +58,8 @@ const Highlights = () => {
                                 <Fade>
                                     <p className="
                                         text-[#fff] font-[500] text-center
-                                        text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                                        mt-[1rem] sm:mt-[1.2rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]
+                                        text-[1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                                        mt-[1rem] sm:mt-[1.1rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]
                                     ">
                                         {item.title}
                                     </p>
