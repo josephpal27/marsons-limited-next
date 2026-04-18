@@ -18,7 +18,6 @@ const AboutBanner = () => {
                     slidesPerView={1}
                     centeredSlides={false}
                     loop={true}
-                    grabCursor={true}
                     speed={1000}
                     effect="fade"
                     fadeEffect={{ crossFade: true }}
