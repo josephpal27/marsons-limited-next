@@ -10,7 +10,7 @@ const AboutBanner = () => {
         <>
             <section className="
                 w-full
-                sm:h-screen
+                lg:h-screen
                 relative
             ">
                 <Swiper
@@ -30,14 +30,14 @@ const AboutBanner = () => {
                     <SwiperSlide>
                         <img src="/images/banners/about-banner-1.avif" alt="About Banner 1" loading="eager" className="
                             w-full
-                            sm:h-[106vh]
+                            lg:h-[106vh]
                             drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
                         "/>
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src="/images/banners/about-banner-2.avif" alt="About Banner 2" loading="eager" className="
                             w-full
-                            sm:h-[106vh]
+                            lg:h-[106vh]
                             drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
                         "/>
                     </SwiperSlide>
