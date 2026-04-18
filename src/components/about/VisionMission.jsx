@@ -62,7 +62,7 @@ const VisionMission = () => {
                     if (item.type === "image") {
                         return (
                             <div key={item.id} className="
-                                w-full sm:w-[33.33%]
+                                w-full lg:w-[33.33%]
                             ">
                                 <img
                                     src={item.image}
@@ -80,9 +80,9 @@ const VisionMission = () => {
                             className={`
                                 w-full lg:w-[33.33%]
                                 p-[0] sm:p-[1rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]
-                                py-[1.5rem] sm:py-0
+                                py-[1.5rem] sm:py-[2rem] lg:py-0
                                 flex flex-col justify-center
-                                ${item.align === "center" ? "text-left sm:text-center" : "text-left"}
+                                ${item.align === "center" ? "text-left lg:text-center" : "text-left"}
                             `}
                         >
                             <Reveal>

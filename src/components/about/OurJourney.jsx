@@ -68,7 +68,7 @@ const OurJourney = () => {
     return (
         <section className="
             px-[1rem] sm:px-[5%] lg:px-[7%]
-            mt-[1.5rem] sm:mt-[6rem] lg:mt-[5rem] xl:mt-[5.5rem] 2xl:mt-[6rem]
+            mt-[1.5rem] sm:mt-[3rem] lg:mt-[5rem] xl:mt-[5.5rem] 2xl:mt-[6rem]
         ">
 
             {/* Head */}
@@ -76,7 +76,7 @@ const OurJourney = () => {
                 <div className="w-full sm:w-[35%]">
                     <Reveal>
                         <h2 className=" 
-                            text-[1.8rem] sm:text-[5rem] lg:text-[4.5rem] xl:text-[5rem] 2xl:text-[5.5rem]
+                            text-[1.8rem] sm:text-[3rem] lg:text-[4.5rem] xl:text-[5rem] 2xl:text-[5.5rem]
                             font-[700] leading-[1]
                         ">
                             OUR <br /> <span className="text-[#e9202a]">JOURNEY</span>
@@ -100,7 +100,7 @@ const OurJourney = () => {
 
             <div ref={sectionRef} className="
                 relative 
-                mt-[2rem] sm:mt-[3rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
+                mt-[2rem] sm:mt-[2.5rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
             ">
 
                 {/* Line */}
@@ -110,7 +110,7 @@ const OurJourney = () => {
                         left-[0] sm:left-1/2
                         -translate-x-0 sm:-translate-x-1/2
                         bg-[#bebebe]
-                        w-[3px] sm:w-[7px] lg:w-[5px] xl:w-[6px] 2xl:w-[7px]
+                        w-[3px] sm:w-[5px] lg:w-[5px] xl:w-[6px] 2xl:w-[7px]
                     "
                     style={{
                         top: lineTop,
@@ -145,7 +145,7 @@ const OurJourney = () => {
                                 ref={(el) => (dotRefs.current[index] = el)}
                                 className="absolute left-[-8.8%] sm:left-1/2 -translate-x-0 sm:-translate-x-1/2 z-10"
                             >
-                                <div className="w-[12px] sm:w-[18px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] h-[12px] sm:h-[18px] lg:h-[14px] xl:h-[16px] 2xl:h-[18px] bg-black rounded-full border-black border-[10px] sm:border-[15px] lg:border-[13px] xl:border-[14px] 2xl:border-[15px]" />
+                                <div className="w-[12px] sm:w-[13px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] h-[12px] sm:h-[13px] lg:h-[14px] xl:h-[16px] 2xl:h-[18px] bg-black rounded-full border-black border-[10px] sm:border-[15px] lg:border-[13px] xl:border-[14px] 2xl:border-[15px]" />
                             </div>
 
                             {/* Right */}
@@ -171,16 +171,16 @@ export default OurJourney;
 // Reusable Box
 const Content = ({ item, align }) => (
     <div className={`
-        ${align === "right" ? "text-left sm:text-right pr-[0] sm:pr-[2rem] lg:pr-[1.6rem] xl:pr-[1.8rem] 2xl:pr-[2rem]" : "pl-[0] sm:pl-[2rem] lg:pl-[1.6rem] xl:pl-[1.8rem] 2xl:pl-[2rem]"}
+        ${align === "right" ? "text-left sm:text-right pr-[0] sm:pr-[1rem] lg:pr-[1.6rem] xl:pr-[1.8rem] 2xl:pr-[2rem]" : "pl-[0] sm:pl-[1rem] lg:pl-[1.6rem] xl:pl-[1.8rem] 2xl:pl-[2rem]"}
     `}>
         <Reveal>
-            <span className="text-[2rem] sm:text-[4rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] font-[700] text-[#0f2b3a] block mt-[1rem] sm:mt-0">
+            <span className="text-[2rem] sm:text-[3rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] font-[700] text-[#0f2b3a] block mt-[1rem] sm:mt-0">
                 {item.year}
             </span>
         </Reveal>
         
         <Reveal>
-            <span className="text-[1.5rem] sm:text-[2.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-[700] block mt-[0.5rem] uppercase">
+            <span className="text-[1.5rem] sm:text-[1.8rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-[700] block mt-[0.5rem] uppercase">
                 {item.title.split(item.highlight)[0]}
                 <span className="text-[#e9202a]">{item.highlight}</span>
             </span>
