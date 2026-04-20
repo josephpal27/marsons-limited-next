@@ -903,6 +903,10 @@ export const investorCornerData = {
             heading: "Intimation of Knowledge Session",
             link: "/pdf/notices-results/regulation-30/intimation-of-knowledge-session.pdf",
           },
+          {
+            heading: "Disclosure Under Reg 30",
+            link: "/pdf/notices-results/regulation-30/disclosure-under-reg-30.pdf",
+          },
         ],
       },
       {
