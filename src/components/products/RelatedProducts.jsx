@@ -50,6 +50,7 @@ const RelatedProducts = () => {
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 py-[0.5rem] sm:py-[2rem] lg:py-[2.4rem] xl:py-[2.7rem] 2xl:py-[3rem]
+                mt-[1rem] sm:mt-[1rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
             ">
                 <Reveal>
                     <h5 className="
