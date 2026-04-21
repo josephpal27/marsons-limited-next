@@ -147,8 +147,8 @@ export const investorCornerData = {
         title: "Composition of various committees of Board of Directors",
         body: [
           {
-            heading: "Composition of various committees of Board of Directors",
-            link: "/pdf/regulation/board-of-directors/composition-of-various-committees-of-board-of-directors.pdf",
+            heading: "Composition of Board of Directors and Committees",
+            link: "/pdf/regulation/board-of-directors/composition-of-board-of-directors-and-committees.pdf",
           },
         ],
       },
@@ -460,6 +460,26 @@ export const investorCornerData = {
             heading: "Secretarial Compliance Report",
             link: "/investor-corner/financials",
             type: "route",
+          },
+        ],
+      },
+      {
+        id: 30,
+        title: "Disclosure under Regulation 30(8)",
+        body: [
+          {
+            heading: "Archival Policy",
+            link: "/pdf/regulation/disclosure-30-8/archival-policy.pdf",
+          },
+        ],
+      },
+      {
+        id: 31,
+        title: "Advertisement as per Regulation 47(1)",
+        body: [
+          {
+            heading: "Policy on Material Subsidiaries",
+            link: "/pdf/regulation/advertisement-reg-47-1/policy-on-material-subsidiaries.pdf",
           },
         ],
       },
