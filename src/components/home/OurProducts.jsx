@@ -57,7 +57,7 @@ let productsData = [
         id: 7,
         name: "Inverter Duty Transformers - Marsons Green",
         desc: "For utility-scale solar PV, BESS, and VFD. Foil windings, unity power factor sizing.",
-        output: "1 MVA – 6.3 MVA | IEC 60076-16",
+        output: "1 MVA – 25 MVA | K-13 / K-20 | IEEE C57.110",
         image: "/images/products/inverter-duty.avif",
         url: "/coming-soon",
     },
