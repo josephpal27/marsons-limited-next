@@ -88,7 +88,7 @@ const VisionMission = () => {
                             <Reveal>
                                 <span className="
                                     text-[1.7rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                                    font-[700] leading-[1]
+                                    font-[700] leading-[1] font-gilroy
                                 ">
                                     {item.title} <br />
                                     <span className="text-[#e9202a]">

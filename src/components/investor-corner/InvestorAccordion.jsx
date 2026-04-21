@@ -67,7 +67,7 @@ const InvestorAccordion = ({ accordionData, slug }) => {
                                                             <p
                                                                 className="
                                                                     text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                                                                    text-[#000] font-[550]
+                                                                    text-[#000] font-[600]
                                                                 "
                                                             >
                                                                 {item.heading}

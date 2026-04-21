@@ -32,13 +32,13 @@ const LatestNewsCard = ({
                 <div className={layout === "horizontal" ? "sm:w-[51%]" : "mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]"}>
                     <span className="
                         text-[1.2rem] sm:text-[1.5rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                        font-[500] text-[#0a2946] block
+                        font-[500] text-[#0a2946] block font-gilroy
                     ">
                         {title}
                     </span>
 
                     <p className="
-                        text-[1rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                        text-[1rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem] font-[450]
                         mt-[0.6rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                     ">
                         {description}

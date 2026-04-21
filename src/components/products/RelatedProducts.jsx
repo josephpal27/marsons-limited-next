@@ -123,7 +123,7 @@ const RelatedProducts = () => {
                                         ">
                                             <span className="
                                                 text-[1.3rem] sm:text-[1.4rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                                                text-[#e9202a] font-[600] leading-[1.3]
+                                                text-[#e9202a] font-[600] leading-[1.3] font-gilroy
                                             ">
                                                 {item.title}
                                             </span>

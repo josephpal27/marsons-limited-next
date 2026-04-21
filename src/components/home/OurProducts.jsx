@@ -127,7 +127,7 @@ const OurProducts = () => {
                                 ">
                                     <div>
                                         <span className="
-                                            text-[#e9202a] font-[700] text-center block
+                                            text-[#e9202a] font-[800] text-center block font-gilroy
                                             text-[1.3rem] sm:text-[1.5rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                         ">
                                             {item.name}

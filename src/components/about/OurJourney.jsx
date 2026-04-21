@@ -174,13 +174,13 @@ const Content = ({ item, align }) => (
         ${align === "right" ? "text-left sm:text-right pr-[0] sm:pr-[1rem] lg:pr-[1.6rem] xl:pr-[1.8rem] 2xl:pr-[2rem]" : "pl-[0] sm:pl-[1rem] lg:pl-[1.6rem] xl:pl-[1.8rem] 2xl:pl-[2rem]"}
     `}>
         <Reveal>
-            <span className="text-[2rem] sm:text-[3rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] font-[700] text-[#0f2b3a] block mt-[1rem] sm:mt-0">
+            <span className="text-[2rem] sm:text-[3rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] font-[700] text-[#0f2b3a] block mt-[1rem] sm:mt-0 font-gilroy">
                 {item.year}
             </span>
         </Reveal>
         
         <Reveal>
-            <span className="text-[1.5rem] sm:text-[1.8rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-[700] block mt-[0.5rem] uppercase">
+            <span className="text-[1.5rem] sm:text-[1.8rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-[700] block mt-[0.5rem] uppercase font-gilroy">
                 {item.title.split(item.highlight)[0]}
                 <span className="text-[#e9202a]">{item.highlight}</span>
             </span>

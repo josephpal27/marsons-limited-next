@@ -109,7 +109,7 @@ const Manufacturer = () => {
                                     p-[0.8rem] sm:p-[1.1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
                                 " key={item.id}>
                                     <span className="
-                                        text-[#fff] font-[700]
+                                        text-[#fff] font-[700] font-gilroy
                                         text-[1.3rem] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
                                     ">
                                         {item.unit}
@@ -142,7 +142,7 @@ const Manufacturer = () => {
                                 hover:shadow-[3px_3px_2px_#0a2946] transition-all duration-300  group
                             " key={item.id}>
                                 <span className="
-                                    text-[#fff] font-[600]
+                                    text-[#fff] font-[600] font-gilroy
                                     text-[1.1rem] sm:text-[1.3rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                 ">
                                     {item.title}

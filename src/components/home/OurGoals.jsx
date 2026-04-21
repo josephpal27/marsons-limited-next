@@ -70,7 +70,7 @@ const OurGoals = () => {
                                     <Fade>
                                         <span className="
                                             text-[1.6rem] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
-                                            font-[550]
+                                            font-[550] font-gilroy
                                         ">
                                             {item.title}
                                         </span>

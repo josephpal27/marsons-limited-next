@@ -90,7 +90,7 @@ const WhyMarsons = () => {
                                 ">
                                     <span className="
                                         text-[1.4rem] sm:text-[1.6rem] lg:text-[1.3rem] xl:text-[1.5rem] 2xl:text-[1.7rem]
-                                        font-[600] leading-[1.3]
+                                        font-[600] leading-[1.3] font-gilroy
                                     ">
                                         {item.title}
                                     </span>

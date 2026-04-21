@@ -87,7 +87,7 @@ const AboutWhatWeDo = () => {
                         <Reveal>
                             <span className="
                                 text-[1.4rem] sm:text-[2rem] lg:text-[2rem] xl:text-[2.3rem] 2xl:text-[2.5rem]
-                                text-[#e9202a] font-[700] block
+                                text-[#e9202a] font-[700] block font-gilroy
                             ">
                                 Unmatched Infrastructure
                             </span>

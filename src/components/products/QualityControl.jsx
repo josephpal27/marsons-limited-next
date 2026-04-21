@@ -50,7 +50,7 @@ const QualityControl = () => {
                             <h6 className="
                                 text-[1.5rem] sm:text-[2.5rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
                                 font-[600] text-[#fff] text-center
-                                w-[65%] sm:w-full
+                                w-[65%] sm:w-full mx-auto
                             ">
                                 QUALITY CONTROL & TESTING
                             </h6>
@@ -84,7 +84,7 @@ const QualityControl = () => {
                                 >
                                     <span className="
                                         text-[1.3rem] sm:text-[1.7rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
-                                        text-[#e9202a] font-[600]
+                                        text-[#e9202a] font-[600] font-gilroy
                                     ">
                                         {item.title}
                                     </span>

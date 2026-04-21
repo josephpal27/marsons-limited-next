@@ -5,7 +5,12 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        gilroy: "var(--font-gilroy)",
+        inter: "var(--font-inter)",
+      },
+    },
   },
   plugins: [],
 };

@@ -88,7 +88,7 @@ const TrustedWorldWide = () => {
                                 }}
                             >
                                 <span className="
-                                    text-[#fff] font-[600]
+                                    text-[#fff] font-[600] font-gilroy
                                     text-[1.3rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
                                 ">
                                     {item.location}
@@ -146,7 +146,7 @@ const TrustedWorldWide = () => {
                             >
                                 <span className="
                                     text-[1.3rem] sm:text-[1.3rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                                    text-[#fff] font-[600]
+                                    text-[#fff] font-[600] font-gilroy
                                 ">
                                     {item.country}
                                 </span>

@@ -13,7 +13,7 @@ const ContactForm = () => {
                     mb-[0.5rem] sm:mb-[0]
                 ">
                     <span className="
-                        text-[#fff] font-[700]
+                        text-[#fff] font-[700] font-gilroy
                         text-[1.5rem] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
                     ">
                         Get In Touch

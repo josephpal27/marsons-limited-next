@@ -12,6 +12,14 @@ html{
   scroll-behavior: unset !important;
 }
 
+body {
+  @apply font-inter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-gilroy;
+}
+
 /* Powering Industries Start */
 .feature-card{
   border-right: 1.5px solid #c6c6c6;
@@ -80,6 +88,7 @@ footer .footer-links span{
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  @apply font-gilroy;
 }
 footer .footer-links a{
   display: block;
@@ -128,6 +137,7 @@ footer .footer-links a:hover{
   display: block;
   color: #eee;
   font-size: 1.2rem;
+  @apply font-gilroy;
 }
 .contact-form input,
 .contact-form textarea{

@@ -73,7 +73,7 @@ const Transformers = ({ data }) => {
                                     ">
                                         {/* <span className="
                                             text-[1.6rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
-                                            font-[550]
+                                            font-[550] font-gilroy
                                         ">
                                             {item.title}
                                         </span> */}

@@ -56,7 +56,7 @@ const ContactDetails = () => {
                     <Fade>
                         <h2 className="
                             text-[1.4rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                            text-[#e9202a] font-[600]
+                            text-[#e9202a] font-[600] font-gilroy
                         ">
                             Get in touch <span className="text-[#000]">for support,</span> <span className="text-[#000]">queries,</span> or <span className="text-[#000]">collaborations</span>
                         </h2>
@@ -87,7 +87,7 @@ const ContactDetails = () => {
                                 data-aos="fade" data-aos-once="true"
                             >
                                 <span className="
-                                    text-[#e9202a] font-[600] d-block
+                                    text-[#e9202a] font-[600] d-block font-gilroy
                                     text-[1.2rem] sm:text-[1.4rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                                     mb-[0.5rem] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
                                 ">
