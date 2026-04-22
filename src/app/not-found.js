@@ -11,13 +11,13 @@ export default function Home() {
             <section className="h-[100dvh] flex flex-col justify-center items-center">
                 <h1 className="
                     text-[3rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
-                    text-[#e9202a] font-bold tracking-[2]
+                    text-[#e9202a] font-bold tracking-[2] font-gilroy
                 ">
                     404
                 </h1>
                 <p className="
                     text-[1.5rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
-                    text-[#000] font-[600]
+                    text-[#000] font-[600] font-gilroy
                 ">
                     PAGE NOT FOUND
                 </p>
