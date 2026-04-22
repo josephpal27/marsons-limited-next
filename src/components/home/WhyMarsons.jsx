@@ -46,7 +46,7 @@ const WhyMarsons = () => {
     return (
         <>
             <section className="
-                pb-[1.5rem] sm:pb-[1.5rem] lg:pb-[2.5rem] xl:pb-[3rem] 2xl:pb-[3.5rem]
+                pt-[1.5rem] sm:pt-[2rem] lg:pt-[3rem] xl:pt-[3.5rem] 2xl:pt-[4rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
             ">
                 <Reveal>
@@ -54,13 +54,13 @@ const WhyMarsons = () => {
                         text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                         text-[#000] font-[600]
                     ">
-                        WHY <span className="text-[#e9202a]">MARSONS</span>
+                        WHY <br /> <span className="text-[#e9202a]">MARSONS</span>
                     </h5>
                 </Reveal>
 
                 {/* Row */}
                 <div className="
-                    mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                    mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem]
                     flex justify-between flex-wrap
                 ">
                     {whyMarsonsData.map((item) => {

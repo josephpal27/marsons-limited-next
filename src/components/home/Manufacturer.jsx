@@ -71,33 +71,35 @@ const Manufacturer = () => {
     return (
         <>
             <div className="
-                py-[0] sm:py-[1.5rem] lg:py-[1rem] xl:py-[1.5rem] 2xl:py-[2rem]
+                mt-[1rem] sm:mt-[1.5rem] lg:mt-[1rem] xl:mt-[1.5rem] 2xl:mt-[3.5rem]
+                py-[1] sm:py-[1.5rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex justify-between items-center flex-wrap h-full
+                bg-[url('/images/manufacturer-bg.png')] bg-no-repeat bg-cover bg-bottom
             ">
                 {/* Left */}
-                <div className="w-full lg:w-[47%]">
+                <div className="w-full lg:w-[52%]">
                     <Reveal>
                         <h6 className="
                             text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
-                            text-[#000] font-[600] uppercase
+                            text-[#fff] font-[600] uppercase
                             mb-[0.8rem] sm:mb-[1rem] lg:mb-[0.6rem] xl:mb-[0.8rem] 2xl:mb-[1rem]
                         ">
-                            Only <span className="text-[#e9202a]">EHV</span> Manufacturer in <span className="text-[#e9202a]">Eastern India</span>
+                            Only EHV Manufacturer in Eastern India
                         </h6>
                     </Reveal>
 
                     <Fade>
                         <p className="
                             text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                            text-[#000] font-[500]
+                            text-[#fff] font-[500]
                         ">
                             No other transformer manufacturer in Eastern India — including the North Eastern Region — produces Extra-High Voltage transformers. Nearly 200 EHV units commissioned across India's most demanding grid projects. 150 MVA 220 kV class impulse-tested at our own NABL accredited laboratory.
                         </p>
                     </Fade>
 
                     {/* Cards */}
-                    <div className="
+                    {/* <div className="
                         mt-[1.5rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                         flex justify-between flex-wrap
                     ">
@@ -124,15 +126,16 @@ const Manufacturer = () => {
                                 </div>
                             )
                         })}
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Right */}
                 <div className="
-                    w-full lg:w-[47%]
+                    w-full lg:w-[42%]
                     flex justify-between flex-wrap mt-[1.2rem] sm:mt-0
+                    gap-[0.7rem] sm:gap-[1.3rem] lg:gap-[1.3rem] xl:gap-[1.4rem] 2xl:gap-[1.5rem]
                 ">
-                    {ehvData.map((item) => {
+                    {/* {ehvData.map((item) => {
                         return (
                             <div className="
                                 mb-[1rem] sm:mb-[1.3rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
@@ -154,6 +157,33 @@ const Manufacturer = () => {
                                 ">
                                     {item.desc}
                                 </p>
+                            </div>
+                        )
+                    })} */}
+                    {ehvHighlightData.map((item) => {
+                        return (
+                            <div className="
+                                    w-full bg-[#fff] shadow-[6px_6px_2.6px_#e9202a] rounded-md
+                                    p-[0.8rem] sm:p-[1.1rem] lg:p-[1.5rem] xl:p-[1.6rem] 2xl:p-[1.7rem]
+                                    flex justify-between items-center flex-wrap
+                                " key={item.id}>
+                                <div className="w-[40%]">
+                                    <span className="
+                                        text-[#0a2946] font-[700] font-gilroy
+                                        text-[1.3rem] sm:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.2rem] 2xl:text-[2.3rem]
+                                    ">
+                                        {item.unit}
+                                    </span>
+                                </div>
+                                <div className="w-[55%]">
+                                    <p className="
+                                        text-[#000] font-[550]
+                                        text-[0.85rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[1.2rem]
+                                        mt-[0.3rem]
+                                    ">
+                                        {item.desc}
+                                    </p>
+                                </div>
                             </div>
                         )
                     })}

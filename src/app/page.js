@@ -17,11 +17,11 @@ export default function Home() {
   return (
     <>
       <HomeBanner />
+      <WhyMarsons />
+      <Manufacturer />
       <PoweringIndustries />
       <OurGoals />
       <OurProducts />
-      <WhyMarsons />
-      <Manufacturer />
       <TrustedWorldWide />
       <LatestNews />
       <section className="px-[1rem] sm:px-[5%] lg:px-[7%]">
