@@ -20,6 +20,14 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-gilroy;
 }
 
+/* Swiper Customization */
+.swiper-wrapper {
+  align-items: stretch !important;
+}
+.swiper-slide {
+  height: auto !important;
+}
+
 /* Powering Industries Start */
 .feature-card{
   border-right: 1.5px solid #c6c6c6;

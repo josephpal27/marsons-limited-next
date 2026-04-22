@@ -1,3 +1,8 @@
+"use client"
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 import Reveal from "../Reveal";
 import Fade from '../Fade';
 
@@ -72,7 +77,7 @@ const Manufacturer = () => {
         <>
             <div className="
                 mt-[1rem] sm:mt-[1.5rem] lg:mt-[1rem] xl:mt-[1.5rem] 2xl:mt-[3.5rem]
-                py-[1] sm:py-[1.5rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
+                py-[1] sm:py-[1.5rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex justify-between items-center flex-wrap h-full
                 bg-[url('/images/manufacturer-bg.png')] bg-no-repeat bg-cover bg-bottom
@@ -99,78 +104,67 @@ const Manufacturer = () => {
                     </Fade>
 
                     {/* Cards */}
-                    {/* <div className="
-                        mt-[1.5rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
-                        flex justify-between flex-wrap
+                    <div className="
+                        mt-[3rem]
                     ">
-                        {ehvHighlightData.map((item) => {
-                            return (
-                                <div className="
-                                    mb-[0.7rem] sm:mb-[1.3rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
-                                    w-[48.5%] bg-[#0a2946] shadow-[3px_3px_2.6px_#e9202a]
-                                    p-[0.8rem] sm:p-[1.1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
-                                " key={item.id}>
-                                    <span className="
-                                        text-[#fff] font-[700] font-gilroy
-                                        text-[1.3rem] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
-                                    ">
-                                        {item.unit}
-                                    </span>
-                                    <p className="
-                                        text-[#c8c8c8]
-                                        text-[0.85rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
-                                        mt-[0.3rem]
-                                    ">
-                                        {item.desc}
-                                    </p>
-                                </div>
-                            )
-                        })}
-                    </div> */}
+                        <Swiper
+                            modules={[Autoplay]}
+                            slidesPerView={2}
+                            centeredSlides={false}
+                            loop={true}
+                            grabCursor={true}
+                            spaceBetween={10}
+                            speed={1000}
+                            autoplay={{
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            }}
+                        >
+                            {ehvData.map((item) => {
+                                return (
+                                    <SwiperSlide key={item.id} className="p-[5px]">
+                                        <div className="
+                                            bg-[#fff] shadow-[4px_4px_2.6px_#000] rounded-md w-full h-full
+                                            p-[0.8rem] sm:p-[1.1rem] lg:p-[1rem] xl:p-[1.1rem] 2xl:p-[1.2rem]
+                                        ">
+                                            <span className="
+                                                text-[#0a2946] font-[700] font-gilroy
+                                                text-[1.3rem] sm:text-[1.8rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
+                                            ">
+                                                {item.title}
+                                            </span>
+                                            <p className="
+                                                text-[#000] font-[550]
+                                                text-[0.85rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                                mt-[0.3rem]
+                                            ">
+                                                {item.desc}
+                                            </p>
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })}
+                        </Swiper>
+                    </div>
                 </div>
 
                 {/* Right */}
                 <div className="
                     w-full lg:w-[42%]
                     flex justify-between flex-wrap mt-[1.2rem] sm:mt-0
-                    gap-[0.7rem] sm:gap-[1.3rem] lg:gap-[1.3rem] xl:gap-[1.4rem] 2xl:gap-[1.5rem]
+                    gap-[0.7rem] sm:gap-[1.3rem] lg:gap-[1.1rem] xl:gap-[1.2rem] 2xl:gap-[1.3rem]
                 ">
-                    {/* {ehvData.map((item) => {
-                        return (
-                            <div className="
-                                mb-[1rem] sm:mb-[1.3rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
-                                w-full sm:w-[48.5%] bg-[#0a2946] hover:bg-[#e9202a]
-                                px-[0.8rem] sm:px-[1.1rem] lg:px-[0.8rem] xl:px-[0.9rem] 2xl:px-[1rem]
-                                py-[1rem] sm:py-[1.5rem] lg:py-[1.47rem] xl:py-[1.65rem] 2xl:py-[1.75rem]
-                                hover:shadow-[3px_3px_2px_#0a2946] transition-all duration-300  group
-                            " key={item.id}>
-                                <span className="
-                                    text-[#fff] font-[600] font-gilroy
-                                    text-[1.1rem] sm:text-[1.3rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                                ">
-                                    {item.title}
-                                </span>
-                                <p className="
-                                    text-[#c8c8c8] group-hover:text-[#fff]
-                                    text-[0.85rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
-                                    mt-[0.5rem]
-                                ">
-                                    {item.desc}
-                                </p>
-                            </div>
-                        )
-                    })} */}
                     {ehvHighlightData.map((item) => {
                         return (
                             <div className="
                                     w-full bg-[#fff] shadow-[6px_6px_2.6px_#e9202a] rounded-md
-                                    p-[0.8rem] sm:p-[1.1rem] lg:p-[1.5rem] xl:p-[1.6rem] 2xl:p-[1.7rem]
+                                    p-[0.8rem] sm:p-[1.1rem] lg:p-[1.4rem] xl:p-[1.5rem] 2xl:p-[1.6rem]
                                     flex justify-between items-center flex-wrap
                                 " key={item.id}>
                                 <div className="w-[40%]">
                                     <span className="
                                         text-[#0a2946] font-[700] font-gilroy
-                                        text-[1.3rem] sm:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.2rem] 2xl:text-[2.3rem]
+                                        text-[1.3rem] sm:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.3rem]
                                     ">
                                         {item.unit}
                                     </span>
@@ -178,7 +172,7 @@ const Manufacturer = () => {
                                 <div className="w-[55%]">
                                     <p className="
                                         text-[#000] font-[550]
-                                        text-[0.85rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[1.2rem]
+                                        text-[0.85rem] sm:text-[1rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                         mt-[0.3rem]
                                     ">
                                         {item.desc}
