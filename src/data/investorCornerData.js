@@ -195,7 +195,12 @@ export const investorCornerData = {
       {
         id: 8,
         title: "Policy for determining Material Subsidiaries",
-        body: [],
+        body: [
+          {
+            heading: "Policy on Material Subsidiaries",
+            link: "/pdf/regulation/material-subsidiaries/policy-on-material-subsidiaries.pdf",
+          },
+        ],
       },
       {
         id: 9,
@@ -476,10 +481,20 @@ export const investorCornerData = {
       {
         id: 31,
         title: "Advertisement as per Regulation 47(1)",
+        body: [],
+      },
+      {
+        id: 32,
+        title: "Employee Benefit scheme documents framed in terms of SEBI (SBEB) Regulations 2021",
+        body: [],
+      },
+      {
+        id: 33,
+        title: "Compliance with Regulation 46(3)",
         body: [
           {
-            heading: "Policy on Material Subsidiaries",
-            link: "/pdf/regulation/advertisement-reg-47-1/policy-on-material-subsidiaries.pdf",
+            heading: "Compliance with Regulation 46(3)",
+            link: "/pdf/regulation/compliance-with-regulation-46(3)/regulation-46(3).pdf",
           },
         ],
       },
