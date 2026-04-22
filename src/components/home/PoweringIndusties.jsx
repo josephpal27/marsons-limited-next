@@ -37,7 +37,7 @@ const PoweringIndustries = () => {
   return (
     <>
       <section className="
-        py-[1rem] sm:py-[2rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
+        py-[1rem] sm:py-[2rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
         px-[1rem] sm:px-[5%] lg:px-[7%]
         flex flex-col justify-center
         pb-[0]
