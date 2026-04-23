@@ -50,12 +50,12 @@ const WhyMarsons = () => {
                 px-[1rem] sm:px-[5%] lg:px-[7%]
             ">
                 <Reveal>
-                    <h5 className="
+                    <h2 className="
                         text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                         text-[#000] font-[600]
                     ">
                         WHY <br /> <span className="text-[#e9202a]">MARSONS</span>
-                    </h5>
+                    </h2>
                 </Reveal>
 
                 {/* Row */}

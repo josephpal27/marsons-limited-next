@@ -31,13 +31,13 @@ const OurGoals = () => {
                 {/* Top */}
                 <div>
                     <Reveal>
-                        <h3 className="
+                        <h5 className="
                             text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                             text-[#000] font-[600]
                             mb-[1rem] sm:mb-[1.1rem] lg:mb-[1.3rem] xl:mb-[1.4rem] 2xl:mb-[1.5rem]
                         ">
                             OUR <br /> <span className="text-[#e9202a]">GOALS</span>
-                        </h3>
+                        </h5>
                     </Reveal>
 
                     <Fade>

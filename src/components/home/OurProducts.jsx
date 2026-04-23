@@ -83,12 +83,12 @@ const OurProducts = () => {
                 flex flex-col justify-center
             ">
                 <Reveal>
-                    <h4 className="
+                    <h6 className="
                         text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                         text-[#000] font-[600]
                     ">
                         OUR <br /> <span className="text-[#e9202a]">PRODUCTS</span>
-                    </h4>
+                    </h6>
                 </Reveal>
 
                 {/* Products Row */}

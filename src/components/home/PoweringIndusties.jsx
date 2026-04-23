@@ -43,13 +43,13 @@ const PoweringIndustries = () => {
         pb-[0] relative
       ">
         <Reveal>
-          <h2 className="
+          <h4 className="
             text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
             text-[#000] font-[600] uppercase
             mb-[0.4rem] sm:mb-[0.5rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
           ">
             Powering <br className="block sm:hidden" /> <span className="text-[#e9202a]">Industries</span>
-          </h2>
+          </h4>
         </Reveal>
 
         <p className="
