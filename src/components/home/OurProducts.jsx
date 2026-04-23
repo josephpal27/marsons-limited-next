@@ -7,7 +7,7 @@ import Reveal from '../Reveal';
 let productsData = [
     {
         id: 1,
-        name: "Distribution Transformers",
+        name: "Distribution <br/> Transformers",
         desc: "For state utilities, DISCOMs, and industrial facilities. BIS Star Rated (Level 1–3). Hermetically sealed, conservator, and free-breathing variants.",
         output: "10 KVA – 2,500 KVA | Up to 33 kV | IS 1180",
         image: "/images/products/distribution.avif",
@@ -15,7 +15,7 @@ let productsData = [
     },
     {
         id: 2,
-        name: "Power Transformers",
+        name: "Power <br/> Transformers",
         desc: "The only EHV transformer manufacturer in Eastern India. Serving India's 220 kV / 400 kV grid and US transmission networks at 69–345 kV.",
         output: "Up to 300 MVA | Up to 345 kV | IS 2026 / IEEE C57",
         image: "/images/products/power.avif",
@@ -23,7 +23,7 @@ let productsData = [
     },
     {
         id: 3,
-        name: "Furnace Duty Transformers",
+        name: "Furnace Duty <br/> Transformers",
         desc: "Purpose-built for electric arc furnaces and ladle furnaces. Designed for continuous repetitive short-circuit events.",
         output: "EAF & LF Type | Electrode current up to 50 kA",
         image: "/images/products/furnace-duty.avif",
@@ -31,7 +31,7 @@ let productsData = [
     },
     {
         id: 4,
-        name: "Locomotive & Traction",
+        name: "Locomotive & <br/> Traction",
         desc: "Critical front-end transformers for Indian Railways' electric locomotive fleet.",
         output: "WAG9 / WAP5 / WAP7 | 25 kV AC | RDSO",
         image: "/images/products/locomotive.avif",
@@ -39,7 +39,7 @@ let productsData = [
     },
     {
         id: 5,
-        name: "Dry Type Transformers",
+        name: "Dry Type <br/> Transformers",
         desc: "Oil-free, fire-safe units for hospitals, metro tunnels, data centres, and high-rise buildings.",
         output: "Up to 20 MVA | Up to 33 kV | IS 11171",
         image: "/images/products/dry-type.avif",
@@ -47,7 +47,7 @@ let productsData = [
     },
     {
         id: 6,
-        name: "WTG Transformers - Marsons Green",
+        name: "WTG Transformers - <br/> Marsons Green",
         desc: "India's full onshore wind fleet. Handles thermal cycling, VCB surges, and harmonics.",
         output: "1 MVA – 6.3 MVA | IEC 60076-16",
         image: "/images/products/wtg.avif",
@@ -63,7 +63,7 @@ let productsData = [
     },
     {
         id: 8,
-        name: "US Market Transformers",
+        name: "US Market <br/> Transformers",
         desc: "Pad-mounted, substation, GSU, solar/BESS, wind collector, and specialty transformers. PE-stamped all 50 states.",
         output: "Up to 300 MVA / 345 kV | IEEE / ANSI / DOE",
         image: "/images/products/us-market.avif",
@@ -87,7 +87,7 @@ const OurProducts = () => {
                         text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                         text-[#000] font-[600]
                     ">
-                        OUR <span className="text-[#e9202a]">PRODUCTS</span>
+                        OUR <br /> <span className="text-[#e9202a]">PRODUCTS</span>
                     </h4>
                 </Reveal>
 
@@ -127,20 +127,19 @@ const OurProducts = () => {
                                 ">
                                     <div>
                                         <span className="
-                                            text-[#e9202a] font-[800] text-center block font-gilroy
+                                            text-[#e9202a] font-[800] block
                                             text-[1.3rem] sm:text-[1.5rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                                        ">
-                                            {item.name}
+                                        " dangerouslySetInnerHTML={{__html: item.name} } >
                                         </span>
                                         <span className="
-                                            text-[#000] text-center font-[700] block
+                                            text-[#000] font-[700] block
                                             text-[0.9rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.75rem] 2xl:text-[0.85rem]
                                             mt-[0.8rem]
                                         ">
                                             {item.output}
                                         </span>
                                         <p className="
-                                            text-[#000] text-center font-[450]
+                                            text-[#000] font-[450]
                                             text-[0.9rem] sm:text-[1.1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                                             mt-[0.3rem]
                                         ">

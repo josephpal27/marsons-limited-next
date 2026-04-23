@@ -23,10 +23,10 @@ export default function Home() {
       <OurGoals />
       <OurProducts />
       <TrustedWorldWide />
-      <LatestNews />
       <section className="px-[1rem] sm:px-[5%] lg:px-[7%]">
         <OurClientLogos />
       </section>
+      <LatestNews />
     </>
   );
 }
