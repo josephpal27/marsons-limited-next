@@ -56,8 +56,9 @@ const TrustedWorldWide = () => {
     return (
         <>
             <div className="
-                px-[1rem] sm:px-[5%] lg:px-[7%] bg-[url('/images/trusted-bg.png')] bg-no-repeat bg-cover bg-center
-                py-[4rem]
+                px-[1rem] sm:px-[5%] lg:px-[7%] bg-[url('/images/trusted-bg.png')] bg-no-repeat bg-cover bg-bottom
+                py-[4rem] sm:py-[3rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
+                mb-[2rem] sm:mb-[2rem] lg:mb-[1.4rem] xl:mb-[1.7rem] 2xl:mb-[2rem]
             ">
                 <Reveal>
                     <h6 className="
@@ -95,7 +96,7 @@ const TrustedWorldWide = () => {
                                     " />
                                 </div>
                                 {/* Content */}
-                                <div className="p-[1rem] sm:p-[1.2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[1.5rem]">
+                                <div className="p-[1rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]">
                                     <span className="
                                         text-[#000] font-[600] font-gilroy
                                         text-[1.3rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]

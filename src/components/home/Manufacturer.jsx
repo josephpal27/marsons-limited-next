@@ -76,7 +76,7 @@ const Manufacturer = () => {
     return (
         <>
             <div className="
-                mt-[1rem] sm:mt-[1.5rem] lg:mt-[1rem] xl:mt-[1.5rem] 2xl:mt-[3.5rem]
+                mt-[1rem] sm:mt-[3rem] lg:mt-[2.5rem] xl:mt-[3rem] 2xl:mt-[3.5rem]
                 py-[1] sm:py-[1.5rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex justify-between items-center flex-wrap h-full
@@ -105,7 +105,7 @@ const Manufacturer = () => {
 
                     {/* Cards */}
                     <div className="
-                        mt-[3rem]
+                        mt-[3rem] sm:mt-[3rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
                     ">
                         <Swiper
                             modules={[Autoplay]}
@@ -125,7 +125,7 @@ const Manufacturer = () => {
                                     <SwiperSlide key={item.id} className="p-[5px]">
                                         <div className="
                                             bg-[#fff] shadow-[4px_4px_2.6px_#000] rounded-md w-full h-full
-                                            p-[0.8rem] sm:p-[1.1rem] lg:p-[1rem] xl:p-[1.1rem] 2xl:p-[1.2rem]
+                                            p-[0.8rem] sm:p-[1.1rem] lg:p-[0.9rem] xl:p-[1rem] 2xl:p-[1.2rem]
                                         ">
                                             <span className="
                                                 text-[#0a2946] font-[700] font-gilroy
