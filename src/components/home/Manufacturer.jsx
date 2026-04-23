@@ -76,8 +76,8 @@ const Manufacturer = () => {
     return (
         <>
             <div className="
-                mt-[1rem] sm:mt-[3rem] lg:mt-[2.5rem] xl:mt-[3rem] 2xl:mt-[3.5rem]
-                py-[1] sm:py-[1.5rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
+                mt-[1.5rem] sm:mt-[3rem] lg:mt-[2.5rem] xl:mt-[3rem] 2xl:mt-[3.5rem]
+                py-[1.5rem] sm:py-[1.5rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex justify-between items-center flex-wrap h-full
                 bg-[url('/images/manufacturer-bg.png')] bg-no-repeat bg-cover bg-bottom
@@ -105,11 +105,11 @@ const Manufacturer = () => {
 
                     {/* Cards */}
                     <div className="
-                        mt-[3rem] sm:mt-[3rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
+                        mt-[1.5rem] sm:mt-[3rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
                     ">
                         <Swiper
                             modules={[Autoplay]}
-                            slidesPerView={2}
+                            slidesPerView={1}
                             centeredSlides={false}
                             loop={true}
                             grabCursor={true}
@@ -118,6 +118,11 @@ const Manufacturer = () => {
                             autoplay={{
                                 delay: 3000,
                                 disableOnInteraction: false,
+                            }}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                }
                             }}
                         >
                             {ehvData.map((item) => {
@@ -135,7 +140,7 @@ const Manufacturer = () => {
                                             </span>
                                             <p className="
                                                 text-[#000] font-[550]
-                                                text-[0.85rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                                text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                                 mt-[0.3rem]
                                             ">
                                                 {item.desc}
@@ -153,26 +158,27 @@ const Manufacturer = () => {
                     w-full lg:w-[42%]
                     flex justify-between flex-wrap mt-[1.2rem] sm:mt-0
                     gap-[0.7rem] sm:gap-[1.3rem] lg:gap-[1.1rem] xl:gap-[1.2rem] 2xl:gap-[1.3rem]
+                    pb-[0.5rem] sm:pb-0
                 ">
                     {ehvHighlightData.map((item) => {
                         return (
                             <div className="
-                                    w-full bg-[#fff] shadow-[6px_6px_2.6px_#e9202a] rounded-md
-                                    p-[0.8rem] sm:p-[1.1rem] lg:p-[1.4rem] xl:p-[1.5rem] 2xl:p-[1.6rem]
+                                    w-[48.1%] sm:w-full bg-[#fff] shadow-[5px_5px_2.6px_#e9202a] sm:shadow-[6px_6px_2.6px_#e9202a]  rounded-xl sm:rounded-md
+                                    p-[0.5rem] sm:p-[1.1rem] lg:p-[1.4rem] xl:p-[1.5rem] 2xl:p-[1.6rem]
                                     flex justify-between items-center flex-wrap
                                 " key={item.id}>
-                                <div className="w-[40%]">
+                                <div className="w-full sm:w-[40%]">
                                     <span className="
                                         text-[#0a2946] font-[700] font-gilroy
-                                        text-[1.3rem] sm:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.3rem]
+                                        text-[1.2rem] sm:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.3rem]
                                     ">
                                         {item.unit}
                                     </span>
                                 </div>
-                                <div className="w-[55%]">
+                                <div className="w-full sm:w-[55%]">
                                     <p className="
                                         text-[#000] font-[550]
-                                        text-[0.85rem] sm:text-[1rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                                        text-[0.75rem] sm:text-[1rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                         mt-[0.3rem]
                                     ">
                                         {item.desc}

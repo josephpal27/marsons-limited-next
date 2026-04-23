@@ -60,7 +60,7 @@ const WhyMarsons = () => {
 
                 {/* Row */}
                 <div className="
-                    mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem]
+                    mt-[1.2rem] sm:mt-[1.8rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem]
                     flex justify-between flex-wrap
                 ">
                     {whyMarsonsData.map((item) => {
