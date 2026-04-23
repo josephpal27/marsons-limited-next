@@ -12,7 +12,7 @@ const whyMarsonsData = [
     },
     {
         id: 2,
-        title: "Built to Two International Standards",
+        title: "Built to International Standards",
         desc: "	We engineer to IS/IEC for India's grid and IEEE/ANSI for the United States — from the same factory, the same quality system, the same people. 132 kV class units certified and exported to European markets.",
         image: "/images/why-marsons/3.avif",
     },
