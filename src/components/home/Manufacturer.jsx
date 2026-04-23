@@ -80,7 +80,7 @@ const Manufacturer = () => {
                 py-[1.5rem] sm:py-[1.5rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex justify-between items-center flex-wrap h-full
-                bg-[url('/images/manufacturer-bg.png')] bg-no-repeat bg-cover bg-bottom
+                bg-[url('/images/manufacturer-bg.avif')] bg-no-repeat bg-cover bg-bottom
             ">
                 {/* Left */}
                 <div className="w-full lg:w-[52%]">

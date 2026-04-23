@@ -4,14 +4,14 @@ import Fade from "../Fade";
 let ourGoalsData = [
     {
         id: 1,
-        image: "/images/vision.png",
+        image: "/images/vision.avif",
         icon: "/images/icons/vision.avif",
         title: "VISION",
         desc: "To establish Marsons as a global brand and one of the most trusted names in transformers.",
     },
     {
         id: 2,
-        image: "/images/vision.png",
+        image: "/images/mission.avif",
         icon: "/images/icons/mission.avif",
         title: "MISSION",
         desc: "Through quality assurance and stringent evaluations, provide customers with quality products at affordable prices and consistency in service. Develop and maintain supplier–customer relationships based on open communication, mutual trust, and respect.",
@@ -23,9 +23,9 @@ const OurGoals = () => {
     return (
         <>
             <section className="
-                py-[1.5rem] sm:py-[3rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
+                py-[1.7rem] sm:py-[3rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                bg-[url('/images/mission-vision-bg.png')] bg-no-repeat bg-cover bg-center z-[-10]
+                bg-[url('/images/mission-vision-bg.avif')] bg-no-repeat bg-cover bg-bottom sm:bg-center z-[-10]
             ">
 
                 {/* Top */}
@@ -53,27 +53,27 @@ const OurGoals = () => {
                 {/* Bottom */}
                 <div className="
                     flex justify-end flex-wrap gap-[4rem]
-                    mt-[2.5rem] sm:mt-[2.8rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
+                    mt-[3rem] sm:mt-[2.8rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
                 ">
                     {
                         ourGoalsData.map((item, index) => {
                             return (
                                 <div className="
                                     w-full sm:w-[30%] group
-                                    p-[1rem] sm:p-[1.2rem] lg:p-[1rem] xl:p-[1.1rem] 2xl:p-[1.2rem]
+                                    p-[0.8rem] sm:p-[1.2rem] lg:p-[1rem] xl:p-[1.1rem] 2xl:p-[1.2rem]
                                     bg-[#0a2946] text-[#fff] relative
-                                    mb-[3rem] sm:mb-0 last:mb-[1.4rem] sm:last:mb-0
+                                    mb-[0] sm:mb-0 last:mb-[1.4rem] sm:last:mb-0
                                 " key={index}>
                                     <div>
                                         <img src={item.image} alt={item.title} loading="lazy" className="
-                                            w-full
+                                            w-full rounded-lg
                                         " />
                                     </div>
                                     <Fade>
                                         <span className="
-                                            text-[1.6rem] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
+                                            text-[1.5rem] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
                                             font-[550] font-gilroy block
-                                            mt-[1rem] sm:mt-[0.7rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                                            mt-[0.8rem] sm:mt-[0.7rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                         ">
                                             {item.title}
                                         </span>
@@ -81,9 +81,9 @@ const OurGoals = () => {
                                     
                                     <Fade>
                                         <p className="
-                                            text-[1rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
-                                            mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
-                                            mb-[50px] sm:mb-[50px] lg:mb-[40px] xl:mb-[45px] 2xl:mb-[50px]
+                                            text-[0.9rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                                            mt-[0.4rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
+                                            mb-[45px] sm:mb-[50px] lg:mb-[40px] xl:mb-[45px] 2xl:mb-[50px]
                                         ">
                                             {item.desc}
                                         </p>

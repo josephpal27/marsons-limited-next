@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const locationData = [
     {
         id: 1,
-        image: "/images/factory.png",
+        image: "/images/factory.avif",
         location: "India — IS / IEC Standards",
         desc: "The only EHV transformer manufacturer in Eastern India including the NER. Serving 16 state electricity boards, Indian Railways, steel industry, and India's 500 GW renewable energy target.",
         rating: [
@@ -20,7 +20,7 @@ const locationData = [
     },
     {
         id: 2,
-        image: "/images/transformer.png",
+        image: "/images/transformer.avif",
         location: "United States — IEEE / ANSI",
         desc: "Serving US utilities, renewable energy developers, and industrial customers with substation, GSU, pad-mounted, and specialty transformers. PE-stamped for all 50 states. NERC/FERC compliant.",
         rating: [
@@ -56,9 +56,9 @@ const TrustedWorldWide = () => {
     return (
         <>
             <div className="
-                px-[1rem] sm:px-[5%] lg:px-[7%] bg-[url('/images/trusted-bg.png')] bg-no-repeat bg-cover bg-bottom
-                py-[4rem] sm:py-[3rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
-                mb-[2rem] sm:mb-[2rem] lg:mb-[1.4rem] xl:mb-[1.7rem] 2xl:mb-[2rem]
+                px-[1rem] sm:px-[5%] lg:px-[7%] bg-[url('/images/trusted-bg.avif')] bg-no-repeat bg-cover bg-bottom
+                py-[1.5rem] sm:py-[3rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
+                mb-[1.5rem] sm:mb-[2rem] lg:mb-[1.4rem] xl:mb-[1.7rem] 2xl:mb-[2rem]
             ">
                 <Reveal>
                     <h6 className="
@@ -71,7 +71,7 @@ const TrustedWorldWide = () => {
 
                 {/* Cards */}
                 <div className="
-                    mt-[1.2rem] sm:mt-[2rem] lg:mt-[2.3rem] xl:mt-[2.4rem] 2xl:mt-[2.5rem]
+                    mt-[1.3rem] sm:mt-[2rem] lg:mt-[2.3rem] xl:mt-[2.4rem] 2xl:mt-[2.5rem]
                     flex justify-between flex-wrap
                 ">
                     {locationData.map((item, index) => {
@@ -96,7 +96,7 @@ const TrustedWorldWide = () => {
                                     " />
                                 </div>
                                 {/* Content */}
-                                <div className="p-[1rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]">
+                                <div className="p-[0.8rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]">
                                     <span className="
                                         text-[#000] font-[600] font-gilroy
                                         text-[1.3rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
@@ -104,24 +104,24 @@ const TrustedWorldWide = () => {
                                         {item.location}
                                     </span>
                                     <p className="
-                                        text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                        text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                         text-[#000]
-                                        mt-[0.7rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
+                                        mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
                                     ">
                                         {item.desc}
                                     </p>
                                     <div className="
-                                        mt-[1.2rem] sm:mt-[1.3rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
+                                        mt-[1.1rem] sm:mt-[1.3rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                                         flex flex-wrap 
-                                        gap-[1rem] sm:gap-[0.9rem] lg:gap-[0.7rem] xl:gap-[0.8rem] 2xl:gap-[0.9rem]
+                                        gap-[0.7rem] sm:gap-[0.9rem] lg:gap-[0.7rem] xl:gap-[0.8rem] 2xl:gap-[0.9rem]
                                     ">
                                         {item.rating.map((item, index) => {
                                             return (
                                                 <p key={index} className="
                                                     bg-[#154776] text-[#fbfbfb] uppercase
-                                                    py-[0.35rem] sm:py-[0.4rem] lg:py-[0.3rem] xl:py-[0.35rem] 2xl:py-[0.4rem]
-                                                    px-[0.6rem] sm:px-[0.6rem] lg:px-[0.5rem] xl:px-[0.55rem] 2xl:px-[0.6rem]
-                                                    text-[0.85rem] sm:text-[0.8rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem]
+                                                    py-[0.3rem] sm:py-[0.4rem] lg:py-[0.3rem] xl:py-[0.35rem] 2xl:py-[0.4rem]
+                                                    px-[0.5rem] sm:px-[0.6rem] lg:px-[0.5rem] xl:px-[0.55rem] 2xl:px-[0.6rem]
+                                                    text-[0.7rem] sm:text-[0.8rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem]
                                                 ">
                                                     {item}
                                                 </p>
@@ -156,13 +156,13 @@ const TrustedWorldWide = () => {
                                 }}
                             >
                                 <span className="
-                                    text-[1.3rem] sm:text-[1.3rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
+                                    text-[1.2rem] sm:text-[1.3rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                                     text-[#fff] font-[600] font-gilroy
                                 ">
                                     {item.country}
                                 </span>
                                 <p className="
-                                    text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                    text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                     mt-[0.5rem]
                                     text-[#efefef] font-[400]
                                 ">

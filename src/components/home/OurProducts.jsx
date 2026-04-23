@@ -78,7 +78,7 @@ const OurProducts = () => {
     return (
         <>
             <section className="
-                py-[1.5rem] sm:py-[2.5rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
+                py-[2rem] sm:py-[2.5rem] lg:py-[2.5rem] xl:py-[3rem] 2xl:py-[3.5rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex flex-col justify-center
             ">
@@ -94,7 +94,7 @@ const OurProducts = () => {
                 {/* Products Row */}
                 <div className="
                     flex flex-wrap justify-between
-                    mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                    mt-[1.7rem] sm:mt-[1.8rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                 ">
                     {productsData.map((item, index) => {
                         return (
@@ -146,6 +146,7 @@ const OurProducts = () => {
                                             {item.desc}
                                         </p>
                                     </div>
+                                    {/* Desktop Link */}
                                     <div className="mt-[1rem] sm:mt-[1.1rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]">
                                         <Link href={item.url} className="
                                             text-center block bg-[#e9202a] hover:bg-[#d6151f] text-[#fff] font-[500] transition
@@ -155,6 +156,22 @@ const OurProducts = () => {
                                             VIEW PRODUCT
                                         </Link>
                                     </div>
+                                    {/* Mobile Link */}
+                                    {/* <div className="flex justify-between items-center mt-[1rem]">
+                                        <div className="w-[48%]">
+                                            <Link href={item.url} className="
+                                                text-center block bg-[#e9202a] hover:bg-[#d6151f] text-[#fff] font-[500] transition
+                                                text-[0.9rem] py-[0.5rem]
+                                            ">
+                                                VIEW PRODUCT
+                                            </Link>
+                                        </div>
+                                        <div className="w-[30%]">
+                                            <img src="/images/products/distribution-art.png" alt={item.name} loading="lazy" className="
+                                                w-full h-[80px] object-contain
+                                            " />
+                                        </div>
+                                    </div> */}
                                 </div>
                             </motion.div>
                         )

@@ -37,18 +37,18 @@ const PoweringIndustries = () => {
   return (
     <>
       <section className="
-        py-[1rem] sm:py-[2rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
+        py-[1.5rem] sm:py-[2rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
         px-[1rem] sm:px-[5%] lg:px-[7%]
         flex flex-col justify-center
-        pb-[0]
+        pb-[0] relative
       ">
         <Reveal>
           <h2 className="
             text-[1.8rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
             text-[#000] font-[600] uppercase
-            mb-[0] sm:mb-[0.5rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
+            mb-[0.4rem] sm:mb-[0.5rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
           ">
-            Powering <span className="text-[#e9202a]">Industries</span>
+            Powering <br className="block sm:hidden" /> <span className="text-[#e9202a]">Industries</span>
           </h2>
         </Reveal>
 
@@ -71,15 +71,17 @@ const PoweringIndustries = () => {
                 <div className="
                   feature-card
                   w-full sm:w-[50%] lg:w-[25%]
-                  mb-[2rem] sm:mb-0
+                  mb-[1.5rem] sm:mb-0
                   p-[0] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
+                  pb-[1.5rem] sm:pb-0
                   flex flex-col relative group
+                  border-b-[1px] border-black sm:border-b-[0] last:border-b-[0]
                 " key={index}>
                   <motion.img
                     src={item.image}
                     alt={item.title}
                     loading="lazy"
-                    className="w-[20%] sm:w-[25%] lg:w-[30%]"
+                    className="w-[20%] sm:w-[25%] lg:w-[30%] grayscale sm:grayscale-0 brightness-0 sm:brightness-100"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -88,7 +90,7 @@ const PoweringIndustries = () => {
                       ease: "easeOut",
                     }}
                   />
-                  <motion.span 
+                  <motion.span
                     className="
                       text-[#e9202a] font-[500] block
                       text-[1.3rem] sm:text-[1.4rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
@@ -106,13 +108,13 @@ const PoweringIndustries = () => {
                   </motion.span>
 
                   <Fade>
-                      <p className="
+                    <p className="
                         text-[1rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                         text-[#323232] font-[450]
                         mt-[0.5rem] sm:mt-[0.6rem] lg:mt-[0.5rem] xl:mt-[0.6rem] 2xl:mt-[0.7rem]
                       ">
-                        {item.desc}
-                      </p>
+                      {item.desc}
+                    </p>
                   </Fade>
 
                   <Link href="/about" className="
@@ -132,6 +134,12 @@ const PoweringIndustries = () => {
             })
           }
         </div>
+
+        {/* Tower Image (Only Mobile) */}
+        <img src="/images/powering-industries-bg.avif" alt="Powering Industries Background" loading="lazy" className="
+          w-full absolute bottom-0 right-0 opacity-80 sm:hidden
+        "/>
+
       </section>
     </>
   )

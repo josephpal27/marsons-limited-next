@@ -8,7 +8,7 @@ const LatestNews = () => {
         <section className="
             pb-[0] sm:pb-[3rem] lg:pb-[3rem] xl:pb-[3.5rem] 2xl:pb-[4rem]
             px-[1rem] sm:px-[5%] lg:px-[7%]
-            mt-[0] sm:mt-[2rem] lg:mt-[1.3rem] xl:mt-[1.7rem] 2xl:mt-[2rem]
+            mt-[1.5rem] sm:mt-[2rem] lg:mt-[1.3rem] xl:mt-[1.7rem] 2xl:mt-[2rem]
             flex flex-col justify-center
         ">
             <Reveal>
