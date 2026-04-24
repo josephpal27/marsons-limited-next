@@ -37,7 +37,7 @@ const PoweringIndustries = () => {
   return (
     <>
       <section className="
-        py-[1.5rem] sm:py-[2rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
+        py-[1.5rem] sm:py-[2.5rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
         px-[1rem] sm:px-[5%] lg:px-[7%]
         flex flex-col justify-center
         pb-[0] relative
@@ -71,7 +71,7 @@ const PoweringIndustries = () => {
                 <div className="
                   feature-card
                   w-full sm:w-[50%] lg:w-[25%]
-                  mb-[1.5rem] sm:mb-0
+                  mb-[1.5rem] lg:mb-0
                   p-[0] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
                   pb-[1.5rem] sm:pb-0
                   flex flex-col relative group

@@ -76,8 +76,8 @@ const Manufacturer = () => {
     return (
         <>
             <div className="
-                mt-[1.5rem] sm:mt-[3rem] lg:mt-[2.5rem] xl:mt-[3rem] 2xl:mt-[3.5rem]
-                py-[1.5rem] sm:py-[1.5rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
+                mt-[1.5rem] sm:mt-[2rem] lg:mt-[2.5rem] xl:mt-[3rem] 2xl:mt-[3.5rem]
+                py-[1.5rem] sm:py-[2rem] lg:py-[3rem] xl:py-[3.5rem] 2xl:py-[4rem]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 flex justify-between items-center flex-wrap h-full
                 bg-[url('/images/manufacturer-bg.avif')] bg-no-repeat bg-cover bg-bottom
@@ -105,7 +105,7 @@ const Manufacturer = () => {
 
                     {/* Cards */}
                     <div className="
-                        mt-[1.5rem] sm:mt-[3rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
+                        mt-[1.5rem] sm:mt-[2rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
                     ">
                         <Swiper
                             modules={[Autoplay]}
@@ -156,14 +156,14 @@ const Manufacturer = () => {
                 {/* Right */}
                 <div className="
                     w-full lg:w-[42%]
-                    flex justify-between flex-wrap mt-[1.2rem] sm:mt-0
+                    flex justify-between flex-wrap mt-[1.2rem] lg:mt-0
                     gap-[0.7rem] sm:gap-[1.3rem] lg:gap-[1.1rem] xl:gap-[1.2rem] 2xl:gap-[1.3rem]
                     pb-[0.5rem] sm:pb-0
                 ">
                     {ehvHighlightData.map((item) => {
                         return (
                             <div className="
-                                    w-[48.1%] sm:w-full bg-[#fff] shadow-[5px_5px_2.6px_#e9202a] sm:shadow-[6px_6px_2.6px_#e9202a]  rounded-xl sm:rounded-md
+                                    w-[48.1%] lg:w-full bg-[#fff] shadow-[5px_5px_2.6px_#e9202a] sm:shadow-[6px_6px_2.6px_#e9202a]  rounded-xl sm:rounded-md
                                     p-[0.5rem] sm:p-[1.1rem] lg:p-[1.4rem] xl:p-[1.5rem] 2xl:p-[1.6rem]
                                     flex justify-between items-center flex-wrap
                                 " key={item.id}>

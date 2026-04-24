@@ -66,7 +66,6 @@ const Footer = () => {
                         ">
                             <span>Contact Info</span>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@marsonsonline.com" target="_blank">sales@marsonsonline.com</a>
-                            <a href="tel:8335881284">+91 8335881284</a>
                             <a href="tel:9007004222">+91 9007004222</a>
                             <a href="https://maps.app.goo.gl/xX2QPszNz8wNjfCs7" target="_blank">Marsons Limited Budge Budge Trunk Road, Maheshtala, Kolkata - 700142</a>
                         </div>
