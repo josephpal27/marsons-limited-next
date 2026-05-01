@@ -68,15 +68,12 @@ const MyNavbar = () => {
               <NavDropdown.Item as={Link} href="/products/pad-mounted-transformers" onClick={handleClose} className={`${pathname === "/products/pad-mounted-transformers" ? "active" : ""}`}>
                 PAD Mounted Transformers
               </NavDropdown.Item>
-              {/* <NavDropdown.Item as={NavLink} href="/products/cast-resin-transformers" onClick={handleClose} className={`${pathname === "/products/cast-resin-transformers" ? "active" : ""}`}>
-                Cast resin transformers
+              <NavDropdown.Item as={Link} href="/products/marsons-green/wtg-transformers" onClick={handleClose} className={`${pathname === "/products/marsons-green/wtg-transformers" ? "active" : ""}`}>
+                WTG Transformers
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} href="/products/solar-transformers" onClick={handleClose} className={`${pathname === "/products/solar-transformers" ? "active" : ""}`}>
-                Solar transformers
+              <NavDropdown.Item as={Link} href="/products/marsons-green/inverter-duty-transformers" onClick={handleClose} className={`${pathname === "/products/marsons-green/inverter-duty-transformers" ? "active" : ""}`}>
+                Inverter Duty Transformers
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} href="/products/instrumental-transformers" onClick={handleClose} className={`${pathname === "/products/instrumental-transformers" ? "active" : ""}`}>
-                Instrumental transformers
-              </NavDropdown.Item> */}
             </NavDropdown>
             {/* <Nav.Link as={NavLink} href="/clientele" onClick={handleClose} className={`${pathname === "/clientele" ? "active" : ""}`}>
               CLIENTELE
