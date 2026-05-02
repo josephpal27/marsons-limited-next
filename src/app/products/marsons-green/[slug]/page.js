@@ -1,5 +1,7 @@
 import MarsonsGreenOverview from "@/components/marsons-green/MarsonsGreenOverview";
+import TheProblems from "@/components/marsons-green/TheProblems";
 import ProductsBanner from "@/components/products/ProductsBanner";
+import TechnicalSpecifications from "@/components/products/TechnicalSpecifications";
 import { marsonsGreenData } from "@/data/marsonsGreenData";
 import { notFound } from "next/navigation";
 
@@ -46,6 +48,8 @@ export default async function MarsonsGreen({ params }) {
         <>
             <ProductsBanner title={product?.title} range={""} />
             <MarsonsGreenOverview />
+            <TheProblems />
+            <TechnicalSpecifications specs={product?.technicalSpecs} />
         </>
     );
 }

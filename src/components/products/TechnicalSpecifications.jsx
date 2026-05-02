@@ -1,6 +1,13 @@
+"use client"
+
 import Reveal from "../Reveal";
+import { usePathname } from "next/navigation";
 
 const TechnicalSpecifications = ({ specs }) => {
+
+    const pathname = usePathname();
+    const isMarsonsGreen = pathname.startsWith("/products/marsons-green/");
+
     return (
         <>
             <section className="
@@ -8,10 +15,10 @@ const TechnicalSpecifications = ({ specs }) => {
                 pt-[1.3rem] sm:pt-[2.5rem] lg:pt-[2.4rem] xl:pt-[2.7rem] 2xl:pt-[3rem]
             ">
                 <Reveal>
-                    <h3 className="
+                    <h3 className={`
                         text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                        text-[#e9202a] font-[600] text-center
-                    ">
+                        font-[600] text-center ${isMarsonsGreen ? "text-[#228f49]" : "text-[#e9202a]"}
+                    `}>
                         TECHNICAL SPECIFICATIONS
                     </h3>
                 </Reveal>
