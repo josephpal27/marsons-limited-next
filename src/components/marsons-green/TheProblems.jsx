@@ -39,7 +39,7 @@ const TheProblems = () => {
         <>
             <section className="
                 pt-[2.3rem] sm:pt-[3.5rem] lg:pt-[3.4rem] xl:pt-[3.7rem] 2xl:pt-[4rem]
-                mb-[1.3rem] sm:mb-[1.5rem] lg:mb-[1.4rem] xl:mb-[1.7rem] 2xl:mb-[2rem]
+                mb-[1rem] sm:mb-[1.5rem] lg:mb-[1.4rem] xl:mb-[1.7rem] 2xl:mb-[2rem]
             ">
                 <Reveal>
                     <h2 className="
@@ -55,7 +55,7 @@ const TheProblems = () => {
                 <div className="
                     px-[1rem] sm:px-[5%] lg:px-[7%]
                     bg-[#f0f0f0] relative
-                    mt-[2rem] sm:mt-[2rem] lg:mt-[2.5rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
+                    mt-[1.5rem] sm:mt-[2rem] lg:mt-[2.5rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
                 ">
                     <Swiper
                         modules={[Navigation, Autoplay]}
@@ -63,7 +63,7 @@ const TheProblems = () => {
                         centeredSlides={false}
                         loop={true}
                         grabCursor={true}
-                        spaceBetween={0}
+                        spaceBetween={10}
                         speed={2000}
                         autoplay={{
                             delay: 5000,
@@ -86,7 +86,7 @@ const TheProblems = () => {
                                             flex justify-between items-center flex-wrap
                                         ">
                                             {/* Image */}
-                                            <div className="w-[40%]">
+                                            <div className="w-full sm:w-[40%]">
                                                 <img src={item.image} alt={item.title} loading="lazy" className="
                                                     w-full
                                                     shadow-[4px_4px_7px_rgba(0,0,0,0.25)] 
@@ -97,17 +97,17 @@ const TheProblems = () => {
                                             </div>
 
                                             {/* Content */}
-                                            <div className="w-[55%]">
+                                            <div className="w-full sm:w-[55%] mt-[1.5rem] sm:mt-0">
                                                 <span className="
-                                                    text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
+                                                    text-[1.2rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
                                                     text-[#0a2946] font-[600]
                                                 ">
                                                     {item.title}
                                                 </span>
                                                 <p className="
                                                     text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                                                    mt-[1.2rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.7rem] 2xl:mt-[1.8rem]
-                                                    font-[500] text-[#000] leading-[1.7]
+                                                    mt-[0.5rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.7rem] 2xl:mt-[1.8rem]
+                                                    font-[500] text-[#000] leading-[1.5] sm:leading-[1.7]
                                                 ">
                                                     {item.desc}
                                                 </p>
@@ -122,7 +122,7 @@ const TheProblems = () => {
                     {/* Prev Btn */}
                     <button className="
                         custom-prev absolute left-[2%] top-1/2 -translate-y-1/2 z-10 text-[#707070] hover:text-[#0a2946]
-                        text-[2.5rem]
+                        text-[2.5rem] hidden sm:block
                     ">
                         <MdKeyboardArrowLeft />
                     </button>
@@ -130,7 +130,7 @@ const TheProblems = () => {
                     {/* Next Btn */}
                     <button className="
                         custom-next absolute right-[2%] top-1/2 -translate-y-1/2 z-10 text-[#707070] hover:text-[#0a2946]
-                        text-[2.5rem]
+                        text-[2.5rem] hidden sm:block
                     ">
                         <MdKeyboardArrowRight />
                     </button>

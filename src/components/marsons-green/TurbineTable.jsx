@@ -16,7 +16,7 @@ const TurbineTable = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%] 
-                py-[2rem] sm:py-[4.2rem] lg:py-[3.9rem] xl:py-[4.2rem] 2xl:py-[4.5rem]
+                py-[1.5rem] sm:py-[4.2rem] lg:py-[3.9rem] xl:py-[4.2rem] 2xl:py-[4.5rem]
             ">
                 <Reveal>
                     <h5 className="
@@ -26,94 +26,90 @@ const TurbineTable = () => {
                         TURBINE <br /> COMPATIBILITY TABLE
                     </h5>
                 </Reveal>
-                
-                {/* Table */}
-                <div className="
-                    mt-[1.7rem] sm:mt-[1.9rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem]
-                ">
-                    <table className="w-full border border-[#0a2946] border-collapse">
 
-                        {/* Header */}
-                        <thead className="text-[#0a2946]">
+                {/* Table */}
+                <div className="mt-[1.5rem]">
+
+                    <table className="w-full sm:border border-[#0a2946] border-collapse">
+
+                        {/* HEADER (hidden on mobile) */}
+                        <thead className="hidden sm:table-header-group text-[#0a2946]">
                             <tr>
-                                <th className="
-                                    px-[1rem] sm:px-[1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                                    py-[0.9rem] sm:py-[0.9rem] lg:py-[0.7rem] xl:py-[0.8rem] 2xl:py-[0.9rem]
-                                    text-left w-[25%] bg-[#0a2946] text-white border border-[#0a2946]
-                                ">
+                                <th className="px-4 py-3 text-left w-[25%] bg-[#0a2946] text-white border border-[#0a2946]">
                                     Turbine Model
                                 </th>
-                                <th className="
-                                    px-[1rem] sm:px-[1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                                    py-[0.9rem] sm:py-[0.9rem] lg:py-[0.7rem] xl:py-[0.8rem] 2xl:py-[0.9rem]
-                                    text-center border border-[#0a2946]
-                                ">
+                                <th className="px-4 py-3 text-center border border-[#0a2946]">
                                     Rating (MW)
                                 </th>
-                                <th className="
-                                    px-[1rem] sm:px-[1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                                    py-[0.9rem] sm:py-[0.9rem] lg:py-[0.7rem] xl:py-[0.8rem] 2xl:py-[0.9rem]
-                                    text-center border border-[#0a2946]
-                                ">
+                                <th className="px-4 py-3 text-center border border-[#0a2946]">
                                     Transformer LV Voltage
                                 </th>
-                                <th className="
-                                    px-[1rem] sm:px-[1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                                    py-[0.9rem] sm:py-[0.9rem] lg:py-[0.7rem] xl:py-[0.8rem] 2xl:py-[0.9rem]
-                                    text-center border border-[#0a2946]
-                                ">
+                                <th className="px-4 py-3 text-center border border-[#0a2946]">
                                     Transformer MVA
                                 </th>
                             </tr>
                         </thead>
 
-                        {/* Body */}
+                        {/* BODY */}
                         <tbody>
                             {turbineData.map((item, index) => (
                                 <tr
                                     key={index}
-                                    className={index % 2 === 0 ?
-                                        "bg-gray-100 hover:bg-gray-50 transition group block sm:table-row" :
-                                        "bg-[#fff] hover:bg-[#f9f9f9] transition group block sm:table-row"
-                                    }
+                                    className={`
+                                    ${index % 2 === 0 ? "bg-gray-100" : "bg-white"}
+                                    border border-[#0a2946]
+                                    mb-4 sm:mb-0
+                                    rounded-md sm:rounded-none
+                                    overflow-hidden
+                                    block sm:table-row
+                                `}
                                 >
-                                    {/* First Column */}
+
+                                    {/* MODEL */}
                                     <td className="
-                                        px-[0.8rem] sm:px-[1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                                        py-[0.6rem] sm:py-[0.8rem] lg:py-[0.6rem] xl:py-[0.7rem] 2xl:py-[1.2rem]
-                                        font-semibold text-white bg-[#0a2946] border border-[#0a2946]
-                                    ">
+                                    block sm:table-cell
+                                    px-3 py-3 font-semibold text-white bg-[#0a2946]
+                                    border border-[#0a2946]
+                                ">
                                         {item[0]}
                                     </td>
 
-                                    {/* Other Columns */}
+                                    {/* RATING */}
                                     <td className="
-                                        block sm:table-cell 
-                                        px-[0.8rem] sm:px-[1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                                        py-[0.6rem] sm:py-[0.8rem] lg:py-[0.6rem] xl:py-[0.7rem] 2xl:py-[1.2rem]
-                                        font-[500] text-center
-                                        text-gray-800 border border-[#0a2946]
-                                    ">
+                                    block sm:table-cell sm:text-center
+                                    px-3 py-2 border border-[#0a2946]
+                                    text-gray-800
+                                ">
+                                        <span className="sm:hidden font-semibold text-[#0a2946] block mb-1">
+                                            Rating (MW)
+                                        </span>
                                         {item[1]}
                                     </td>
+
+                                    {/* VOLTAGE */}
                                     <td className="
-                                        block sm:table-cell 
-                                        px-[0.8rem] sm:px-[1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                                        py-[0.6rem] sm:py-[0.8rem] lg:py-[0.6rem] xl:py-[0.7rem] 2xl:py-[1.2rem]
-                                        font-[500] text-center
-                                        text-gray-800 border border-[#0a2946]
-                                    ">
+                                    block sm:table-cell sm:text-center
+                                    px-3 py-2 border border-[#0a2946]
+                                    text-gray-800
+                                ">
+                                        <span className="sm:hidden font-semibold text-[#0a2946] block mb-1">
+                                            Transformer LV Voltage
+                                        </span>
                                         {item[2]}
                                     </td>
+
+                                    {/* MVA */}
                                     <td className="
-                                        block sm:table-cell 
-                                        px-[0.8rem] sm:px-[1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                                        py-[0.6rem] sm:py-[0.8rem] lg:py-[0.6rem] xl:py-[0.7rem] 2xl:py-[1.2rem]
-                                        font-[500] text-center
-                                        text-gray-800 border border-[#0a2946]
-                                    ">
+                                    block sm:table-cell sm:text-center
+                                    px-3 py-2 border border-[#0a2946]
+                                    text-gray-800
+                                ">
+                                        <span className="sm:hidden font-semibold text-[#0a2946] block mb-1">
+                                            Transformer MVA
+                                        </span>
                                         {item[3]}
                                     </td>
+
                                 </tr>
                             ))}
                         </tbody>
