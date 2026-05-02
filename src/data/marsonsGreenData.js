@@ -1,7 +1,9 @@
 export const marsonsGreenData = [
     {
         id: 1,
+        banner: "/images/banners/wtg-banner.png",
         title: "WTG Transformers",
+        range: "MARSONS GREEN | 1 MVA – 6.3 MVA | IEC 60076-16 | India's Full Onshore Wind Fleet",
         slug: "wtg-transformers",
         technicalSpecs: [
             ["Rating Range", "1 MVA to 6.3 MVA (covers India's full onshore turbine fleet: 1.5 MW – 6.3 MW)"],

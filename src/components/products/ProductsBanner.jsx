@@ -1,6 +1,13 @@
-import Reveal from "../Reveal";
+"use client"
 
-const ProductsBanner = ({title, range}) => {
+import Reveal from "../Reveal";
+import { usePathname } from "next/navigation";
+
+const ProductsBanner = ({ title, range, banner }) => {
+
+    const pathname = usePathname();
+    const isMarsonsGreen = pathname.startsWith("/products/marsons-green/");
+
     return (
         <>
             <section className="
@@ -8,11 +15,11 @@ const ProductsBanner = ({title, range}) => {
                 lg:h-screen
                 relative
             ">
-                <img src="/images/banners/about-banner.avif" alt="About Banner" loading="eager" className="
+                <img src={banner} alt="Products Banner" loading="eager" className={`
                     w-full
                     lg:h-[106vh]
                     drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
-                " />
+                `} />
                 <div className="
                     pb-[1rem] sm:pb-[3rem] lg:pb-[2.9rem] xl:pb-[3.2rem] 2xl:pb-[3.5rem]
                     px-[1rem] sm:px-[5%] lg:px-[7%]

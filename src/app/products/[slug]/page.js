@@ -72,7 +72,7 @@ export default async function Products({ params }) {
 
   return (
     <>
-      <ProductsBanner title={product?.title} range={product?.range} />
+      <ProductsBanner title={product?.title} range={product?.range} banner={product?.banner} />
       <Transformers data={product} />
       <TechnicalSpecifications specs={product?.technicalSpecs} />
       {/* <Facility /> */}
