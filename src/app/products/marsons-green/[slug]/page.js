@@ -1,6 +1,7 @@
 import GreenAdvantage from "@/components/marsons-green/GreenAdvantage";
 import MarsonsGreenOverview from "@/components/marsons-green/MarsonsGreenOverview";
 import TheProblems from "@/components/marsons-green/TheProblems";
+import TurbineTable from "@/components/marsons-green/TurbineTable";
 import ProductsBanner from "@/components/products/ProductsBanner";
 import TechnicalSpecifications from "@/components/products/TechnicalSpecifications";
 import { marsonsGreenData } from "@/data/marsonsGreenData";
@@ -52,6 +53,7 @@ export default async function MarsonsGreen({ params }) {
             <TheProblems />
             <TechnicalSpecifications specs={product?.technicalSpecs} />
             <GreenAdvantage />
+            <TurbineTable />
         </>
     );
 }

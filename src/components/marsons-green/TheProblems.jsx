@@ -5,6 +5,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import Reveal from "../Reveal";
 
 const theProblemsData = [
     {
@@ -15,9 +16,21 @@ const theProblemsData = [
     },
     {
         id: 2,
-        title: "Thermal Cycling Fatigue",
-        desc: "Each turbine start/stop cycle creates rapid heating and cooling. Standard transformers are rated for continuous duty only. Marsons WTG units use enhanced insulation materials and oil formulations engineered for cyclic thermal stress.",
-        image: "/images/marsons-green/wtg/slider/1.png",
+        title: "VCB Switching Surges",
+        desc: "Vacuum Circuit Breakers generate high di/dt transients when disconnecting turbines. Marsons WTG designs include reinforced BIL and RC surge suppression capability.",
+        image: "/images/marsons-green/wtg/slider/2.png",
+    },
+    {
+        id: 3,
+        title: "Harmonic Currents from VSDs",
+        desc: "Variable Speed Drives generate 5th, 7th, 11th, 13th order harmonic currents. Marsons WTG windings are K-factor derated to handle harmonic heating without insulation degradation.",
+        image: "/images/marsons-green/wtg/slider/3.png",
+    },
+    {
+        id: 4,
+        title: "Loop-Feed Ring Main Faults",
+        desc: "Wind farm collector networks use daisy-chain ring-main topology. Marsons WTG units are rated and configured for loop-feed ring-bus operation with HV loop-feed bushings.",
+        image: "/images/marsons-green/wtg/slider/4.png",
     },
 ]
 
@@ -28,13 +41,15 @@ const TheProblems = () => {
                 pt-[2.3rem] sm:pt-[3.5rem] lg:pt-[3.4rem] xl:pt-[3.7rem] 2xl:pt-[4rem]
                 mb-[1.3rem] sm:mb-[1.5rem] lg:mb-[1.4rem] xl:mb-[1.7rem] 2xl:mb-[2rem]
             ">
-                <h2 className="
-                    pl-[1rem] sm:pl-[5%] lg:pl-[7%]
-                    text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                    text-[#228f49] font-[600]
-                ">
-                    WHY STANDARD <br /> TRANSFORMERS FAIL IN WIND
-                </h2>
+                <Reveal>
+                    <h2 className="
+                        pl-[1rem] sm:pl-[5%] lg:pl-[7%]
+                        text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
+                        text-[#228f49] font-[600]
+                    ">
+                        WHY STANDARD <br /> TRANSFORMERS FAIL IN WIND
+                    </h2>
+                </Reveal>
 
                 {/* Slider */}
                 <div className="
