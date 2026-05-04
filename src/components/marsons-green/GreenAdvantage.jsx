@@ -24,7 +24,7 @@ const GreenAdvantage = () => {
                             text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
                             text-[#228f49] sm:text-[#fff] font-[600]
                         ">
-                            Marsons Green Advantage
+                            MARSONS GREEN ADVANTAGE
                         </h4>
                     </Reveal>
         

@@ -10,25 +10,25 @@ import Reveal from "../Reveal";
 const theProblemsData = [
     {
         id: 1,
-        title: "Thermal Cycling Fatigue",
+        title: "Thermal Cycling <br/> Fatigue",
         desc: "Each turbine start/stop cycle creates rapid heating and cooling. Standard transformers are rated for continuous duty only. Marsons WTG units use enhanced insulation materials and oil formulations engineered for cyclic thermal stress.",
         image: "/images/marsons-green/wtg/slider/1.png",
     },
     {
         id: 2,
-        title: "VCB Switching Surges",
+        title: "VCB Switching <br/> Surges",
         desc: "Vacuum Circuit Breakers generate high di/dt transients when disconnecting turbines. Marsons WTG designs include reinforced BIL and RC surge suppression capability.",
         image: "/images/marsons-green/wtg/slider/2.png",
     },
     {
         id: 3,
-        title: "Harmonic Currents from VSDs",
+        title: "Harmonic Currents <br/> from VSDs",
         desc: "Variable Speed Drives generate 5th, 7th, 11th, 13th order harmonic currents. Marsons WTG windings are K-factor derated to handle harmonic heating without insulation degradation.",
         image: "/images/marsons-green/wtg/slider/3.png",
     },
     {
         id: 4,
-        title: "Loop-Feed Ring Main Faults",
+        title: "Loop-Feed Ring <br/> Main Faults",
         desc: "Wind farm collector networks use daisy-chain ring-main topology. Marsons WTG units are rated and configured for loop-feed ring-bus operation with HV loop-feed bushings.",
         image: "/images/marsons-green/wtg/slider/4.png",
     },
@@ -100,13 +100,12 @@ const TheProblems = () => {
                                             <div className="w-full sm:w-[55%] mt-[1.5rem] sm:mt-0">
                                                 <span className="
                                                     text-[1.2rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                                                    text-[#0a2946] font-[600]
-                                                ">
-                                                    {item.title}
-                                                </span>
+                                                    text-[#0a2946] font-[600] leading-[1.1]
+                                                " dangerouslySetInnerHTML={{ __html: item.title }} />
+            
                                                 <p className="
                                                     text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                                                    mt-[0.5rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.7rem] 2xl:mt-[1.8rem]
+                                                    mt-[0.5rem] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                                                     font-[500] text-[#000] leading-[1.5] sm:leading-[1.7]
                                                 ">
                                                     {item.desc}
