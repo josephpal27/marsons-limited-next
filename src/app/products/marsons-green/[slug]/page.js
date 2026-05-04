@@ -49,8 +49,8 @@ export default async function MarsonsGreen({ params }) {
     return (
         <>
             <ProductsBanner title={product?.title} range={product?.range} banner={product?.banner} />
-            <MarsonsGreenOverview />
-            <TheProblems />
+            <MarsonsGreenOverview overview={product?.overview} title={product?.title} />
+            <TheProblems problems={product?.problems} />
             <TechnicalSpecifications specs={product?.technicalSpecs} />
             <GreenAdvantage />
             <TurbineTable />

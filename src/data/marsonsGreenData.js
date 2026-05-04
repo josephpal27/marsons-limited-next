@@ -5,6 +5,39 @@ export const marsonsGreenData = [
         title: "WTG Transformers",
         range: "MARSONS GREEN | 1 MVA – 6.3 MVA | IEC 60076-16 | India's Full Onshore Wind Fleet",
         slug: "wtg-transformers",
+        overview: {
+            image: "/images/marsons-green/wtg/wtg.png",
+            desc: "Every wind turbine generates power at low voltage — typically 690 V to 1,200 V — which must be stepped up to medium voltage for collection and grid injection. The transformer that does this job is not a standard distribution transformer. IEC 60076-16 exists precisely because conventional transformers fail prematurely in wind applications. Marsons WTG Transformers are designed, tested, and delivered to this standard — covering every onshore wind turbine class currently operating or planned in India.",
+        },
+        problems: {
+            heading: "WHY STANDARD <br/> TRANSFORMERS FAIL IN WIND",
+            items: [
+                {
+                    id: 1,
+                    title: "Thermal Cycling <br/> Fatigue",
+                    desc: "Each turbine start/stop cycle creates rapid heating and cooling. Standard transformers are rated for continuous duty only. Marsons WTG units use enhanced insulation materials and oil formulations engineered for cyclic thermal stress.",
+                    image: "/images/marsons-green/wtg/slider/1.png",
+                },
+                {
+                    id: 2,
+                    title: "VCB Switching <br/> Surges",
+                    desc: "Vacuum Circuit Breakers generate high di/dt transients when disconnecting turbines. Marsons WTG designs include reinforced BIL and RC surge suppression capability.",
+                    image: "/images/marsons-green/wtg/slider/2.png",
+                },
+                {
+                    id: 3,
+                    title: "Harmonic Currents <br/> from VSDs",
+                    desc: "Variable Speed Drives generate 5th, 7th, 11th, 13th order harmonic currents. Marsons WTG windings are K-factor derated to handle harmonic heating without insulation degradation.",
+                    image: "/images/marsons-green/wtg/slider/3.png",
+                },
+                {
+                    id: 4,
+                    title: "Loop-Feed Ring <br/> Main Faults",
+                    desc: "Wind farm collector networks use daisy-chain ring-main topology. Marsons WTG units are rated and configured for loop-feed ring-bus operation with HV loop-feed bushings.",
+                    image: "/images/marsons-green/wtg/slider/4.png",
+                },
+            ]
+        },
         technicalSpecs: [
             ["Rating Range", "1 MVA to 6.3 MVA (covers India's full onshore turbine fleet: 1.5 MW – 6.3 MW)"],
             ["HV Voltage Class", "Up to 33 kV (MV collector network side)"],
@@ -21,9 +54,27 @@ export const marsonsGreenData = [
             ["Standards", "IEC 60076-16 (primary standard) | IS 2026, IEC 60076"],
         ],
     },
+
     {
         id: 2,
+        banner: "/images/banners/inverter-duty-banner.png",
         title: "Inverter Duty Transformers",
-        slug: "inverter-duty-transformers"
+        range: "MARSONS GREEN | 1 MVA – 25 MVA | K-13 / K-20 Rated | Solar PV / BESS / VFD",
+        slug: "inverter-duty-transformers",
+        overview: {
+            image: "/images/marsons-green/inverter-duty/inverter-duty.png",
+            desc: "Solar PV inverters and battery storage inverters generate harmonic currents that standard transformers are not rated to handle. Connecting a conventional distribution transformer to a solar inverter system causes accelerated insulation degradation and premature failure — even at rated load. Marsons Inverter Duty Transformers are purpose-engineered for inverter-based sources: foil windings, K-factor rated insulation, multi-pulse harmonic cancellation, and unity power factor sizing.",
+        },
+        problems: {
+            heading: "THE PROBLEM - AND <br/> HOW MARSONS IDTs SOLVE IT",
+            items: [
+                {
+                    id: 1,
+                    title: "Harmonic Currents <br/> from Inverters",
+                    desc: "Solar inverters produce 5th, 7th, 11th, 13th order harmonics causing additional winding heating not accounted for in standard transformer ratings. Marsons IDTs are K-factor rated (K-13/K-20 per IEEE C57.110) with foil windings that distribute harmonic currents uniformly.",
+                    image: "/images/marsons-green/wtg/slider/1.png",
+                },
+            ]
+        },
     },
 ]

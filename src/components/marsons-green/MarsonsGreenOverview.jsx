@@ -1,5 +1,5 @@
 
-const MarsonsGreenOverview = () => {
+const MarsonsGreenOverview = ({overview, title}) => {
     return (
         <>
             <section className="
@@ -11,7 +11,7 @@ const MarsonsGreenOverview = () => {
                 <div className="
                     w-full sm:w-[42%]
                 ">
-                    <img src="/images/marsons-green/wtg/wtg.png" alt="WTG Transformer" loading="lazy" className="
+                    <img src={overview.image} alt={title} loading="lazy" className="
                         w-full
                     " />
                 </div>
@@ -27,7 +27,7 @@ const MarsonsGreenOverview = () => {
                         mt-[0.8rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                         font-[500] text-[#000] leading-[1.5] sm:leading-[2]
                     ">
-                        Every wind turbine generates power at low voltage — typically 690 V to 1,200 V — which must be stepped up to medium voltage for collection and grid injection. The transformer that does this job is not a standard distribution transformer. IEC 60076-16 exists precisely because conventional transformers fail prematurely in wind applications. Marsons WTG Transformers are designed, tested, and delivered to this standard — covering every onshore wind turbine class currently operating or planned in India.
+                        {overview.desc}
                     </p>
                 </div>
             </section>
