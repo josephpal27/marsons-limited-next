@@ -53,6 +53,11 @@ export const marsonsGreenData = [
             ["K-Factor Rating", "K-7, K-13 per IEEE C57.110 for harmonic duty"],
             ["Standards", "IEC 60076-16 (primary standard) | IS 2026, IEC 60076"],
         ],
+        advantage: {
+            image: "/images/marsons-green/wtg/advantage-bg.png",
+            title: "MARSONS GREEN ADVANTAGE",
+            desc: "Harnessing wind power requires more than a standard distribution transformer. Marsons WTG Transformers bridge the critical gap between your turbine's generation and grid injection. Covering India's full onshore wind fleet from 1 MVA to 6.3 MVA, our engineered solutions provide the steadfast backbone your renewable energy projects demand.",
+        },
     },
 
     {
@@ -75,6 +80,26 @@ export const marsonsGreenData = [
                     image: "/images/marsons-green/wtg/slider/1.png",
                 },
             ]
+        },
+        technicalSpecs: [
+            ["Rating Range", "1 MVA to 25 MVA (covers rooftop solar to 250 MW+ utility-scale parks)"],
+            ["HV Voltage Class", "Up to 33 kV (grid injection at 11 kV / 22 kV / 33 kV)"],
+            ["LV Winding Voltage", "415 V / 690 V / 800 V / 1,050 V — matched to inverter AC output"],
+            ["Frequency", "50 Hz (India) | 60 Hz on request"],
+            ["Primary / Multi-Winding", "Single secondary | 2 / 3 / 4 / 5 secondary windings (multi-pulse harmonic cancellation)"],
+            ["Cooling", "ONAN / ONAF / OFAF — forced cooling for large MVA ratings"],
+            ["Winding Material", "Aluminium Foil / Copper Foil (foil winding essential for harmonic current distribution)"],
+            ["K-Factor Rating", "K-13 (standard solar duty) | K-20 (heavy harmonic / BESS / VFD duty) — per IEEE C57.110"],
+            ["Power Factor Rating", "Unity (1.0) power factor — NOT 0.8 pf. Critical for correct solar duty sizing."],
+            ["Insulating Oil", "Mineral Oil or Silicone Oil"],
+            ["Neutral Grounding", "Solidly grounded or impedance grounded per site grid code (CEA regulations India)"],
+            ["For BESS Applications", "150% cyclic overloading capability for battery charge/discharge cycles"],
+            ["Standards", "IS 2026, IEC 60076, IEEE C57.12.00, IEEE C57.110 (K-factor), CBIP Manual on Solar Transformers"],
+        ],
+        advantage: {
+            image: "/images/marsons-green/inverter-duty/advantage-bg.png",
+            title: "ENGINEERED FOR INVERTERS",
+            desc: "Handle rigorous harmonic profiles with precision. Marsons Inverter Duty Transformers seamlessly connect complex inverter outputs to the grid, offering advanced multi-winding designs and enhanced overload capabilities for solar and BESS applications up to 25 MVA.",
         },
     },
 ]

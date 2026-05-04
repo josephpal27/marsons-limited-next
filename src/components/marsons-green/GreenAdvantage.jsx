@@ -1,6 +1,6 @@
 import Reveal from "../Reveal"
 
-const GreenAdvantage = () => {
+const GreenAdvantage = ({advantage}) => {
     return (
         <>
             <section className="
@@ -9,7 +9,7 @@ const GreenAdvantage = () => {
             ">
 
                 {/* Image */}
-                <img src="/images/marsons-green/wtg/advantage-bg.png" alt="Advantage" loading="lazy" className="
+                <img src={advantage.image} alt="Advantage" loading="lazy" className="
                     w-full
                 " />
 
@@ -24,7 +24,7 @@ const GreenAdvantage = () => {
                             text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
                             text-[#228f49] sm:text-[#fff] font-[600]
                         ">
-                            MARSONS GREEN ADVANTAGE
+                            {advantage.title}
                         </h4>
                     </Reveal>
         
@@ -33,7 +33,7 @@ const GreenAdvantage = () => {
                         mt-[0.8rem] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         font-[500] text-[#000] sm:text-[#fff] leading-[1.6] sm:leading-[1.7]
                     ">
-                        Harnessing wind power requires more than a standard distribution transformer. Marsons WTG Transformers bridge the critical gap between your turbine's generation and grid injection. Covering India's full onshore wind fleet from 1 MVA to 6.3 MVA, our engineered solutions provide the steadfast backbone your renewable energy projects demand.
+                        {advantage.desc}
                     </p>
                 </div>
             </section>

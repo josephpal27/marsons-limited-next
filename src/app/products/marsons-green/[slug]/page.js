@@ -52,8 +52,10 @@ export default async function MarsonsGreen({ params }) {
             <MarsonsGreenOverview overview={product?.overview} title={product?.title} />
             <TheProblems problems={product?.problems} />
             <TechnicalSpecifications specs={product?.technicalSpecs} />
-            <GreenAdvantage />
-            <TurbineTable />
+            <GreenAdvantage advantage={product?.advantage} />
+            
+            {/* Show only for WTG */}
+            {product?.slug === "wtg-transformers" && <TurbineTable />}
         </>
     );
 }
