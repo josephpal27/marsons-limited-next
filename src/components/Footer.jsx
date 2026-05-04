@@ -1,6 +1,13 @@
+"use client"
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+
+    const pathname = usePathname();
+    const isMarsonsGreen = pathname.startsWith("/products/marsons-green/");
+
     return (
         <>
             <footer className="
@@ -17,9 +24,13 @@ const Footer = () => {
                     <div className="
                         w-full lg:w-[37%]
                     ">
-                        <img src="/images/logo/logo.png" alt="Logo" loading="lazy" className="
-                            w-[50%] sm:w-[250px] lg:w-[240px] xl:w-[270px] 2xl:w-[300px]
-                            rounded-[8px] sm:rounded-[10px] lg:rounded-[6px] xl:rounded-[8px] 2xl:rounded-[10px]
+                        <img
+                            src={isMarsonsGreen ? "/images/logo/green-logo.png" : "/images/logo/logo.png"}
+                            alt={isMarsonsGreen ? "Marsons Green" : "Marsons Limited"}
+                            loading="lazy"
+                            className="
+                                w-[50%] sm:w-[250px] lg:w-[240px] xl:w-[270px] 2xl:w-[300px]
+                                rounded-[8px] sm:rounded-[10px] lg:rounded-[6px] xl:rounded-[8px] 2xl:rounded-[10px]
                         " />
                         <p className="
                             text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]

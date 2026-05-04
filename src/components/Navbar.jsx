@@ -14,7 +14,9 @@ const MyNavbar = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   const pathname = usePathname();
+  const isMarsonsGreen = pathname.startsWith("/products/marsons-green/");
 
   const isActive = (path) => {
     if (path === "/") return pathname === "/";
@@ -24,7 +26,11 @@ const MyNavbar = () => {
   return (
     <Navbar expand="lg" className="navbar">
       <Navbar.Brand as={Link} href="/" className="nav-brand">
-        <img src="/images/logo/logo.png" alt="Marsons Limited" loading="eager" />
+        <img
+          src={isMarsonsGreen ? "/images/logo/green-logo.png" : "/images/logo/logo.png"}
+          alt={isMarsonsGreen ? "Marsons Green" : "Marsons Limited"}
+          loading="eager"
+        />
       </Navbar.Brand>
 
       {/* Toggle button opens Offcanvas */}
@@ -39,7 +45,11 @@ const MyNavbar = () => {
       >
         <Offcanvas.Header>
           <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-            <img src="/images/logo/logo.png" alt="Marsons Logo" className="offCanvasLogo" />
+            <img
+              src={isMarsonsGreen ? "/images/logo/green-logo.png" : "/images/logo/logo.png"}
+              alt={isMarsonsGreen ? "Marsons Green" : "Marsons Limited"}
+              className="offCanvasLogo"
+            />
           </Offcanvas.Title>
         </Offcanvas.Header>
 
@@ -113,7 +123,7 @@ const MyNavbar = () => {
             </Nav.Link> */}
             <Nav.Link as={Link} href="/contact" active={false} onClick={handleClose} className={isActive("/contact") ? "active" : ""}>
               CONTACT
-            </Nav.Link> 
+            </Nav.Link>
           </Nav>
         </Offcanvas.Body>
       </Navbar.Offcanvas>
