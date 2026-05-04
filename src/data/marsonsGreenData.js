@@ -77,7 +77,25 @@ export const marsonsGreenData = [
                     id: 1,
                     title: "Harmonic Currents <br/> from Inverters",
                     desc: "Solar inverters produce 5th, 7th, 11th, 13th order harmonics causing additional winding heating not accounted for in standard transformer ratings. Marsons IDTs are K-factor rated (K-13/K-20 per IEEE C57.110) with foil windings that distribute harmonic currents uniformly.",
-                    image: "/images/marsons-green/wtg/slider/1.png",
+                    image: "/images/marsons-green/inverter-duty/slider/1.png",
+                },
+                {
+                    id: 2,
+                    title: "Wrong power <br/> factor sizing",
+                    desc: "Standard transformers are rated at 0.8 power factor. Solar inverters run at unity pf — meaning a standard transformer is undersized by 25% for solar duty. Marsons IDTs are rated at unity (1.0) power factor.",
+                    image: "/images/marsons-green/inverter-duty/slider/2.png",
+                },
+                {
+                    id: 3,
+                    title: "Continuous <br/> full-load duty",
+                    desc: "A distribution feeder averages 40–60% load. A solar IDT runs at or near rated load for 6–8 hours daily. Marsons IDTs are thermally designed for this continuous duty profile.",
+                    image: "/images/marsons-green/inverter-duty/slider/3.png",
+                },
+                {
+                    id: 4,
+                    title: "Grid harmonic <br/> injection (THD)",
+                    desc: "Marsons 3-winding or 5-winding IDTs with phase-shifted secondaries cancel dominant 5th and 7th harmonic orders at the MV bus — reducing Total Harmonic Distortion injected into the grid.",
+                    image: "/images/marsons-green/inverter-duty/slider/4.png",
                 },
             ]
         },

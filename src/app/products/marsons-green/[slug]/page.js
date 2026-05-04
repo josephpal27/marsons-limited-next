@@ -1,4 +1,5 @@
 import GreenAdvantage from "@/components/marsons-green/GreenAdvantage";
+import GreenApplications from "@/components/marsons-green/GreenApplications";
 import MarsonsGreenOverview from "@/components/marsons-green/MarsonsGreenOverview";
 import TheProblems from "@/components/marsons-green/TheProblems";
 import TurbineTable from "@/components/marsons-green/TurbineTable";
@@ -53,9 +54,12 @@ export default async function MarsonsGreen({ params }) {
             <TheProblems problems={product?.problems} />
             <TechnicalSpecifications specs={product?.technicalSpecs} />
             <GreenAdvantage advantage={product?.advantage} />
-            
+
             {/* Show only for WTG */}
             {product?.slug === "wtg-transformers" && <TurbineTable />}
+
+            {/* Show only for Inverter Duty */}
+            {product?.slug === "inverter-duty-transformers" && <GreenApplications />}
         </>
     );
 }
