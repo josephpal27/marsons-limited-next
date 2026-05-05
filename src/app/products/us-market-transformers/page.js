@@ -2,6 +2,7 @@ import MarsonsGreenOverview from "@/components/marsons-green/MarsonsGreenOvervie
 import ProductsBanner from "@/components/products/ProductsBanner";
 import TechnicalSpecifications from "@/components/products/TechnicalSpecifications";
 import PadMounted from "@/components/us-market/PadMounted";
+import SpecialtyTranformers from "@/components/us-market/SpecialtyTranformers";
 import SubStationPower from "@/components/us-market/SubStationPower";
 import { usMarketData } from "@/data/usMarketData";
 
@@ -16,6 +17,7 @@ export default function UsMarketTransformers() {
             <PadMounted />
             <TechnicalSpecifications specs={data.technicalSpecs} />
             <SubStationPower />
+            <SpecialtyTranformers />
         </>
     );
 }

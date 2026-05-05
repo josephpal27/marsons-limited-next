@@ -76,7 +76,7 @@ const GreenApplications = () => {
                                 </div>
 
                                 <span className="
-                                    text-center block font-[600]
+                                    text-center block font-[600] font-gilroy
                                     text-[1rem] sm:text-[1.1rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                                 " dangerouslySetInnerHTML={{ __html: item.title }} />
                                 

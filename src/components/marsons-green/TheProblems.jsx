@@ -71,7 +71,7 @@ const TheProblems = ({problems}) => {
                                             <div className="w-full sm:w-[55%] mt-[1.5rem] sm:mt-0">
                                                 <span className="
                                                     text-[1.2rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                                                    text-[#0a2946] font-[600] leading-[1.1]
+                                                    text-[#0a2946] font-[600] leading-[1.1] font-gilroy
                                                 " dangerouslySetInnerHTML={{ __html: item.title }} />
             
                                                 <p className="

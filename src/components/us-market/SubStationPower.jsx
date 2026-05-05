@@ -140,7 +140,7 @@ const SubStationPower = () => {
                                     </div>
                                     <div className="w-[80%]">
                                         <span className="
-                                            text-[#0a2946] font-[700]
+                                            text-[#0a2946] font-[700] font-gilroy
                                             text-[1.5rem]
                                         ">
                                             {item.title}
