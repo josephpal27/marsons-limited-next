@@ -84,9 +84,9 @@ const MyNavbar = () => {
               <NavDropdown.Item as={Link} href="/products/marsons-green/inverter-duty-transformers" onClick={handleClose} className={`${pathname === "/products/marsons-green/inverter-duty-transformers" ? "active" : ""}`}>
                 Inverter Duty Transformers
               </NavDropdown.Item>
-              {/* <NavDropdown.Item as={Link} href="/products/us-market-transformers" onClick={handleClose} className={`${pathname === "/products/marsons-green/inverter-duty-transformers" ? "active" : ""}`}>
+              <NavDropdown.Item as={Link} href="/products/us-market-transformers" onClick={handleClose} className={`${pathname === "/products/marsons-green/inverter-duty-transformers" ? "active" : ""}`}>
                 US Market Transformers
-              </NavDropdown.Item> */}
+              </NavDropdown.Item>
             </NavDropdown>
             {/* <Nav.Link as={NavLink} href="/clientele" onClick={handleClose} className={`${pathname === "/clientele" ? "active" : ""}`}>
               CLIENTELE
