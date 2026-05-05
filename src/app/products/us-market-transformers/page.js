@@ -4,6 +4,7 @@ import TechnicalSpecifications from "@/components/products/TechnicalSpecificatio
 import PadMounted from "@/components/us-market/PadMounted";
 import SpecialtyTranformers from "@/components/us-market/SpecialtyTranformers";
 import SubStationPower from "@/components/us-market/SubStationPower";
+import UsStandards from "@/components/us-market/UsStandards";
 import { usMarketData } from "@/data/usMarketData";
 
 export default function UsMarketTransformers() {
@@ -18,6 +19,7 @@ export default function UsMarketTransformers() {
             <TechnicalSpecifications specs={data.technicalSpecs} />
             <SubStationPower />
             <SpecialtyTranformers />
+            <UsStandards />
         </>
     );
 }
