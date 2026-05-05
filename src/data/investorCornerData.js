@@ -76,6 +76,22 @@ export const investorCornerData = {
         title: "Statement of Deviation or Variation",
         body: [
           {
+            heading: "December 2025",
+            link: "/pdf/financials/deviation-variation/dec-25.pdf",
+          },
+          {
+            heading: "September 2025",
+            link: "/pdf/financials/deviation-variation/sep-25.pdf",
+          },
+          {
+            heading: "June 2025",
+            link: "/pdf/financials/deviation-variation/jun-25.pdf",
+          },
+          {
+            heading: "March 2025",
+            link: "/pdf/financials/deviation-variation/mar-25.pdf",
+          },
+          {
             heading: "June 2024",
             link: "/pdf/financials/deviation-variation/jun-24.pdf",
           },
@@ -95,8 +111,20 @@ export const investorCornerData = {
         title: "Annual Secretarial Compliance Report",
         body: [
           {
-            heading: "Annual Secretarial Compliance Report for March 2024",
+            heading: "March 2025",
+            link: "/pdf/financials/annual-secretarial-compliance/mar-25.pdf",
+          },
+          {
+            heading: "March 2024",
             link: "/pdf/financials/annual-secretarial-compliance/mar-24.pdf",
+          },
+          {
+            heading: "March 2023",
+            link: "/pdf/financials/annual-secretarial-compliance/mar-23.pdf",
+          },
+          {
+            heading: "March 2022",
+            link: "/pdf/financials/annual-secretarial-compliance/mar-22.pdf",
           },
         ],
       },
@@ -217,6 +245,14 @@ export const investorCornerData = {
           {
             heading: "Familarisation Policy",
             link: "/pdf/regulation/familization-programmes/familarisation-policy.pdf",
+          },
+          {
+            heading: "Familiarisation Programme 2023-24",
+            link: "/pdf/regulation/familization-programmes/familiarisation-programme-2023-24.pdf",
+          },
+          {
+            heading: "Familiarisation Programme 2024-25",
+            link: "/pdf/regulation/familization-programmes/familiarisation-programme-2024-25.pdf",
           },
         ],
       },

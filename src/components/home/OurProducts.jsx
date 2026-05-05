@@ -51,7 +51,7 @@ let productsData = [
         desc: "India's full onshore wind fleet. Handles thermal cycling, VCB surges, and harmonics.",
         output: "1 MVA – 6.3 MVA | IEC 60076-16",
         image: "/images/products/wtg.avif",
-        url: "/coming-soon",
+        url: "/products/marsons-green/wtg-transformers",
     },
     {
         id: 7,
@@ -59,7 +59,7 @@ let productsData = [
         desc: "For utility-scale solar PV, BESS, and VFD. Foil windings, unity power factor sizing.",
         output: "1 MVA – 25 MVA | K-13 / K-20 | IEEE C57.110",
         image: "/images/products/inverter-duty.avif",
-        url: "/coming-soon",
+        url: "/products/marsons-green/inverter-duty-transformers",
     },
     {
         id: 8,
