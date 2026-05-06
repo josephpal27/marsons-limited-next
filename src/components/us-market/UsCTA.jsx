@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { MdArrowOutward } from "react-icons/md";
 import { HiDownload } from "react-icons/hi";
+import Reveal from "../Reveal";
 
 const UsCTA = () => {
     return (
@@ -13,24 +14,28 @@ const UsCTA = () => {
                 flex justify-between items-center flex-wrap
             ">
                 <div className="w-full sm:w-[25%]">
-                    <img 
-                        src="/images/us-market/cta.png" 
-                        alt="CTA" 
-                        loading="lazy" 
+                    <img
+                        src="/images/us-market/cta.png"
+                        alt="CTA"
+                        loading="lazy"
                         className="
                             w-full scale-[1] sm:scale-[1.3]
                             ml-0 sm:ml-[3rem] mt-[1rem] sm:mt-0
-                        " 
+                        "
                     />
                 </div>
                 <div className="w-full sm:w-[60%] mt-[1.5rem] sm:mt-0 pb-[3rem] sm:pb-0">
-                    <Link href="/contact" className="
-                        text-[#fff] font-[600] font-gilroy w-max
-                        text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                        flex items-center gap-[0.5rem] group
-                    ">
-                        Get In Touch <MdArrowOutward className="group-hover:rotate-45 transition duration-300" />
-                    </Link>
+
+                    <Reveal>
+                        <Link href="/contact" className="
+                            text-[#fff] font-[600] font-gilroy w-max
+                            text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
+                            flex items-center gap-[0.5rem] group
+                        ">
+                            Get In Touch <MdArrowOutward className="group-hover:rotate-45 transition duration-300" />
+                        </Link>
+                    </Reveal>
+
                     <p className="
                         text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                         mt-[0.7rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]

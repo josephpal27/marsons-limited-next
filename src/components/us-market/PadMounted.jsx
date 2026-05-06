@@ -1,3 +1,4 @@
+import Reveal from "../Reveal"
 
 const PadMounted = () => {
     return (
@@ -14,12 +15,15 @@ const PadMounted = () => {
                     w-full sm:w-[50%]
                     mt-[1.5rem] sm:mt-0
                 ">
-                    <h2 className="
-                        text-[1.5rem] sm:text-[2.2rem] lg:text-[2.2rem] xl:text-[2.5rem] 2xl:text-[2.8rem]
-                        text-[#0a2946] font-[600]
-                    ">
-                        PAD-MOUNTED DISTRIBUTION TRANSFORMERS (standard US distribution method)
-                    </h2>
+                    <Reveal>
+                        <h2 className="
+                            text-[1.5rem] sm:text-[2.2rem] lg:text-[2.2rem] xl:text-[2.5rem] 2xl:text-[2.8rem]
+                            text-[#0a2946] font-[600]
+                        ">
+                            PAD-MOUNTED DISTRIBUTION TRANSFORMERS (standard US distribution method)
+                        </h2>
+                    </Reveal>
+
                     <p className="
                         text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                         mt-[0.8rem] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]

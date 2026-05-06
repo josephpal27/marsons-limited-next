@@ -58,7 +58,7 @@ const Transformers = ({ data }) => {
                                 >
                                     <img
                                         src={item.image}
-                                        alt="Transformers"
+                                        alt={`Transformer Image ${index + 1}`}
                                         loading="lazy"
                                         className="
                                             w-full grayscale-[100%] group-hover:grayscale-[0%] transition-all duration-300

@@ -8,6 +8,11 @@ import UsCTA from "@/components/us-market/UsCTA";
 import UsStandards from "@/components/us-market/UsStandards";
 import { usMarketData } from "@/data/usMarketData";
 
+export const metadata = {
+  title: "US Market Transformers - Marsons Limited",
+  description: "",
+};
+
 export default function UsMarketTransformers() {
 
     const data = usMarketData[0];

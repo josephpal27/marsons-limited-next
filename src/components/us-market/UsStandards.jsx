@@ -1,3 +1,5 @@
+import Reveal from "../Reveal"
+
 const usStandardsData = [
     ["IEEE C57.12.00", "General requirements — liquid-immersed distribution, power and regulating transformers"],
     ["IEEE C57.12.10", "Safety requirements — liquid-filled power transformers ≤1000 MVA"],
@@ -21,12 +23,14 @@ const UsStandards = () => {
                 py-[1.5rem] sm:py-[2rem] lg:py-[2.4rem] xl:py-[2.7rem] 2xl:py-[3rem]
                 mt-[0.8rem] sm:mt-0
             ">
-                <h6 className="
-                    text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                    text-[#e9202a] font-[600]
-                ">
-                    US STANDARDS <br /> COMPLIANCE TABLE
-                </h6>
+                <Reveal>
+                    <h6 className="
+                        text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
+                        text-[#e9202a] font-[600]
+                    ">
+                        US STANDARDS <br /> COMPLIANCE TABLE
+                    </h6>
+                </Reveal>
 
                 {/* Table */}
                 <div className="
