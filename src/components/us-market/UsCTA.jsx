@@ -41,8 +41,8 @@ const UsCTA = () => {
                     <a href="#" target="_blank" className="
                         bg-[#fff] text-[#0a2946] rounded-md font-gilroy flex items-center w-max transition duration-200
                         text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
-                        px-[1rem]
-                        py-[0.7rem]
+                        px-[1rem] sm:px-[1rem] lg:px-[0.8rem] xl:px-[0.9rem] 2xl:px-[1rem]
+                        py-[0.7rem] sm:py-[0.7rem] lg:py-[0.6rem] xl:py-[0.65rem] 2xl:py-[0.7rem]
                         mt-[1.5rem] sm:mt-[2rem] lg:mt-[2.5rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
                         gap-[0.5rem]
                         hover:bg-[#e9202a] hover:text-[#fff]

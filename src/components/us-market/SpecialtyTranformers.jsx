@@ -59,7 +59,7 @@ const SpecialtyTranformers = () => {
                         return (
                             <div key={item.id} className="
                                 w-[32%] relative group overflow-hidden
-                                mb-[1.7rem]
+                                mb-[1.7rem] sm:mb-[1.5rem] lg:mb-[1.5rem] xl:mb-[1.6rem] 2xl:mb-[1.7rem]
                             ">
                                 <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
                                 <div className="
@@ -70,7 +70,7 @@ const SpecialtyTranformers = () => {
                                     bg-[linear-gradient(to_bottom,rgba(0,0,0,0.1)_0%,#0a2946_100%)] text-[#fff]
                                 ">
                                     <span className="
-                                        text-[1.6rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
+                                        text-[1.6rem] sm:text-[1.5rem] lg:text-[1.5rem] xl:text-[1.65rem] 2xl:text-[1.8rem]
                                         font-[550] leading-[1.2] font-gilroy
                                     " dangerouslySetInnerHTML={{ __html: item.title }} />
                                     <p className="
