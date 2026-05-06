@@ -41,7 +41,8 @@ const SpecialtyTranformers = () => {
     return (
         <>
             <section className="
-                px-[0] sm:px-[5%] lg:px-[7%]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
+                mt-[0.5rem] sm:mt-0
             ">
                 <h5 className="
                     text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
@@ -58,24 +59,24 @@ const SpecialtyTranformers = () => {
                     {specialtyData.map((item) => {
                         return (
                             <div key={item.id} className="
-                                w-[32%] relative group overflow-hidden
-                                mb-[1.7rem] sm:mb-[1.5rem] lg:mb-[1.5rem] xl:mb-[1.6rem] 2xl:mb-[1.7rem]
+                                w-[48.5%] sm:w-[32%] relative group overflow-hidden
+                                mb-[0.8rem] sm:mb-[1.5rem] lg:mb-[1.5rem] xl:mb-[1.6rem] 2xl:mb-[1.7rem]
                             ">
                                 <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
                                 <div className="
                                     absolute top-0 w-full h-full
                                     flex flex-col justify-end
-                                    p-[1.5rem] sm:p-[1.5rem] lg:p-[1.8rem] xl:p-[1.9rem] 2xl:p-[2rem]
+                                    p-[0.6rem] sm:p-[1.5rem] lg:p-[1.8rem] xl:p-[1.9rem] 2xl:p-[2rem]
                                     group-hover:translate-y-full transition-all duration-500
                                     bg-[linear-gradient(to_bottom,rgba(0,0,0,0.1)_0%,#0a2946_100%)] text-[#fff]
                                 ">
                                     <span className="
-                                        text-[1.6rem] sm:text-[1.5rem] lg:text-[1.5rem] xl:text-[1.65rem] 2xl:text-[1.8rem]
+                                        text-[1rem] sm:text-[1.5rem] lg:text-[1.5rem] xl:text-[1.65rem] 2xl:text-[1.8rem]
                                         font-[550] leading-[1.2] font-gilroy
                                     " dangerouslySetInnerHTML={{ __html: item.title }} />
                                     <p className="
-                                        text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
-                                        mt-[0.7rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                                        text-[0.6rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                        mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                     ">
                                         {item.desc}
                                     </p>

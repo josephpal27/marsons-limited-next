@@ -93,8 +93,8 @@ const SubStationPower = () => {
     return (
         <>
             <section className="
-                px-[0] sm:px-[5%] lg:px-[7%]
-                py-[2.3rem] sm:py-[3.5rem] lg:py-[3.9rem] xl:py-[4.2rem] 2xl:py-[4.5rem]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
+                py-[2.7rem] sm:py-[3.5rem] lg:py-[3.9rem] xl:py-[4.2rem] 2xl:py-[4.5rem]
             ">
                 <h4 className="
                     text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
@@ -109,7 +109,7 @@ const SubStationPower = () => {
                     mt-[1.5rem] sm:mt-[2rem] lg:mt-[2.5rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
                 ">
                     {/* Image */}
-                    <div className="w-[37%]">
+                    <div className="w-full sm:w-[37%]">
                         <img 
                             src="/images/us-market/two-winding.png" 
                             alt="Sub Station Power" 
@@ -120,8 +120,8 @@ const SubStationPower = () => {
 
                     {/* Content */}
                     <div className="
-                        w-[61%]
-                        flex flex-col
+                        w-full sm:w-[61%]
+                        flex flex-col mt-[1.5rem] sm:mt-0
                         gap-[1rem] sm:gap-[1rem] lg:gap-[1rem] xl:gap-[1.15rem] 2xl:gap-[1.25rem]
                     ">
                         {subStationData.map((item) => {

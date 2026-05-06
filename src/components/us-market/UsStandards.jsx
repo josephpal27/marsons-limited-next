@@ -17,8 +17,9 @@ const UsStandards = () => {
     return (
         <>
             <section className="
-                px-[0] sm:px-[5%] lg:px-[7%]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
                 py-[1.5rem] sm:py-[2rem] lg:py-[2.4rem] xl:py-[2.7rem] 2xl:py-[3rem]
+                mt-[0.8rem] sm:mt-0
             ">
                 <h6 className="
                     text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]

@@ -6,24 +6,24 @@ const UsCTA = () => {
     return (
         <>
             <section className="
-                px-[0] sm:px-[5%] lg:px-[7%]
-                mt-[3rem] sm:mt-[4rem] lg:mt-[4.4rem] xl:mt-[4.7rem] 2xl:mt-[5rem]
-                mb-[4rem] sm:mb-[5rem] lg:mb-[6.4rem] xl:mb-[6.7rem] 2xl:mb-[7rem]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
+                mt-[2.2rem] sm:mt-[4rem] lg:mt-[4.4rem] xl:mt-[4.7rem] 2xl:mt-[5rem]
+                mb-[1rem] sm:mb-[5rem] lg:mb-[6.4rem] xl:mb-[6.7rem] 2xl:mb-[7rem]
                 bg-[url('/images/us-market/cta-bg.png')] bg-cover bg-no-repeat bg-center
                 flex justify-between items-center flex-wrap
             ">
-                <div className="w-[25%]">
+                <div className="w-full sm:w-[25%]">
                     <img 
                         src="/images/us-market/cta.png" 
                         alt="CTA" 
                         loading="lazy" 
                         className="
-                            w-full scale-[1.3]
-                            ml-[3rem]
+                            w-full scale-[1] sm:scale-[1.3]
+                            ml-0 sm:ml-[3rem] mt-[1rem] sm:mt-0
                         " 
                     />
                 </div>
-                <div className="w-[60%]">
+                <div className="w-full sm:w-[60%] mt-[1.5rem] sm:mt-0 pb-[3rem] sm:pb-0">
                     <Link href="/contact" className="
                         text-[#fff] font-[600] font-gilroy w-max
                         text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
@@ -47,7 +47,7 @@ const UsCTA = () => {
                         gap-[0.5rem]
                         hover:bg-[#e9202a] hover:text-[#fff]
                     ">
-                        Download Catalogue <HiDownload className="text-[1rem] sm:text-[1rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]" />
+                        Download Catalogue <HiDownload className="text-[1.2rem] sm:text-[1rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]" />
                     </a>
                 </div>
             </section>

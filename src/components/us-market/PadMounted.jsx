@@ -3,15 +3,16 @@ const PadMounted = () => {
     return (
         <>
             <section className="
-                px-[0] sm:px-[5%] lg:px-[7%]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
                 pt-[2.3rem] sm:pt-[3.5rem] lg:pt-[3.9rem] xl:pt-[4.2rem] 2xl:pt-[4.5rem]
-                pb-[1.5rem] sm:pb-[1.5rem] lg:pb-[1.4rem] xl:pb-[1.7rem] 2xl:pb-[2rem]
-                flex justify-between flex-wrap
+                pb-[1rem] sm:pb-[1.5rem] lg:pb-[1.4rem] xl:pb-[1.7rem] 2xl:pb-[2rem]
+                flex justify-between flex-wrap flex-col-reverse sm:flex-row
                 bg-[url('/images/us-market/pad-mounted-bg.png')] bg-cover bg-no-repeat bg-center
             ">
                 {/* Content */}
                 <div className="
-                    w-[50%]
+                    w-full sm:w-[50%]
+                    mt-[1.5rem] sm:mt-0
                 ">
                     <h2 className="
                         text-[1.5rem] sm:text-[2.2rem] lg:text-[2.2rem] xl:text-[2.5rem] 2xl:text-[2.8rem]
@@ -30,7 +31,7 @@ const PadMounted = () => {
 
                 {/* Image */}
                 <div className="
-                    w-[44%]
+                    w-full sm:w-[44%]
                 ">
                     <img src="/images/us-market/pad-mounted.png" alt="PAD Mounted" loading="lazy" className="w-full" />
                 </div>
