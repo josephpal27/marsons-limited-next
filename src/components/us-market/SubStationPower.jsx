@@ -121,14 +121,16 @@ const SubStationPower = () => {
                     {/* Content */}
                     <div className="
                         w-[61%]
-                        flex flex-col gap-[1.25rem]
+                        flex flex-col
+                        gap-[1rem] sm:gap-[1rem] lg:gap-[1rem] xl:gap-[1.15rem] 2xl:gap-[1.25rem]
                     ">
                         {subStationData.map((item) => {
                             return(
                                 <div key={item.id} className="
                                     bg-[#f4f3f3]
-                                    p-[1rem]
-                                    flex justify-between gap-[1rem]
+                                    p-[1rem] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
+                                    flex justify-between
+                                    gap-[1rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]
                                 ">
                                     <div className="w-[16%]">
                                         <img 
@@ -141,28 +143,29 @@ const SubStationPower = () => {
                                     <div className="w-[80%]">
                                         <span className="
                                             text-[#0a2946] font-[700] font-gilroy
-                                            text-[1.5rem]
+                                            text-[1.5rem] sm:text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
                                         ">
                                             {item.title}
                                         </span>
                                         <div className="
-                                            mt-[1rem]
-                                            flex gap-[1rem]
+                                            mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                                            gap-[1rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]
+                                            flex
                                         ">
                                             {item.range.map((range) => {
                                                 return (
                                                     <div key={range.id} className="
                                                         bg-[#0a2946] text-[#fff]
-                                                        px-[1rem]
+                                                        px-[1rem] sm:px-[1rem] lg:px-[0.8rem] xl:px-[0.9rem] 2xl:px-[1rem]
                                                         py-[0.2rem]
                                                     ">
                                                         <span className="
-                                                            text-[0.75rem]    
+                                                            text-[0.7rem] sm:text-[0.55rem] lg:text-[0.55rem] xl:text-[0.65rem] 2xl:text-[0.75rem]
                                                         ">
                                                             {range.head}
                                                         </span>
                                                         <p className="
-                                                            text-[0.95rem]
+                                                            text-[0.9rem] sm:text-[0.65rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]
                                                             mt-[0.2rem]
                                                         ">
                                                             {range.value}

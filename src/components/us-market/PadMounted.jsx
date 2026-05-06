@@ -14,7 +14,7 @@ const PadMounted = () => {
                     w-[50%]
                 ">
                     <h2 className="
-                        text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[2.8rem]
+                        text-[1.5rem] sm:text-[2.2rem] lg:text-[2.2rem] xl:text-[2.5rem] 2xl:text-[2.8rem]
                         text-[#0a2946] font-[600]
                     ">
                         PAD-MOUNTED DISTRIBUTION TRANSFORMERS (standard US distribution method)
