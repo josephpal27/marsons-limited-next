@@ -8,7 +8,7 @@ const PadMounted = () => {
                 pt-[2.3rem] sm:pt-[3.5rem] lg:pt-[3.9rem] xl:pt-[4.2rem] 2xl:pt-[4.5rem]
                 pb-[1rem] sm:pb-[1.5rem] lg:pb-[1.4rem] xl:pb-[1.7rem] 2xl:pb-[2rem]
                 flex justify-between flex-wrap flex-col-reverse sm:flex-row
-                bg-[url('/images/us-market/pad-mounted-bg.png')] bg-cover bg-no-repeat bg-center
+                bg-[url('/images/us-market/pad-mounted-bg.avif')] bg-cover bg-no-repeat bg-center
             ">
                 {/* Content */}
                 <div className="
@@ -37,7 +37,7 @@ const PadMounted = () => {
                 <div className="
                     w-full sm:w-[44%]
                 ">
-                    <img src="/images/us-market/pad-mounted.png" alt="PAD Mounted" loading="lazy" className="w-full" />
+                    <img src="/images/us-market/pad-mounted.avif" alt="PAD Mounted" loading="lazy" className="w-full" />
                 </div>
 
             </section>

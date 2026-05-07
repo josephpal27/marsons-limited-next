@@ -1,11 +1,11 @@
 export const usMarketData = [
     {
         id: 1,
-        banner: "/images/banners/us-market-banner.png",
+        banner: "/images/banners/us-market-banner.avif",
         title: "US Market Transformers",
         range: "Up to 300 MVA / 345 kV | IEEE C57 Series | ANSI / DOE / NERC / FERC Compliant",
         overview: {
-            image: "/images/us-market/us-transformer.png",
+            image: "/images/us-market/us-transformer.avif",
             desc: "Marsons manufactures liquid-filled power transformers for the US grid — pad-mounted distribution, substation power, generator step-up (GSU), and specialty transformers — engineered to IEEE/ANSI standards with PE-stamped documentation for all 50 states. Our US portfolio covers voltages from 15 kV through 345 kV and ratings from 10 kVA to 300 MVA.",
         },
         technicalSpecs: [

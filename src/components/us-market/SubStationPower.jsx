@@ -3,7 +3,7 @@ import Reveal from "../Reveal"
 const subStationData = [
     {
         id: 1,
-        image: "/images/us-market/two-winding.png",
+        image: "/images/us-market/two-winding.avif",
         title: "Two-Winding",
         range: [
             {
@@ -115,7 +115,7 @@ const SubStationPower = () => {
                     {/* Image */}
                     <div className="w-full sm:w-[37%]">
                         <img
-                            src="/images/us-market/two-winding.png"
+                            src="/images/us-market/two-winding.avif"
                             alt="Sub Station Power"
                             loading="lazy"
                             className="w-full"

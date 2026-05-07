@@ -10,12 +10,12 @@ const UsCTA = () => {
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 mt-[2.2rem] sm:mt-[4rem] lg:mt-[4.4rem] xl:mt-[4.7rem] 2xl:mt-[5rem]
                 mb-[1rem] sm:mb-[5rem] lg:mb-[6.4rem] xl:mb-[6.7rem] 2xl:mb-[7rem]
-                bg-[url('/images/us-market/cta-bg.png')] bg-cover bg-no-repeat bg-center
+                bg-[url('/images/us-market/cta-bg.avif')] bg-cover bg-no-repeat bg-center
                 flex justify-between items-center flex-wrap
             ">
                 <div className="w-full sm:w-[25%]">
                     <img
-                        src="/images/us-market/cta.png"
+                        src="/images/us-market/cta.avif"
                         alt="CTA"
                         loading="lazy"
                         className="
