@@ -28,12 +28,15 @@ const Applications = ({applications}) => {
                 ">
                     {applications.map((item, index) => {
                         return (
-                            <div key={index} className="
+                            <div key={index} className={`
                                 w-full sm:w-[28%]
                                 bg-[#0a2946] text-[#fff] rounded-xl relative
                                 p-[1.5rem] sm:p-[1rem] lg:p-[1.5rem] xl:p-[1.7rem] 2xl:p-[2rem]
                                 mb-[3.5rem] sm:mb-[3rem] lg:mb-[4.5rem] xl:mb-[4.7rem] 2xl:mb-[5rem]
-                            ">
+                                ${applications.length === 4 ? 
+                                    "sm:[&:nth-child(2)]:mr-[28%] sm:[&:nth-child(3)]:ml-[28%]" : ""
+                                }
+                            `}>
                                 <div className={`
                                     absolute top-[-2rem] left-[-0.7rem] sm:left-[-1.5rem]
                                     w-[65px] sm:w-[50px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
