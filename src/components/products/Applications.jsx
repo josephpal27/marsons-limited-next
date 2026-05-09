@@ -9,7 +9,7 @@ const Applications = ({applications}) => {
                 px-[1rem] sm:px-[5%] lg:px-[7%] 
                 pt-[1rem] sm:pt-[3.5rem] lg:pt-[3.4rem] xl:pt-[3.7rem] 2xl:pt-[4rem]
                 mt-[1rem] sm:mt-[4rem] lg:mt-[4.2rem] xl:mt-[4.6rem] 2xl:mt-[5rem]
-                bg-[url('/images/applications-bg.png')] bg-cover
+                bg-[url('/images/applications-bg.avif')] bg-cover
                 ${applications.length === 0 ? "hidden" : ""}
             `}>
                 <Reveal>
