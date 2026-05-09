@@ -49,6 +49,33 @@ export const productsData = [
             ["Optional Fittings", "Buchholz relay, OTI, WTI, marshalling box, conservator with silica gel breather"],
             ["Type Tests", "BIS approved. Type tested at NABL accredited laboratory. Energy efficient up to Level 3 per IS 1180."]
         ],
+        applications: [
+            {
+                title: "State Electricity Boards & DISCOMs",
+                desc: "Last-mile distribution from 11 kV / 33 kV feeders to 433 V LT networks.",
+                icon: "/images/icons/applications/1.png",
+            },
+            {
+                title: "Industrial Facilities",
+                desc: "Step-down from 11 kV / 33 kV to 433 V for LT motor loads, lighting, and auxiliary power.",
+                icon: "/images/icons/applications/2.png",
+            },
+            {
+                title: "Chemical Plants & Oil Terminals",
+                desc: "Hermetically sealed units eliminate maintenance risk in corrosive / flammable atmospheres.",
+                icon: "/images/icons/applications/3.png",
+            },
+            {
+                title: "Agricultural Feeders",
+                desc: "ONAN free-breathing units for pump sets and PM-KUSUM solar pump installations.",
+                icon: "/images/icons/applications/4.png",
+            },
+            {
+                title: "Urban Distribution",
+                desc: "Compact finished units for urban distribution substations and underground cable networks.",
+                icon: "/images/icons/applications/5.png",
+            },
+        ],
         slug: "distribution-transformers",
     },
     {
@@ -88,6 +115,7 @@ export const productsData = [
             ["Short-Circuit Strength", "Designed per IEC 60076-5 / IEEE C57.12.00. Short-circuit test capability in-house."],
             ["Auxiliary Fittings", "Buchholz relay, WTI, OTI, sudden pressure relay, PRD, online DGA port, fiber optic hot-spot monitoring"]
         ],
+        applications: [],
         slug: "power-transformers",
     },
     {
@@ -123,6 +151,28 @@ export const productsData = [
             ["Insulating Fluid", "PCB-free mineral oil — forced circulation through external oil-water heat exchangers"],
             ["Standards", "IS 2026, IEC 60076, furnace transformer specific design practices"]
         ],
+        applications: [
+            {
+                title: "Electric Arc Furnaces (EAF)",
+                desc: "Integrated steel plants and electric mini-mills. Typically 10–150 MVA, 6.6–33 kV primary.",
+                icon: "/images/icons/applications/1.png",
+            },
+            {
+                title: "Ladle Furnaces (LF)",
+                desc: "Secondary metallurgy — steel refining, alloying, temperature homogenisation. Typically 10–60 MVA.",
+                icon: "/images/icons/applications/2.png",
+            },
+            {
+                title: "Submerged Arc Furnaces",
+                desc: "Ferro-alloy (ferro-manganese, ferro-chrome, ferro-silicon) and silicon carbide manufacturing.",
+                icon: "/images/icons/applications/3.png",
+            },
+            {
+                title: "Non-Ferrous Smelters",
+                desc: "Aluminium, copper, zinc, and nickel smelting and refining operations.",
+                icon: "/images/icons/applications/4.png",
+            },
+        ],
         slug: "furnace-duty-transformers",
     },
     {
@@ -156,6 +206,38 @@ export const productsData = [
             ["Key Safety Advantage", "Zero oil — inherently fire-safe. No oil spillage, no Buchholz relay, no oil testing required."],
             ["Optional Extras", "Forced air cooling fans with thermostat, PTC thermistors in windings, temperature monitoring relay"],
             ["Enclosure Options", "Open frame | IP21/IP31 ventilated | IP54 sealed"]
+        ],
+        applications: [
+            {
+                title: "Hospitals & Healthcare",
+                desc: "Fire safety codes mandate oil-free transformers in occupied hospital buildings.",
+                icon: "/images/icons/applications/1.png",
+            },
+            {
+                title: "High-Rise Buildings & Airports",
+                desc: "No oil spillage risk in occupied structures. Suitable for basement or floor-level substation rooms.",
+                icon: "/images/icons/applications/2.png",
+            },
+            {
+                title: "Metro Rail & Tunnels",
+                desc: "RDSO and fire safety codes for underground metro systems require dry type or fire-resistant transformers.",
+                icon: "/images/icons/applications/3.png",
+            },
+            {
+                title: "Offshore Platforms & Marine",
+                desc: "Oil-free transformers prevent contamination and fire risk on offshore oil rigs and vessels.",
+                icon: "/images/icons/applications/4.png",
+            },
+            {
+                title: "Data Centres & IT Infrastructure",
+                desc: "High reliability, no oil servicing, compact — suitable for raised-floor data centre environments.",
+                icon: "/images/icons/applications/5.png",
+            },
+            {
+                title: "Petrochemical Plants",
+                desc: "Fire-safe in hazardous zones where oil transformers require special protection.",
+                icon: "/images/icons/applications/1.png",
+            },
         ],
         slug: "dry-type-transformers",
     },
@@ -192,6 +274,7 @@ export const productsData = [
             ["Efficiency", "DOE 2016 (10 CFR 431) compliant"],
             ["Standard", "IEEE C57.12.34 (3-phase) | IEEE C57.12.25 (1-phase)"]
         ],
+        applications: [],
         slug: "pad-mounted-transformers",
     },
 ]

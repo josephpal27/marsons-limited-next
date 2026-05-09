@@ -1,4 +1,5 @@
 // import Facility from "@/components/products/Facility";
+import Applications from "@/components/products/Applications";
 import GetInTouch from "@/components/products/GetInTouch";
 import ProductsBanner from "@/components/products/ProductsBanner";
 import QualityControl from "@/components/products/QualityControl";
@@ -75,6 +76,7 @@ export default async function Products({ params }) {
       <ProductsBanner title={product?.title} range={product?.range} banner={product?.banner} />
       <Transformers data={product} />
       <TechnicalSpecifications specs={product?.technicalSpecs} />
+      <Applications applications={product?.applications} />
       {/* <Facility /> */}
       <RelatedProducts />
       <QualityControl />

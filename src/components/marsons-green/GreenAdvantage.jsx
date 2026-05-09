@@ -20,12 +20,12 @@ const GreenAdvantage = ({advantage}) => {
                     relative sm:absolute top-0 left-0 w-full h-full flex flex-col justify-end
                 ">
                     <Reveal>
-                        <h4 className="
+                        <span className="
                             text-[1.5rem] sm:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
-                            text-[#228f49] sm:text-[#fff] font-[600]
+                            text-[#228f49] sm:text-[#fff] font-[600] font-gilroy
                         ">
                             {advantage.title}
-                        </h4>
+                        </span>
                     </Reveal>
         
                     <p className="
