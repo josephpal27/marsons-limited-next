@@ -1,15 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-// import { Poppins } from "next/font/google";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 import MyNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-// const poppins = Poppins({
-//   subsets: ["latin"],
-//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-// });
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +29,10 @@ export default function RootLayout({ children }) {
         <MyNavbar />
         {children}
         <Footer />
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+        />
       </body>
     </html>
   );
