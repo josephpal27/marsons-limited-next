@@ -113,7 +113,7 @@ const SubStationPower = () => {
                     mt-[1.5rem] sm:mt-[2rem] lg:mt-[2.5rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
                 ">
                     {/* Image */}
-                    <div className="w-full sm:w-[37%]">
+                    <div className="w-full lg:w-[37%]">
                         <img
                             src="/images/us-market/two-winding.avif"
                             alt="Sub Station Power"
@@ -124,9 +124,9 @@ const SubStationPower = () => {
 
                     {/* Content */}
                     <div className="
-                        w-full sm:w-[61%]
-                        flex flex-col mt-[1.5rem] sm:mt-0
-                        gap-[1rem] sm:gap-[1rem] lg:gap-[1rem] xl:gap-[1.15rem] 2xl:gap-[1.25rem]
+                        w-full lg:w-[61%]
+                        flex flex-col mt-[1.5rem] lg:mt-0
+                        gap-[1rem] xl:gap-[1.15rem] 2xl:gap-[1.25rem]
                     ">
                         {subStationData.map((item) => {
                             return (
@@ -134,7 +134,7 @@ const SubStationPower = () => {
                                     bg-[#f4f3f3]
                                     p-[0.9rem] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
                                     flex justify-between flex-col sm:flex-row
-                                    gap-[1rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]
+                                    gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]
                                 ">
                                     <div className="w-[50%] sm:w-[16%]">
                                         <img
@@ -147,7 +147,7 @@ const SubStationPower = () => {
                                     <div className="w-full sm:w-[80%] mt-[0.3rem] sm:mt-0">
                                         <span className="
                                             text-[#0a2946] font-[700] font-gilroy
-                                            text-[1.3rem] sm:text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
+                                            text-[1.3rem] sm:text-[1.4rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
                                         ">
                                             {item.title}
                                         </span>
@@ -164,12 +164,12 @@ const SubStationPower = () => {
                                                         py-[0.4rem] sm:py-[0.2rem]
                                                     ">
                                                         <span className="
-                                                            text-[0.8rem] sm:text-[0.55rem] lg:text-[0.55rem] xl:text-[0.65rem] 2xl:text-[0.75rem]
+                                                            text-[0.8rem] sm:text-[0.9rem] lg:text-[0.55rem] xl:text-[0.65rem] 2xl:text-[0.75rem]
                                                         ">
                                                             {range.head}
                                                         </span>
                                                         <p className="
-                                                            text-[1rem] sm:text-[0.65rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]
+                                                            text-[1rem] sm:text-[1rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]
                                                             mt-[0.2rem]
                                                         ">
                                                             {range.value}

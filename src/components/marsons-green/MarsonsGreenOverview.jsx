@@ -9,7 +9,7 @@ const MarsonsGreenOverview = ({overview, title}) => {
             ">
                 {/* Image */}
                 <div className="
-                    w-full sm:w-[42%]
+                    w-full lg:w-[42%]
                 ">
                     <img src={overview.image} alt={title} loading="lazy" className="
                         w-full
@@ -18,7 +18,7 @@ const MarsonsGreenOverview = ({overview, title}) => {
 
                 {/* Content */}
                 <div className="
-                    w-full sm:w-[53%]
+                    w-full lg:w-[53%]
                     px-[1rem] sm:px-0
                     mt-[0.5rem] sm:mt-0
                 ">

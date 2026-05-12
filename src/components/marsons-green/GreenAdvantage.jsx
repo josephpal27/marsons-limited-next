@@ -30,7 +30,7 @@ const GreenAdvantage = ({advantage}) => {
         
                     <p className="
                         text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                        mt-[0.8rem] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
+                        mt-[0.8rem] sm:mt-[0.8rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         font-[500] text-[#000] sm:text-[#fff] leading-[1.6] sm:leading-[1.7]
                     ">
                         {advantage.desc}

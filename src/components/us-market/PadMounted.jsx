@@ -7,13 +7,13 @@ const PadMounted = () => {
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 pt-[2.3rem] sm:pt-[3.5rem] lg:pt-[3.9rem] xl:pt-[4.2rem] 2xl:pt-[4.5rem]
                 pb-[1rem] sm:pb-[1.5rem] lg:pb-[1.4rem] xl:pb-[1.7rem] 2xl:pb-[2rem]
-                flex justify-between flex-wrap flex-col-reverse sm:flex-row
+                flex justify-between flex-wrap flex-col-reverse lg:flex-row
                 bg-[url('/images/us-market/pad-mounted-bg.avif')] bg-cover bg-no-repeat bg-center
             ">
                 {/* Content */}
                 <div className="
-                    w-full sm:w-[50%]
-                    mt-[1.5rem] sm:mt-0
+                    w-full lg:w-[50%]
+                    mt-[1.5rem] lg:mt-0
                 ">
                     <Reveal>
                         <h2 className="
@@ -35,7 +35,7 @@ const PadMounted = () => {
 
                 {/* Image */}
                 <div className="
-                    w-full sm:w-[44%]
+                    w-full lg:w-[44%]
                 ">
                     <img src="/images/us-market/pad-mounted.avif" alt="PAD Mounted" loading="lazy" className="w-full" />
                 </div>
