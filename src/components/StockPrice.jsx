@@ -134,7 +134,7 @@ const StockPrice = () => {
     }, []);
 
     return (
-        <div className="absolute top-[5.1rem] sm:top-[5rem] lg:top-[5.8rem] xl:top-[6.6rem] 2xl:top-[7.2rem] w-full z-[1] px-[5%] flex justify-end">
+        <div className="absolute top-[5.1rem] sm:top-[5rem] lg:top-[5.8rem] xl:top-[6.6rem] 2xl:top-[7.2rem] w-full z-[10] px-[5%] flex justify-end">
             <div className="
                 flex items-center justify-center bg-[#fff] rounded-full overflow-hidden shadow-lg w-full sm:w-max
             ">
