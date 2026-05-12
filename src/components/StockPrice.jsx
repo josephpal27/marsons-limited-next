@@ -1,11 +1,40 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const fetchStock = async (symbol) => {
-    const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}`;
-    const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(yahooUrl)}`;
+// const fetchStock = async (symbol) => {
+//     const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}`;
+//     const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(yahooUrl)}`;
 
-    const res = await fetch(proxyUrl);
+//     const res = await fetch(proxyUrl);
+//     if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+//     const json = await res.json();
+//     const meta = json.chart.result[0].meta;
+
+//     const price = meta.regularMarketPrice;
+//     const prevClose = meta.chartPreviousClose || meta.regularMarketPreviousClose;
+
+//     const changePercent =
+//         typeof meta.regularMarketChangePercent === "number" &&
+//             !isNaN(meta.regularMarketChangePercent)
+//             ? meta.regularMarketChangePercent
+//             : prevClose
+//                 ? ((price - prevClose) / prevClose) * 100
+//                 : 0;
+
+//     return {
+//         price,
+//         change: changePercent,
+//         time: new Date(meta.regularMarketTime * 1000).toLocaleTimeString("en-IN", {
+//             hour: "2-digit",
+//             minute: "2-digit",
+//             second: "2-digit",
+//         }),
+//     };
+// };
+
+const fetchStock = async (symbol) => {
+    const res = await fetch(`https://marsonsonline.com/stock.php?symbol=${symbol}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const json = await res.json();
@@ -13,7 +42,6 @@ const fetchStock = async (symbol) => {
 
     const price = meta.regularMarketPrice;
     const prevClose = meta.chartPreviousClose || meta.regularMarketPreviousClose;
-
     const changePercent =
         typeof meta.regularMarketChangePercent === "number" &&
             !isNaN(meta.regularMarketChangePercent)
@@ -106,7 +134,7 @@ const StockPrice = () => {
     }, []);
 
     return (
-        <div className="absolute top-[5.1rem] sm:top-[5rem] lg:top-[5.8rem] xl:top-[6.6rem] 2xl:top-[7.2rem] w-full z-10 px-[5%] flex justify-end">
+        <div className="absolute top-[5.1rem] sm:top-[5rem] lg:top-[5.8rem] xl:top-[6.6rem] 2xl:top-[7.2rem] w-full z-[1] px-[5%] flex justify-end">
             <div className="
                 flex items-center justify-center bg-[#fff] rounded-full overflow-hidden shadow-lg w-full sm:w-max
             ">
