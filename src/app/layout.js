@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 import MyNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import StockPrice from "@/components/StockPrice";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.variable} ${gilroy.variable}`}>
         <MyNavbar />
+        <StockPrice />
         {children}
         <Footer />
         <ToastContainer
