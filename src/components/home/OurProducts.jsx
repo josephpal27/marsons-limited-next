@@ -67,7 +67,7 @@ let productsData = [
         desc: "Pad-mounted, substation, GSU, solar/BESS, wind collector, and specialty transformers. PE-stamped all 50 states.",
         output: "Up to 300 MVA / 345 kV | IEEE / ANSI / DOE",
         image: "/images/products/us-market.avif",
-        url: "/coming-soon",
+        url: "/products/us-market-transformers",
     },
 ]
 
