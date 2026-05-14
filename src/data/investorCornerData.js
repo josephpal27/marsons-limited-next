@@ -509,6 +509,10 @@ export const investorCornerData = {
         title: "Disclosure under Regulation 30(8)",
         body: [
           {
+            heading: "Ram Taranga Order",
+            link: "/pdf/regulation/disclosure-30-8/ram-taranga-order.pdf",
+          },
+          {
             heading: "Archival Policy",
             link: "/pdf/regulation/disclosure-30-8/archival-policy.pdf",
           },

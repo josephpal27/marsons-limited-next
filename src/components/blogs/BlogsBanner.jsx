@@ -1,6 +1,6 @@
 import Reveal from "../Reveal";
 
-const ContactBanner = () => {
+const BlogsBanner = () => {
     return (
         <>
             <section className="
@@ -8,7 +8,7 @@ const ContactBanner = () => {
                 lg:h-screen
                 relative
             ">
-                <img src="/images/banners/about-banner.avif" alt="Contact Banner" loading="eager" className="
+                <img src="/images/banners/about-banner.avif" alt="Blogs Banner" loading="eager" className="
                     w-full
                     lg:h-[106vh]
                     drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
@@ -26,14 +26,14 @@ const ContactBanner = () => {
                             text-[1.6rem] sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.2rem] 2xl:text-[3.5rem]
                             text-[#fff] font-[700]
                         ">
-                            CONTACT US
+                            OUR BLOGS
                         </h1>
                     </Reveal>
-                    
+
                 </div>
             </section>
         </>
     )
 }
 
-export default ContactBanner
+export default BlogsBanner

@@ -1,4 +1,4 @@
-import latestNewsData from "@/data/LatestNewsData";
+import latestNewsData from "@/data/latestNewsData";
 import LatestNewsCard from "./LatestNewsCard";
 import Reveal from "../Reveal";
 
