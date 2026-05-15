@@ -281,9 +281,19 @@ footer .footer-links a:hover{
 /* Investor Corner Accordion End */
 
 /* Blogs Page Start */
+.blog-content h2{
+  @apply text-[1.3rem] sm:text-[1.3rem] lg:text-[1.25rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
+  text-[#0a2946]
+  mt-[2rem] sm:mt-[2rem] lg:mt-[2.3rem] xl:mt-[2.4rem] 2xl:mt-[2.5rem]
+}
 .blog-content p{
   @apply text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
   text-[#000]
+  mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+}
+.blog-content em{
+  @apply italic text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+  text-[#535252] block font-[500]
   mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
 }
 .blog-content ul{

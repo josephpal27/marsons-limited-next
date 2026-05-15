@@ -1,4 +1,3 @@
-import Reveal from "../Reveal";
 
 const BlogDetailsBanner = ({blog}) => {
     return (
@@ -9,7 +8,7 @@ const BlogDetailsBanner = ({blog}) => {
             ">
                 <img src="/images/banners/about-banner.avif" alt="Blogs Banner" loading="eager" className="
                     w-full
-                    h-[40vh] lg:h-[65vh]
+                    h-[37vh] lg:h-[65vh]
                     drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
                 " />
                 <div className="
@@ -20,14 +19,12 @@ const BlogDetailsBanner = ({blog}) => {
                     h-full
                     flex flex-col justify-end
                 ">
-                    <Reveal>
-                        <h1 className="
-                            text-[1.3rem] sm:text-[1.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
-                            text-[#fff] font-[700]
-                        ">
-                            {blog.title}
-                        </h1>
-                    </Reveal>
+                    <h1 className="
+                        text-[1.3rem] sm:text-[1.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
+                        text-[#fff] font-[700]
+                    ">
+                        {blog.title}
+                    </h1>
                     <span className="
                         text-[#fff] font-[450] block
                         text-[0.8rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]

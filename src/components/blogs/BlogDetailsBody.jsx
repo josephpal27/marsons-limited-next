@@ -32,6 +32,25 @@ const BlogDetailsBody = ({ blog }) => {
                 " dangerouslySetInnerHTML={{ __html: blog.content }}
                 />
 
+                {/* Blog Signature */}
+                <div className="
+                    mt-[1.3rem] sm:mt-[2.5rem] lg:mt-[2.8rem] xl:mt-[2.9rem] 2xl:mt-[3rem]
+                ">
+                    <span className="
+                        text-[1.1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                        font-[600] text-[#0a2946] font-gilroy
+                    ">
+                        Harshvardhan Kotia
+                    </span>
+                    <p className="
+                        text-[0.8rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                        mt-[0.2rem] sm:mt-[0.2rem] lg:mt-[0.1rem] xl:mt-[0.15rem] 2xl:mt-[0.2rem]
+                        text-[#5b5b5b]
+                    ">
+                        CEO, Marsons Limited
+                    </p>
+                </div>
+
                 {/* Latest Blogs Mobile View */}
                 <div className="block lg:hidden w-full mt-[1.8rem]">
                     <LatestBlogs />
