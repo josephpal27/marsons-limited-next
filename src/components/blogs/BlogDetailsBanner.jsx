@@ -9,7 +9,7 @@ const BlogDetailsBanner = ({blog}) => {
             ">
                 <img src="/images/banners/about-banner.avif" alt="Blogs Banner" loading="eager" className="
                     w-full
-                    lg:h-[65vh]
+                    h-[40vh] lg:h-[65vh]
                     drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
                 " />
                 <div className="
@@ -22,7 +22,7 @@ const BlogDetailsBanner = ({blog}) => {
                 ">
                     <Reveal>
                         <h1 className="
-                            text-[1.6rem] sm:text-[1.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
+                            text-[1.3rem] sm:text-[1.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
                             text-[#fff] font-[700]
                         ">
                             {blog.title}
@@ -31,7 +31,7 @@ const BlogDetailsBanner = ({blog}) => {
                     <span className="
                         text-[#fff] font-[450] block
                         text-[0.8rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
-                        mt-[0.8rem] sm:mt-[0.8rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                        mt-[0.5rem] sm:mt-[0.8rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                     "> 
                         {blog.date}
                     </span>

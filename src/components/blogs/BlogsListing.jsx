@@ -13,7 +13,7 @@ const BlogsListing = () => {
                 {blogsData.map((blog, index) => {
                     return (
                         <div key={index} className="
-                            w-[31.6%] 
+                            w-full sm:w-[48%] lg:w-[31.6%] 
                             bg-[#fff] hover:bg-[#fafafa] shadow-[rgba(0,0,0,0.24)_0px_3px_8px] transition duration-300
                             p-[0.8rem] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
                             mb-[1.2rem] sm:mb-[1.8rem] lg:mb-[1.8rem] xl:mb-[1.9rem] 2xl:mb-[2rem]
@@ -27,7 +27,7 @@ const BlogsListing = () => {
                                 {blog.title}
                             </span>
                             <p className="
-                                text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] font-[450]
+                                text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] font-[450]
                                 mt-[0.6rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                             ">
                                 {blog.desc}
@@ -39,7 +39,7 @@ const BlogsListing = () => {
                             ">
                                 <Link href={`/blogs/${blog.slug}`} className="
                                     bg-[#e9202a] text-white font-[450] rounded-[3px] hover:bg-[#d6151f] transition block w-max
-                                    text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                    text-[0.95rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                     px-[1rem]
                                     py-[0.25rem]
                                 ">
