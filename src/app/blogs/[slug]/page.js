@@ -1,4 +1,5 @@
 import BlogDetailsBanner from "@/components/blogs/BlogDetailsBanner";
+import BlogDetailsBody from "@/components/blogs/BlogDetailsBody";
 import { blogsData } from "@/data/blogsData";
 import { notFound } from "next/navigation";
 
@@ -44,6 +45,7 @@ export default async function BlogDetails({ params }) {
     return (
         <>
             <BlogDetailsBanner blog={blog} />
+            <BlogDetailsBody blog={blog} />
         </>
     );
 }

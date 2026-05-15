@@ -136,7 +136,7 @@ const StockPrice = () => {
     return (
         <div className="absolute top-[5.1rem] sm:top-[5rem] lg:top-[5.8rem] xl:top-[6.6rem] 2xl:top-[7.2rem] w-full z-[10] px-[5%] flex justify-end">
             <div className="
-                flex items-center justify-center bg-[#fff] rounded-full overflow-hidden shadow-lg w-full sm:w-max
+                flex items-center justify-center bg-[#fff] rounded-full overflow-hidden shadow-md w-full sm:w-max
             ">
                 <ExchangeBlock label="BSE: MARSONS" data={bse} error={bseError} />
                 <div className="w-px h-3 sm:h-4 lg:h-4 xl:h-4.5 2xl:h-5 bg-[#2a2d3a]" />

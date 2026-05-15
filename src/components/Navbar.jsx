@@ -124,9 +124,9 @@ const MyNavbar = () => {
             <Nav.Link as={NavLink} href="/career" onClick={handleClose} className={`${pathname === "/career" ? "active" : ""}`}>
               CAREER
             </Nav.Link> */}
-            {/* <Nav.Link as={Link} href="/blogs" active={false} onClick={handleClose} className={isActive("/blogs") ? "active" : ""}>
+            <Nav.Link as={Link} href="/blogs" active={false} onClick={handleClose} className={isActive("/blogs") ? "active" : ""}>
               OUR BLOGS
-            </Nav.Link> */}
+            </Nav.Link>
             <Nav.Link as={Link} href="/contact" active={false} onClick={handleClose} className={isActive("/contact") ? "active" : ""}>
               CONTACT
             </Nav.Link>
