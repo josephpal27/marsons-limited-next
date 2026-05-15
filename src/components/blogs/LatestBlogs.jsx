@@ -31,7 +31,7 @@ const LatestBlogs = () => {
                             <div className="w-full lg:w-[76%] mt-[0.8rem] lg:mt-0">
                                 <span className="
                                     text-[1.15rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                                    font-[600] font-gilroy
+                                    font-[600] font-gilroy line-clamp-1
                                 ">
                                     {blog.title}
                                 </span>

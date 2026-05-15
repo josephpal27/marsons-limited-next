@@ -23,12 +23,14 @@ const BlogsListing = () => {
                                 text-[1.2rem] sm:text-[1.3rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                                 font-[500] text-[#0a2946] block font-gilroy
                                 mt-[0.8rem] sm:mt-[0.8rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                                !line-clamp-2
                             ">
                                 {blog.title}
                             </span>
                             <p className="
                                 text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] font-[450]
                                 mt-[0.6rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
+                                line-clamp-2
                             ">
                                 {blog.desc}
                             </p>
