@@ -20,7 +20,7 @@ const BlogDetailsBanner = ({blog}) => {
                     flex flex-col justify-end
                 ">
                     <h1 className="
-                        text-[1.3rem] sm:text-[1.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
+                        text-[1.3rem] sm:text-[2rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
                         text-[#fff] font-[700]
                     ">
                         {blog.title}

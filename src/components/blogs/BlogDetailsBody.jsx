@@ -28,16 +28,16 @@ const BlogDetailsBody = ({ blog }) => {
                 {/* Bottom */}
                 <div className="
                     blog-content
-                    mt-[1.7rem] sm:mt-[2rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
+                    mt-[1.7rem] sm:mt-[2.5rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
                 " dangerouslySetInnerHTML={{ __html: blog.content }}
                 />
 
                 {/* Blog Signature */}
                 <div className="
-                    mt-[1.3rem] sm:mt-[2.5rem] lg:mt-[2.8rem] xl:mt-[2.9rem] 2xl:mt-[3rem]
+                    mt-[1.3rem] sm:mt-[2rem] lg:mt-[2.8rem] xl:mt-[2.9rem] 2xl:mt-[3rem]
                 ">
                     <span className="
-                        text-[1.1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                        text-[1.1rem] sm:text-[1.3rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                         font-[600] text-[#0a2946] font-gilroy
                     ">
                         Harshvardhan Kotia

@@ -8,7 +8,7 @@ const BlogsListing = () => {
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 mt-[2rem] sm:mt-[3rem] lg:mt-[6.5rem] xl:mt-[7.5rem] 2xl:mt-[8rem]
                 pb-[1.5rem] sm:pb-[2rem] lg:pb-[2rem] xl:pb-[2.5rem] 2xl:pb-[3rem]
-                flex flex-wrap gap-[2.6%]
+                flex flex-wrap sm:gap-[3%] lg:gap-[2.6%]
             ">
                 {blogsData.map((blog, index) => {
                     return (
