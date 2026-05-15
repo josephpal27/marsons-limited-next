@@ -279,3 +279,25 @@ footer .footer-links a:hover{
   }
 }
 /* Investor Corner Accordion End */
+
+/* Blogs Page Start */
+.blog-content p{
+  @apply text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+  text-[#000]
+  mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+}
+.blog-content ul{
+  @apply mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+  list-disc pl-[1rem] sm:pl-[1rem] lg:pl-[0.8rem] xl:pl-[0.9rem] 2xl:pl-[1rem]
+}
+.blog-content ul li{
+  @apply text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+  text-[#000] mb-[0.5rem] sm:mb-[0.4rem] lg:mb-[0.3rem] xl:mb-[0.35rem] 2xl:mb-[0.4rem]
+}
+.blog-content a{
+  text-decoration: none !important;
+}
+.blog-content a:hover{
+  text-decoration: underline !important;
+}
+/* Blogs Page End */

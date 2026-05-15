@@ -20,14 +20,21 @@ const BlogDetailsBody = ({ blog }) => {
                         " />
                     </div>
                     {/* Latest Blogs */}
-                    <div className="w-[46%]">
+                    <div className="w-[46%] hidden lg:block">
                         <LatestBlogs />
                     </div>
                 </div>
 
                 {/* Bottom */}
-                <div>
+                <div className="
+                    blog-content
+                    mt-[2rem] sm:mt-[2rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
+                " dangerouslySetInnerHTML={{ __html: blog.content }}
+                />
 
+                {/* Latest Blogs Mobile View */}
+                <div className="block lg:hidden w-full">
+                    <LatestBlogs />
                 </div>
 
             </section>
