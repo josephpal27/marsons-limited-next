@@ -6,13 +6,13 @@ const BlogDetailsBanner = ({blog}) => {
                 w-full
                 relative
             ">
-                <img src="/images/banners/about-banner.avif" alt="Blogs Banner" loading="eager" className="
+                <img src={blog.banner} alt={blog.title} loading="eager" className="
                     w-full
                     h-[37vh] lg:h-[65vh]
                     drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
                 " />
                 <div className="
-                    pb-[1.2rem] sm:pb-[3rem] lg:pb-[2.9rem] xl:pb-[3.2rem] 2xl:pb-[3.5rem]
+                    pb-[2rem] sm:pb-[3.5rem] lg:pb-[4.4rem] xl:pb-[3.7rem] 2xl:pb-[4rem]
                     px-[1rem] sm:px-[5%] lg:px-[7%]
                     absolute
                     top-0 w-full
@@ -20,7 +20,7 @@ const BlogDetailsBanner = ({blog}) => {
                     flex flex-col justify-end
                 ">
                     <h1 className="
-                        text-[1.3rem] sm:text-[2rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
+                        text-[1.2rem] sm:text-[2rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
                         text-[#fff] font-[700]
                     ">
                         {blog.title}

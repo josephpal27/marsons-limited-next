@@ -8,7 +8,7 @@ const BlogsBanner = () => {
                 lg:h-screen
                 relative
             ">
-                <img src="/images/banners/about-banner.avif" alt="Blogs Banner" loading="eager" className="
+                <img src="/images/banners/blogs-banner.avif" alt="Blogs Banner" loading="eager" className="
                     w-full
                     lg:h-[106vh]
                     drop-shadow-[0_7px_0px_#e9202a] sm:drop-shadow-[0_10px_0px_#e9202a]
