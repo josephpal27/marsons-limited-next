@@ -32,6 +32,7 @@ const LatestNews = () => {
                         image={latestNewsData[0].image}
                         title={latestNewsData[0].title}
                         description={latestNewsData[0].desc}
+                        url={latestNewsData[0].url}
                     />
                 </div>
 
@@ -44,6 +45,7 @@ const LatestNews = () => {
                         image={latestNewsData[1].image}
                         title={latestNewsData[1].title}
                         description={latestNewsData[1].desc}
+                        url={latestNewsData[1].url}
                         layout="horizontal"
                     />
 
@@ -51,6 +53,7 @@ const LatestNews = () => {
                         image={latestNewsData[2].image}
                         title={latestNewsData[2].title}
                         description={latestNewsData[2].desc}
+                        url={latestNewsData[2].url}
                         layout="horizontal"
                         reverse
                     />
@@ -62,6 +65,7 @@ const LatestNews = () => {
                         image={latestNewsData[3].image}
                         title={latestNewsData[3].title}
                         description={latestNewsData[3].desc}
+                        url={latestNewsData[3].url}
                     />
                 </div>
 

@@ -52,6 +52,7 @@ const Footer = () => {
                             <span>Quick Links</span>
                             <Link href="/">Home</Link>
                             <Link href="/about">About</Link>
+                            <Link href="/blogs">Our Blogs</Link>
                             {/* <Link href="/clientele">Clientele</Link> */}
                             {/* <Link href="/csr">CSR</Link> */}
                             {/* <Link href="/career">Career</Link> */}
