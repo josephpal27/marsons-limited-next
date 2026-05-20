@@ -893,6 +893,10 @@ export const investorCornerData = {
             heading: "Notice Reg Board Meeting dated 09.02.2026",
             link: "/pdf/notices-results/board-meeting/board-meeting-09-02-2026.pdf",
           },
+          {
+            heading: "Notice Reg Board Meeting dated 15.05.2026",
+            link: "/pdf/notices-results/board-meeting/board-meeting-15-05-2026.pdf",
+          },
         ],
       },
       {
@@ -917,8 +921,13 @@ export const investorCornerData = {
       },
       {
         id: 11,
-        title: "Press/ Media Release",
-        body: [],
+        title: "Press/Media Release",
+        body: [
+          {
+            heading: "Press release",
+            link: "/pdf/notices-results/press-media-release/press-release.pdf",
+          },
+        ],
       },
       {
         id: 12,
@@ -981,6 +990,10 @@ export const investorCornerData = {
           {
             heading: "Disclosure Under Reg 30",
             link: "/pdf/notices-results/regulation-30/disclosure-under-reg-30.pdf",
+          },
+          {
+            heading: "BSE Disclosure",
+            link: "/pdf/notices-results/regulation-30/bse-disclosure-15-05-26.pdf",
           },
         ],
       },
