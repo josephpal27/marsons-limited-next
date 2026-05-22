@@ -69,6 +69,10 @@ export const investorCornerData = {
             heading: "UFR for quarter ended December 2025",
             link: "/pdf/financials/financial-results/ufr-dec-25.pdf",
           },
+          {
+            heading: "Integrated Financials for March 2026",
+            link: "/pdf/financials/financial-results/integrated-financials-mar-26.pdf",
+          },
         ],
       },
       {
