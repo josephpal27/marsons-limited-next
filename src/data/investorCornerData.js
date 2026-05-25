@@ -115,6 +115,10 @@ export const investorCornerData = {
         title: "Annual Secretarial Compliance Report",
         body: [
           {
+            heading: "March 2026",
+            link: "/pdf/financials/annual-secretarial-compliance/mar-26.pdf",
+          },
+          {
             heading: "March 2025",
             link: "/pdf/financials/annual-secretarial-compliance/mar-25.pdf",
           },
