@@ -529,7 +529,12 @@ export const investorCornerData = {
       {
         id: 31,
         title: "Advertisement as per Regulation 47(1)",
-        body: [],
+        body: [
+          {
+            heading: "Newspaper Advertisement March 2026",
+            link: "/pdf/regulation/advertisement-47-1/advertisement-mar-26.pdf",
+          },
+        ],
       },
       {
         id: 32,
