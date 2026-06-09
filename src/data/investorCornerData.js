@@ -517,10 +517,6 @@ export const investorCornerData = {
         title: "Disclosure under Regulation 30(8)",
         body: [
           {
-            heading: "Ram Taranga Order",
-            link: "/pdf/regulation/disclosure-30-8/ram-taranga-order.pdf",
-          },
-          {
             heading: "Archival Policy",
             link: "/pdf/regulation/disclosure-30-8/archival-policy.pdf",
           },
@@ -987,6 +983,10 @@ export const investorCornerData = {
           {
             heading: "Award of order dt 04.02.2026",
             link: "/pdf/notices-results/regulation-30/award-04-02-2026.pdf",
+          },
+          {
+            heading: "Award of order dt 08.05.2026",
+            link: "/pdf/notices-results/regulation-30/award-08-05-2026.pdf",
           },
           {
             heading: "Trading window Dec Qtr",
