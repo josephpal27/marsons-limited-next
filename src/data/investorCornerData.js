@@ -993,6 +993,18 @@ export const investorCornerData = {
             link: "/pdf/notices-results/regulation-30/award-03-06-2026.pdf",
           },
           {
+            heading: "Award of order dt 09.06.2026",
+            link: "/pdf/notices-results/regulation-30/award-09-06-2026.pdf",
+          },
+          {
+            heading: "Award of order dt 10.06.2026",
+            link: "/pdf/notices-results/regulation-30/award-10-06-2026.pdf",
+          },
+          {
+            heading: "Award of order dt 16.06.2026",
+            link: "/pdf/notices-results/regulation-30/award-16-06-2026.pdf",
+          },
+          {
             heading: "Trading window Dec Qtr",
             link: "/pdf/notices-results/regulation-30/trading-window-dec-qtr.pdf",
           },
