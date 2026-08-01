@@ -683,6 +683,10 @@ export const investorCornerData = {
             heading: "December 2025",
             link: "/pdf/corporate-governance/compliance-report/dec-2025.pdf",
           },
+          {
+            heading: "Integrated CG June 2026",
+            link: "/pdf/corporate-governance/compliance-report/cg-jun-2026.pdf",
+          },
         ],
       },
       {
@@ -794,6 +798,10 @@ export const investorCornerData = {
           {
             heading: "Shareholding Pattern for December 2025",
             link: "/pdf/shareholding-pattern/quarterly/dec-2025.pdf",
+          },
+          {
+            heading: "Shareholding Pattern for June 2026",
+            link: "/pdf/shareholding-pattern/quarterly/jun-2026.pdf",
           },
         ],
       },
