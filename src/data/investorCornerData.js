@@ -73,6 +73,10 @@ export const investorCornerData = {
             heading: "Integrated Financials for March 2026",
             link: "/pdf/financials/financial-results/integrated-financials-mar-26.pdf",
           },
+          {
+            heading: "UFR for quarter ended June 2026",
+            link: "/pdf/financials/financial-results/ufr-jun-26.pdf",
+          },
         ],
       },
       {
