@@ -74,7 +74,7 @@ export const investorCornerData = {
             link: "/pdf/financials/financial-results/integrated-financials-mar-26.pdf",
           },
           {
-            heading: "UFR for quarter ended June 2026",
+            heading: "Integrated Financials for June 2026",
             link: "/pdf/financials/financial-results/ufr-jun-26.pdf",
           },
         ],
@@ -551,6 +551,16 @@ export const investorCornerData = {
           },
         ],
       },
+      {
+        id: 34,
+        title: "Newspaper Advertisement",
+        body: [
+          {
+            heading: "Newspaper publication of UFR for quarter ended June 2026",
+            link: "/pdf/regulation/newspaper-advertisement/newspaper-publication-of-ufr-for-quarter-ended-june-2026.pdf",
+          },
+        ],
+      },
     ],
   },
 
@@ -918,6 +928,10 @@ export const investorCornerData = {
             heading: "Notice Reg Board Meeting dated 15.05.2026",
             link: "/pdf/notices-results/board-meeting/board-meeting-15-05-2026.pdf",
           },
+          {
+            heading: "Notice Reg Board Meeting dated 13.08.2026",
+            link: "/pdf/notices-results/board-meeting/board-meeting-13-08-2026.pdf",
+          },
         ],
       },
       {
@@ -947,6 +961,10 @@ export const investorCornerData = {
           {
             heading: "Press release",
             link: "/pdf/notices-results/press-media-release/press-release.pdf",
+          },
+          {
+            heading: "Press release dated 13.08.2026",
+            link: "/pdf/notices-results/press-media-release/press-release-13-08-2026.pdf",
           },
         ],
       },
@@ -1035,6 +1053,10 @@ export const investorCornerData = {
           {
             heading: "BSE Disclosure",
             link: "/pdf/notices-results/regulation-30/bse-disclosure-15-05-26.pdf",
+          },
+          {
+            heading: "Closure of Trading window for the quarter ended June 2026",
+            link: "/pdf/notices-results/regulation-30/closure-of-trading-window-for-the-quarter-ended-june-2026.pdf",
           },
         ],
       },
@@ -1152,6 +1174,26 @@ export const investorCornerData = {
           {
             heading: "CSR Policy",
             link: "/pdf/policies/regulation-46/csr-policy.pdf",
+          },
+          {
+            heading: "Environment, Health and Safety Policy",
+            link: "/pdf/policies/regulation-46/environment-health-and-safety-policy.pdf",
+          },
+          {
+            heading: "Marsons Limited - Sustainability Policy",
+            link: "/pdf/policies/regulation-46/sustainability-policy.pdf",
+          },
+          {
+            heading: "Marsons Limited - Data Privacy Policy",
+            link: "/pdf/policies/regulation-46/data-privacy-policy.pdf",
+          },
+          {
+            heading: "Marsons Limited - Equal Opportunity Policy",
+            link: "/pdf/policies/regulation-46/equal-opportunity-policy.pdf",
+          },
+          {
+            heading: "Marsons Limited - Anti-Corruption and Bribery Policy",
+            link: "/pdf/policies/regulation-46/anti-corruption-and-bribery-policy.pdf",
           },
         ],
       },
