@@ -31,6 +31,10 @@ export const investorCornerData = {
             heading: "Annual Report for FY 2024-25",
             link: "/pdf/financials/annual-report/annual-report-24-25.pdf",
           },
+          {
+            heading: "Annual Report for FY 2025-26",
+            link: "/pdf/financials/annual-report/annual-report-25-26.pdf",
+          },
         ],
       },
       {
